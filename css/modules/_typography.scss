@@ -1,0 +1,75 @@
+h2 {
+    font-weight: 800;
+    font-size: 27px;
+    color: #2C2A71;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #2C2A71;
+}
+
+.text-secondary {
+    color: $dimgrey!important;
+}
+
+.text-pink {
+    color: $deeppink;
+}
+
+.text-primary {
+    color: $midnightblue!important;
+}
+
+.bg-gradient {
+    background: linear-gradient(3.59deg, #1E1B3B 32.08%, #2D2E83 143.69%)!important;
+}
+
+.rounded {
+    border-radius: 20px!important;
+}
+
+.shadow {
+    box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5)!important;
+}
+
+.font-size-8px {
+    font-size: 8px;
+}
+
+.font-size-12px {
+    font-size: 12px;
+}
+
+.font-size-13px {
+    font-size: 13px;
+}
+
+.font-size-16px {
+    font-size: 16px;
+}
+
+.font-size-30px {
+    font-size: 30px;
+}
+
+.font-size-36px {
+    font-size: 36px!important;
+}
+
+.pt-22px {
+    padding-top: 22px;
+}
+
+.pb-35px {
+    padding-bottom: 35px;
+}
+
+.pb-140px {
+    padding-bottom: 140px;
+}
+
+.min-vh-60 {
+    min-height: 60vh;
+}
