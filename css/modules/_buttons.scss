@@ -1,6 +1,5 @@
 .btn {
     font-weight: 500;
-    font-size: 20px;
     border-radius: 27px;
     &:focus {
         box-shadow: none;
@@ -14,6 +13,10 @@
     border: 3px solid #5459CD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.14);
     padding: 8px 30px;
+    &.col-to-action {
+        font-size: 20px;
+        padding: 13px 60px;
+    }
 }
 
 .btn-secondary {

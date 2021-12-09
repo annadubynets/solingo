@@ -11,11 +11,14 @@ body {
     font-family: 'Avenir';
     background-color: $white;
     &.onboarding {
-        background-image: url(../images/footer-bg.svg);
+        background-image: url(../images/footer-bg.png);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: contain;
         min-height: 100vh;
+        @media (min-width: 576px) {
+            background-image: url(../images/footer-bg-desktop.png);
+        }
     }
 }
 
@@ -168,18 +171,55 @@ ul {
     }
 }
 
-.hero {
-    background-image: url('../images/main-bg.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    min-height: 300px;
-    &+section.hero-sibling {
-        position: relative;
-        margin-top: -117px;
-        padding-top: 50px;
-        min-height: calc(100vh - 250px);
+@media (max-width: 576px) {
+    .hero {
+        background-image: url('../images/main-bg.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        min-height: 300px;
+        @media (max-width: 576px) {
+            &+section.hero-sibling {
+                position: relative;
+                margin-top: -117px;
+                padding-top: 50px;
+                min-height: calc(100vh - 250px);
+            }
+        }
+        @media (min-width: 576px) {
+            &+section.hero-sibling {
+                background-image: url('../images/hero-bg.png');
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: contain;
+                position: relative;
+                background-color: $white;
+            }
+        }
     }
+}
+
+.hero {
+    @media (min-width: 576px) {
+        display: none;
+        &+section.hero-sibling {
+            background-image: url('../images/hero-bg.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            position: relative;
+            background-color: transparent;
+            padding-top: 140px;
+            padding-bottom: 160px;
+            h3 {
+                font-size: 49px;
+            }
+        }
+    }
+}
+
+.pt-140px {
+    padding-top: 140px;
 }
 
 .hero-heading {
@@ -199,11 +239,13 @@ ul {
     }
 }
 
-.bg-wave {
-    background-image: url('../images/wave.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+@media (max-width: 576px) {
+    .bg-wave {
+        background-image: url('../images/wave.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
 }
 
 .dropdown-menu {
