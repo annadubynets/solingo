@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solingo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+                <span class="icon-close"></span>
+              </button>
+            <a class="navbar-brand d-block" href="./index.html">
+                <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+            </a>
+            <div class="dropdown ms-auto">
+                <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><img src="images/united-kingdom.svg" alt="United Kingdom"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <p class="font-size-8px text-center">Learn from</p>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/french.svg" alt="French"></span></a></li>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/german.svg" alt="German"></span></a></li>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/saudi-arabia.svg" alt="Aaudi Arabia"></span></a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse top-mobile-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learned</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms.html">T&C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="main-blue min-vh-100 pt-22px pb-140px">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center position-relative">
+                    <div class="return-link">
+                        <a href="account.html" class="return-circle rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="icon-back font-size-14px"></span>
+                        </a>
+                    </div>
+                    <h2 class="mb-0">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center px-lg-3 px-4">
+                <div class="col-lg-6 col-12 px-1 px-lg-2">
+                    <div class="card bg-light py-lg-4 py-3 px-0 mb-5">
+                        <p class="text-start pb-4 px-lg-4 px-3">Do you have any issue on Mind+ store? <span class="text-pink">We will give you straight answers!</span></p>
+                        <p class="text-start pb-3 px-lg-4 px-3">Contact us using our contact form below</p>
+                    </div>
+                    <form>
+                        <div class="mb-3 text-start">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control bg-light" id="inputEmail" placeholder="example@mind+.com">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="selectLanguage" class="form-label">Select an issue</label>
+                            <div class="custom-select profile-select" id="selectLanguage">
+                                <select>
+                                    <option value="0">Select issue</option>
+                                    <option value="1">Issue 1</option> 
+                                    <option value="2">Issue 2</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="mb-4 text-start">
+                            <label for="textareaMessage" class="form-label">Describe your issue</label>
+                            <textarea class="form-control bg-light" id="textareaMessage" rows="4" placeholder="Describe your issue"></textarea>
+                        </div>
+
+                        <label for="textAttachment" class="form-label">Attachment</label>
+                        <div class="py-2">
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-light chose-attachment-file-btn">Choose files</button>
+                                <p class="text-muted ps-4 attachment-file-name">No file chosen</p>
+                                <input type="file" class="d-none" name="attachment-file" id="attachment-file-input">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-6 text-center mt-5 mb-3">
+                                <button type="button" class="btn btn-primary w-100 px-0">Send</button>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="inputUser" class="form-label text-dark">User</label>
+                            <div class="card bg-light text-center p-3">
+                                <p class="font-size-14px text-primary">Wi-Fi User not detected</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="navbar footer-navbar fixed-bottom navbar-light justify-content-around d-lg-none d-flex">
+            <a href="account.html" class="nav-link text-center active"><span class="icon-user font-size-30px d-block pb-1"></span>Account</a>
+            <a href="learned.html" class="nav-link text-center"><span class="icon-layers font-size-30px d-block pb-1"></span>Learned</a>
+            <div class="icon-block text-center position-relative">
+                <a href="home.html" class="nav-link">
+                    <div class="rounded-circle icon-circle d-flex justify-content-center align-items-center mb-1">
+                        <span class="icon-home font-size-30px d-block pb-1"></span>
+                    </div>
+                    Home
+                </a>
+            </div>
+            <a href="articles.html" class="nav-link text-center"><span class="icon-star font-size-30px d-block pb-1"></span>Articles</a>
+            <a href="badges.html" class="nav-link text-center"><span class="icon-badges font-size-30px d-block pb-1"></span>Badges</a>
+        </nav>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="close pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-close font-size-24px text-white"></span>
+            </button>
+        </div>
+        <div class="modal-dialog px-4 pt-160px">
+            <div class="modal-content p-4">
+                <p class="font-size-18 text-dark mb-4">Are you sure you want to unsubscribe?</p>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary w-100 px-0" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary w-100 px-0" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscriptionConfirmed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionConfirmedLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="close pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-close font-size-24px text-white"></span>
+            </button>
+        </div>
+
+        <div class="modal-dialog px-4 pt-140px">
+            <div class="modal-content p-4">
+                <p class="font-size-18 text-dark mb-4">You are no longer member of Solingo. Please continue your visit at our homepage.</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <button type="button" class="btn btn-primary w-100 px-0" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

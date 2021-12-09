@@ -10,8 +10,30 @@ h3 {
     color: #2C2A71;
 }
 
+h4 {
+    font-weight: 800;
+    font-size: 18px;
+    color: #2C2A71;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 14px;
+    color: $deeppink;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 14px;
+    color: $midnightblue;
+}
+
 .text-secondary {
     color: $dimgrey!important;
+}
+
+.text-muted {
+    color: $silver!important;
 }
 
 .text-pink {
@@ -22,8 +44,20 @@ h3 {
     color: $midnightblue!important;
 }
 
+.bg-light {
+    background: #F7F8F9!important;
+}
+
 .bg-gradient {
     background: linear-gradient(3.59deg, #1E1B3B 32.08%, #2D2E83 143.69%)!important;
+}
+
+.bg-gradient-pink {
+    background: linear-gradient(180deg, #F2F2FF 0%, #F2F2FF 100%)!important;
+}
+
+.bg-gradient-transparent {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%)!important;
 }
 
 .rounded {
@@ -34,8 +68,16 @@ h3 {
     box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5)!important;
 }
 
+.shadow-sm {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25)!important;
+}
+
 .font-size-8px {
     font-size: 8px;
+}
+
+.font-size-11px {
+    font-size: 11px;
 }
 
 .font-size-12px {
@@ -46,8 +88,16 @@ h3 {
     font-size: 13px;
 }
 
+.font-size-14px {
+    font-size: 14px;
+}
+
 .font-size-16px {
     font-size: 16px;
+}
+
+.font-size-24px {
+    font-size: 24px;
 }
 
 .font-size-30px {
@@ -62,12 +112,32 @@ h3 {
     padding-top: 22px;
 }
 
+.pt-60px {
+    padding-top: 60px;
+}
+
+.pt-160px {
+    padding-top: 160px;
+}
+
 .pb-35px {
     padding-bottom: 35px;
 }
 
+.pb-60px {
+    padding-bottom: 60px;
+}
+
 .pb-140px {
     padding-bottom: 140px;
+}
+
+.mt-100px {
+    margin-top: -100px;
+}
+
+.mb-32px {
+    margin-bottom: 32px;
 }
 
 .min-vh-60 {

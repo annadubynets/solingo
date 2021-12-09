@@ -43,22 +43,22 @@
                         <a class="nav-link" href="#">Badges</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Account</a>
+                        <a class="nav-link" href="account.html">Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">T&C</a>
+                        <a class="nav-link" href="terms.html">T&C</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="main min-vh-100 pt-22px pb-140px">
+    <section class="main-blue min-vh-100 pt-4 pb-140px">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-12 text-center position-relative">
@@ -67,31 +67,36 @@
                             <span class="icon-back font-size-14px"></span>
                         </a>
                     </div>
-                    <h2>Choose a level
-                    </h2>
-                    <p class="text-secondary font-size-13px">Choose what level suits you!</p>
+                    <h2 class="mb-0">Profile</h2>
                 </div>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4 col-12 text-center mb-lg-4 mb-0 pb-4">
-                    <div class="position-relative d-inline-block">
-                        <div class="img-overlay-rotate rounded"></div>
-                        <img src="images/paris.png" alt="Paris" class="w-100 shadow rounded z-index-1">
-                        <!-- <div class="title-block p-3">
-                            English
-                        </div> -->
+            <div class="row px-lg-3 px-4">
+                <div class="col-12">
+                    <div class="mb-4 text-start">
+                        <label for="inputEmail" class="form-label">Username</label>
+                        <input type="email" class="form-control bg-light" id="inputEmail" placeholder="Example@playwing.com">
                     </div>
-                </div>
-                <!-- <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
-                    <div class="main-circle-style position-relative d-inline-block">
-                        <div class="img-overlay rounded-circle mx-auto"></div>
-                        <img src="images/italian.png" alt="Italian" class="w-100 rounded-pill z-index-1">
-                        <div class="title-block p-3">
-                            Italian
+                    <div class="mb-5 text-start">
+                        <label for="selectLanguage" class="form-label">Site Language</label>
+                        <div class="custom-select profile-select" id="selectLanguage">
+                            <select>
+                                <option value="0">English</option>
+                                <option value="1">Italian</option> 
+                                <option value="2">German</option>
+                                <option value="2">French</option>
+                                <option value="2">Chinese</option>
+                                <option value="2">Spanish</option>
+                                <option value="2">Japanese</option>
+                              </select>
                         </div>
                     </div>
-                </div> -->
+
+                    <a href="#" class="btn-link">Leave Solingo subscription</a>
+
+                    <div class="text-center pt-60px">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#liveSubscription">Save</button>
+                    </div>
+                </div>
             </div>
         </div>
         <nav class="navbar footer-navbar fixed-bottom navbar-light justify-content-around d-lg-none d-flex">
@@ -109,6 +114,49 @@
             <a href="badges.html" class="nav-link text-center"><span class="icon-badges font-size-30px d-block pb-1"></span>Badges</a>
         </nav>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="close pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-close font-size-24px text-white"></span>
+            </button>
+        </div>
+        <div class="modal-dialog px-4 pt-160px">
+            <div class="modal-content p-4">
+                <p class="font-size-14px text-dark mb-4">Are you sure you want to unsubscribe?</p>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscriptionConfirmed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionConfirmedLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="close pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-close font-size-24px text-white"></span>
+            </button>
+        </div>
+
+        <div class="modal-dialog px-4 pt-140px">
+            <div class="modal-content p-4">
+                <p class="font-size-14px text-dark mb-4">You are no longer member of Solingo. Please continue your visit at our homepage.</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
