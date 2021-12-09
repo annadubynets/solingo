@@ -457,24 +457,24 @@ ul {
   border-radius: 0.625rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero {
     background-image: url("../images/main-bg.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    min-height: 300px;
+    min-height: 340px;
   }
 }
-@media (max-width: 576px) and (max-width: 576px) {
+@media (max-width: 768px) and (max-width: 768px) {
   .hero + section.hero-sibling {
     position: relative;
-    margin-top: -117px;
+    margin-top: -130px;
     padding-top: 50px;
     min-height: calc(100vh - 250px);
   }
 }
-@media (max-width: 576px) and (min-width: 576px) {
+@media (max-width: 768px) and (min-width: 768px) {
   .hero + section.hero-sibling {
     background-image: url("../images/hero-bg.png");
     background-repeat: no-repeat;
@@ -484,7 +484,7 @@ ul {
     background-color: #FFFFFF;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .hero {
     display: none;
   }
