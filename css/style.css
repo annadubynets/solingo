@@ -80,12 +80,16 @@ h4 {
   font-size: 8px;
 }
 
+.font-size-10px {
+  font-size: 10px !important;
+}
+
 .font-size-11px {
   font-size: 11px;
 }
 
 .font-size-12px {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .font-size-13px {
@@ -326,7 +330,7 @@ a {
 
 p {
   margin-bottom: 0;
-  color: #26224A;
+  color: #2C2A71;
 }
 
 ul {
@@ -391,7 +395,7 @@ ul {
 .card {
   background: linear-gradient(180deg, #FFFFFF 0%, #F2F2FF 100%);
   box-shadow: 0px 4px 4px rgba(49, 45, 100, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
   border: none;
   padding: 1.25rem 1.5rem;
   position: relative;
@@ -400,6 +404,10 @@ ul {
   font-weight: 500;
   font-size: 12px;
   color: #464482;
+}
+
+.object-fit-cover {
+  object-fit: cover;
 }
 
 .articles .card {
@@ -441,6 +449,14 @@ ul {
   display: flex;
   justify-content: center;
   z-index: 3;
+}
+
+.article-circle {
+  width: 65px;
+  height: 65px;
+  background: #FFFBFB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
 }
 
 .languages.card::after {
@@ -1048,7 +1064,7 @@ ul {
 .custom-select .select-selected {
   background: #F7F8F9;
   box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5);
-  border-radius: 16px;
+  border-radius: 10px;
   text-align: start;
   border: none;
 }
@@ -1059,9 +1075,18 @@ ul {
   position: absolute;
   font-size: 10px;
   display: inline-block;
-  padding: 3px;
-  right: 15px;
-  top: 20px;
+  right: 10px;
+  top: 16px;
+}
+.custom-select .select-selected::before {
+  font-family: "icomoon";
+  content: "";
+  color: #2C2A71;
+  position: absolute;
+  font-size: 14px;
+  display: inline-block;
+  left: 10px;
+  top: 13px;
 }
 .custom-select .select-selected.select-arrow-active {
   border: 3px solid #2C2A71;
@@ -1072,9 +1097,9 @@ ul {
 }
 .custom-select .select-items {
   position: absolute;
-  background: #F7F8F9;
+  background: #F8F8F8;
   box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5);
-  border-radius: 16px;
+  border-radius: 10px;
   text-align: start;
   top: 100%;
   left: 0;
@@ -1090,13 +1115,18 @@ ul {
 }
 .custom-select .select-items div,
 .custom-select .select-selected {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   color: #9E9E9E;
-  padding: 18px 19px;
-  border-radius: 16px;
+  padding: 12px 50px;
+  border-radius: 10px;
   cursor: pointer;
   user-select: none;
+}
+.custom-select .select-items div {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2C2A71;
 }
 .custom-select .select-hide {
   display: none;
@@ -1106,6 +1136,53 @@ ul {
   background: #F7F8F9;
   box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5);
   border: none;
+}
+
+.list-group {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F2FF 100%);
+  box-shadow: 0px 4px 4px rgba(49, 45, 100, 0.2);
+  border-radius: 5px;
+}
+.list-group .list-group-item {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #A9A8C6;
+}
+
+.flag-style {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  vertical-align: text-bottom;
+}
+
+.input-group.search {
+  border: 0;
+  background: #F8F8F8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5);
+}
+.input-group.search .input-group-text {
+  background: #F8F8F8;
+  border: 0;
+  border-radius: 10px;
+}
+.input-group.search .input-group-text::before {
+  font-family: "icomoon";
+  display: inline-block;
+  content: "";
+  font-size: 14px;
+  color: #2C2A71;
+}
+.input-group.search .form-control {
+  padding: 12px;
+  border-left: 0;
+  border: none;
+  box-shadow: none;
+}
+.input-group.search .form-control:focus {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

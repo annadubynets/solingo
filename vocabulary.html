@@ -63,105 +63,56 @@
             <div class="row mb-4">
                 <div class="col-12 text-center position-relative">
                     <div class="return-link">
-                        <a href="articles.html" class="return-circle rounded-circle d-flex justify-content-center align-items-center">
+                        <a href="index.html" class="return-circle rounded-circle d-flex justify-content-center align-items-center">
                             <span class="icon-back font-size-14px"></span>
                         </a>
                     </div>
-                    <h2 class="mb-0">All articles
+                    <h2 class="mb-0">Your Vocabulary
                     </h2>
-                    <p class="text-secondary font-size-13px">Unlock by finishing lessons</p>
+                    <p class="text-secondary font-size-13px"><span class="text-pink">5</span> words learned</p>
                 </div>
             </div>
-            <div class="row px-lg-3 px-4 mb-32px">
+            <div class="row px-lg-3 px-4">
                 <div class="col-lg-6 col-12">
-                    <img src="images/articles-paris.png" class="card-img rounded shadow-sm" alt="Paris, France">
-                    <h2 class="pt-4 text-center mb-32px">Paris, France<span class="ps-2"><img src="images/location-icon.svg" alt="Location"></span></h2>
-
-                    <div class="card mb-4">
-                        <h4 class="text-pink mb-3">Cultural</h4>
-                        <p class="card-text">Paris offers a lot of cultural activites: art exhibitions, opera performances, theatre plays, sports events, you name</p>
+                    <div class="custom-select profile-select mb-32px" id="selectLanguage">
+                        <select>
+                            <option value="0">Select Language</option>
+                            <option value="1">English</option> 
+                            <option value="2">Italian</option>
+                            <option value="3">German</option>
+                            <option value="4">French</option>
+                            <option value="5">Chinese</option>
+                            <option value="6">Spanish</option>
+                            <option value="7">Japanese</option>
+                          </select>
                     </div>
 
-                    <div class="card mb-4">
-                        <h4 class="text-pink mb-3">Architectual</h4>
-                        <p class="card-text">Paris is not only a cultural city, it is first and foremost an architectural jewel. In Paris, you can find beautiful Haussmann buildings, modern art deco buildings, magnificent churches - like the Notre Dame or Saint Eustache -as
-                            well as more unique pieces like the Louis Vuitton Foundation or the George Pompidou Centre.
-                        </p>
+                    <div class="text-center mb-32px">
+                        <span><img src="images/french-flag.svg" alt="French" class="flag-style rounded-circle"></span>
+                        <span class="text-primary ps-1">French: <span class="text-pink">4</span> Words learned</span>
                     </div>
 
-                    <div class="card bg-gradient-pink">
-                        <h4 class="text-pink mb-3">Secret</h4>
-                        <p class="card-text">Paris harbours secrets of all kinds: Catacombs, covered passages, hidden gardens, quarries, old arenas... You'll never find out all its secrets, but it's worth a try. The Garden of the Buddhist Pantheon in the 16th century is particularly
-                            noteworthy, it is a true haven of peace unknown to tourists and even to some locals.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-4 text-center">
-                    <div class="article-circle rounded-circle d-flex justify-content-center align-items-center mb-2">
-                        <span class="icon-temperature font-size-24px"></span>
-                    </div>
-                    <p class="font-size-10px">Average Temperatures
-                        <span class="text-pink d-block">6/25°C (42/77°F)</span>
-                    </p>
-                </div>
-                <div class="col-4 text-center">
-                    <div class="article-circle rounded-circle d-flex justify-content-center align-items-center mb-2">
-                        <span class="icon-business font-size-24px"></span>
-                    </div>
-                    <p class="font-size-10px">Best Period
-                        <span class="text-pink d-block">June to September</span>
-                    </p>
-                </div>
-                <div class="col-4 text-center">
-                    <div class="article-circle rounded-circle d-flex justify-content-center align-items-center mb-2">
-                        <span class="icon-sun font-size-24px"></span>
-                    </div>
-                    <p class="font-size-10px">Time Zone
-                        <span class="text-pink d-block">GMT +1</span>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="card bg-gradient-pink mb-4 p-0">
-                        <div class="row">
-                            <div class="col-4 pe-0">
-                                <img src="images/atricles-paris-2.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="Paris">
-                            </div>
-                            <div class="col-8 ps-0">
-                                <div class="card-body py-2">
-                                    <h5 class="card-title font-size-12px text-pink">Classic</h5>
-                                    <p class="card-text font-size-10px">The Montmartre district This very artistic and constantly changing district is known for its cobbled streets, its magnificent view of Paris, its craft shops, and especially for its painters and accordionists.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="input-group search text-lg-start text-center mb-4">
+                        <button class="input-group-text" id="basic-addon">
+                        </button>
+                        <input type="text" class="form-control" placeholder="Search words..." aria-label="Words" aria-describedby="basic-addon">
                     </div>
 
-                    <div class="card mb-5 p-0">
-                        <div class="row">
-                            <div class="col-8 pe-0">
-                                <div class="card-body py-2">
-                                    <h5 class="card-title font-size-12px text-pink">Classic</h5>
-                                    <p class="card-text font-size-10px">The Montmartre district This very artistic and constantly changing district is known for its cobbled streets, its magnificent view of Paris, its craft shops, and especially for its painters and accordionists.</p>
-                                </div>
-                            </div>
-                            <div class="col-4 ps-0">
-                                <img src="images/articles-paris-3.png" class="img-fluid rounded-end h-100 object-fit-cover" alt="Paris">
-                            </div>
-                        </div>
+                    <ul class="list-group mt-3 mb-32px">
+                        <li class="list-group-item"><span class="text-primary">Je: </span><span class="text-pink">I</span></li>
+                        <li class="list-group-item"><span class="text-primary">il: </span><span class="text-pink">He</span></li>
+                        <li class="list-group-item"><span class="text-primary">Parle: </span><span class="text-pink">Speak</span></li>
+                        <li class="list-group-item"><span class="text-primary">Visite: </span><span class="text-pink">Visit</span></li>
+                    </ul>
+
+                    <div class="text-center">
+                        <span><img src="images/german-flag.svg" alt="French" class="flag-style rounded-circle"></span>
+                        <span class="text-primary ps-1">German: <span class="text-pink">1</span> Word learned</span>
                     </div>
 
-                    <h2 class="mb-4 text-center">Little Anecdote</h2>
-
-                    <div class="card mb-4">
-                        <h4 class="text-pink font-size-13px text-center mb-3">Cops or chickens?
-                        </h4>
-                        <p class="card-text">In 1871, the buildings of the Parisian police were all destroyed in a major fire. So, they had to find a place to relocate.The Paris Police decided to move to the “Ile de la Cité”, which was formerly reserved for poultry markets!
-                            As a result, the Parisians started calling their policemen “chickens” to make fun of them.
-                        </p>
-                    </div>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item"><span class="text-primary">ich </span><span class="text-pink">I</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
