@@ -1,16 +1,10 @@
 body {
     font-family: 'Avenir';
     background-color: $white;
-    &.onboarding {
-        background-image: url(../images/footer-bg.png);
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: contain;
-        min-height: 100vh;
-        @media (min-width: 576px) {
-            background-image: url(../images/footer-bg-desktop.png);
-        }
-    }
+}
+
+main {
+    min-height: 100vh;
 }
 
 a {

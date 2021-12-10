@@ -10,47 +10,47 @@
 @import "modules/utilities";
 
 
-.hero {
+.landing {
+    background-image: url('../images/footer-bg.png');
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-
-    @media (max-width: 575px) {
-        min-height: 440px;
-        background-image: url('../images/main-bg.png');
-
-        &+section.hero-sibling {
-            position: relative;
-            margin-top: -180px;
-            padding-top: 70px;
-            min-height: calc(100vh - 408px);
-        }
-
-        @media (max-width: 376px) {
-            min-height: 340px;
-
-            &+section.hero-sibling {
-                margin-top: -130px;
-                padding-top: 50px;
-                min-height: calc(100vh - 357px);
-            }
-        }
+    background-position: bottom;
+    background-size: contain;
+    
+    @media (min-width: 576px) {
+        background-image: url('../images/footer-bg-desktop.png');
     }
 
-    @media (min-width: 992px) {
-        display: none;
-        &+section.hero-sibling {
-            background-image: url('../images/hero-bg.png');
+    main {
+        display: flex;
+        flex-direction: column;
+
+        background-repeat: no-repeat;
+        @media (max-width: 575px) {
+            background-image: url('../images/mobile-hero-bg.jpg');
+            background-position: top;
+            background-size: 100%;
+
+            .wifi-registration {
+                margin-top: -120px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            background-image: url('../images/hero-bg-middle.png');
             background-repeat: no-repeat;
             background-position: top right;
-            background-size: 726px;
-            position: relative;
-            background-color: transparent;
-            padding-top: 140px;
-            padding-bottom: 160px;
-            h3 {
-                font-size: 49px;
+            background-size: 530px;
+
+            @media (min-width: 768px) {
+                background-size: 640px;
             }
+        }
+
+        @media (min-width: 992px) {
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-image: url('../images/hero-bg.png');
+            background-size: 726px;
 
             @media (min-width: 1200px) {
                 background-size: 780px;
@@ -59,46 +59,39 @@
             @media (min-width: 1400px) {
                 background-size: 900px;
             }
+
+            .wifi-registration {
+                margin-top: 80px;
+                margin-bottom: 80px;
+            }
+        }
+
+        footer {
+            margin-top: auto;
         }
     }
+    
+    .hero {
+        @media (max-width: 575px) {
+            padding-top: 70vw;
+        }
 
-    @media (min-width: 576px) and (max-width: 991px) {
-        display: none;
-        &+section.hero-sibling {
-            background-image: url('../images/hero-bg-middle.png');
-            background-repeat: no-repeat;
-            background-position: top right;
-            background-size: 530px;
-            position: relative;
-            background-color: transparent;
-            padding-top: 220px;
-            min-height: calc(100vh - 148px);
+        @media (min-width: 576px) and (max-width: 991px) {
+
+            padding-top: 230px;
+
             h3 {
                 font-size: 49px;
             }
+        }
 
-            @media (min-width: 768px) {
-                background-size: 640px;
+        @media (min-width: 992px) {
+            padding-top: 140px;
+
+            h3 {
+                font-size: 49px;
             }
         }
-    }
-}
-
-@media (max-width: 991px) {
-    .bg-wave {
-        background-image: url('../images/wave.svg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: contain;
-    }
-}
-
-@media (min-width: 992px) {
-    .bg-wave {
-        background-image: url('../images/wave-middle.svg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: contain;
     }
 }
 
