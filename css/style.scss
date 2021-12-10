@@ -7,34 +7,99 @@
 @import "modules/buttons";
 @import "modules/navbar";
 @import "modules/accordion";
-body {
-    font-family: 'Avenir';
-    background-color: $white;
-    &.onboarding {
-        background-image: url(../images/footer-bg.png);
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: contain;
-        min-height: 100vh;
-        @media (min-width: 576px) {
-            background-image: url(../images/footer-bg-desktop.png);
+@import "modules/utilities";
+
+
+.hero {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    @media (max-width: 575px) {
+        min-height: 440px;
+        background-image: url('../images/main-bg.png');
+
+        &+section.hero-sibling {
+            position: relative;
+            margin-top: -180px;
+            padding-top: 70px;
+            min-height: calc(100vh - 408px);
+        }
+
+        @media (max-width: 376px) {
+            min-height: 340px;
+
+            &+section.hero-sibling {
+                margin-top: -130px;
+                padding-top: 50px;
+                min-height: calc(100vh - 357px);
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+        &+section.hero-sibling {
+            background-image: url('../images/hero-bg.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 726px;
+            position: relative;
+            background-color: transparent;
+            padding-top: 140px;
+            padding-bottom: 160px;
+            h3 {
+                font-size: 49px;
+            }
+
+            @media (min-width: 1200px) {
+                background-size: 780px;
+            }
+
+            @media (min-width: 1400px) {
+                background-size: 900px;
+            }
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 991px) {
+        display: none;
+        &+section.hero-sibling {
+            background-image: url('../images/hero-bg-middle.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 530px;
+            position: relative;
+            background-color: transparent;
+            padding-top: 220px;
+            min-height: calc(100vh - 148px);
+            h3 {
+                font-size: 49px;
+            }
+
+            @media (min-width: 768px) {
+                background-size: 640px;
+            }
         }
     }
 }
 
-a {
-    text-decoration: none;
+@media (max-width: 991px) {
+    .bg-wave {
+        background-image: url('../images/wave.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
 }
 
-p {
-    margin-bottom: 0;
-    color: $midnightblue;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+@media (min-width: 992px) {
+    .bg-wave {
+        background-image: url('../images/wave-middle.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
 }
 
 .read-more-link {
@@ -99,17 +164,13 @@ ul {
     box-shadow: 0px 4px 4px rgba(49, 45, 100, 0.2);
     border-radius: 0.25rem;
     border: none;
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.25rem;
     position: relative;
     .card-text {
         font-weight: 500;
         font-size: 12px;
         color: #464482;
     }
-}
-
-.object-fit-cover {
-    object-fit: cover;
 }
 
 .articles {
@@ -165,90 +226,6 @@ ul {
     margin: 0 auto;
 }
 
-.languages {
-    &.card {
-        &::after {
-            content: "";
-            display: block;
-            height: 0.375rem;
-            width: 3.125rem;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            margin-left: -20px;
-            background: rgba(37, 34, 73, 0.7);
-            box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
-            border-radius: 0.625rem;
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .hero {
-        background-image: url('../images/main-bg.png');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        min-height: 340px;
-        @media (max-width: 576px) {
-            &+section.hero-sibling {
-                position: relative;
-                margin-top: -130px;
-                padding-top: 50px;
-                min-height: calc(100vh - 250px);
-            }
-        }
-        @media (min-width: 576px) {
-            &+section.hero-sibling {
-                background-image: url('../images/hero-bg-middle.png');
-                background-repeat: no-repeat;
-                background-position: right;
-                background-size: contain;
-                position: relative;
-                background-color: $white;
-            }
-        }
-    }
-}
-
-.hero {
-    @media (min-width: 992px) {
-        display: none;
-        &+section.hero-sibling {
-            background-image: url('../images/hero-bg.png');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
-            position: relative;
-            background-color: transparent;
-            padding-top: 140px;
-            padding-bottom: 160px;
-            h3 {
-                font-size: 49px;
-            }
-        }
-    }
-}
-
-.hero {
-    @media (min-width: 576px) and (max-width: 991px) {
-        display: none;
-        &+section.hero-sibling {
-            background-image: url('../images/hero-bg-middle.png');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
-            position: relative;
-            background-color: transparent;
-            padding-top: 140px;
-            padding-bottom: 160px;
-            h3 {
-                font-size: 49px;
-            }
-        }
-    }
-}
-
 .pt-140px {
     padding-top: 140px;
 }
@@ -267,24 +244,6 @@ ul {
         background: $pink;
         box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
         border-radius: 0.625rem;
-    }
-}
-
-@media (max-width: 991px) {
-    .bg-wave {
-        background-image: url('../images/wave.svg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: contain;
-    }
-}
-
-@media (min-width: 992px) {
-    .bg-wave {
-        background-image: url('../images/wave-middle.svg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: contain;
     }
 }
 
