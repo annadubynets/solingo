@@ -288,7 +288,7 @@ h4 {
 }
 
 .font-size-12px {
-  font-size: 12px !important;
+  font-size: 12px;
 }
 
 .font-size-13px {
@@ -311,8 +311,13 @@ h4 {
   font-size: 30px;
 }
 
+@media (min-width: 1201px) {
+  .font-size-xl-30px {
+    font-size: 30px;
+  }
+}
 .font-size-36px {
-  font-size: 36px !important;
+  font-size: 36px;
 }
 
 .pt-22px {
