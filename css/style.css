@@ -52,6 +52,10 @@ h4 {
   background: #F7F8F9 !important;
 }
 
+.bg-pink {
+  background: #F84281 !important;
+}
+
 .bg-gradient {
   background: linear-gradient(3.59deg, #1E1B3B 32.08%, #2D2E83 143.69%) !important;
 }
@@ -64,16 +68,28 @@ h4 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%) !important;
 }
 
+.rounded-1 {
+  border-radius: 5px !important;
+}
+
+.rounded-2 {
+  border-radius: 6px !important;
+}
+
 .rounded {
   border-radius: 20px !important;
 }
 
-.shadow {
+.shadow-lg {
   box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5) !important;
 }
 
 .shadow-sm {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25) !important;
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.25) !important;
 }
 
 .font-size-8px {
@@ -150,6 +166,10 @@ h4 {
 
 .mt-100px {
   margin-top: -100px;
+}
+
+.mb-100px {
+  margin-bottom: 100px;
 }
 
 .mb-32px {
@@ -473,7 +493,7 @@ ul {
   border-radius: 0.625rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .hero {
     background-image: url("../images/main-bg.png");
     background-repeat: no-repeat;
@@ -482,7 +502,7 @@ ul {
     min-height: 340px;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 576px) and (max-width: 576px) {
   .hero + section.hero-sibling {
     position: relative;
     margin-top: -130px;
@@ -490,9 +510,9 @@ ul {
     min-height: calc(100vh - 250px);
   }
 }
-@media (max-width: 768px) and (min-width: 768px) {
+@media (max-width: 576px) and (min-width: 576px) {
   .hero + section.hero-sibling {
-    background-image: url("../images/hero-bg.png");
+    background-image: url("../images/hero-bg-middle.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -500,12 +520,31 @@ ul {
     background-color: #FFFFFF;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .hero {
     display: none;
   }
   .hero + section.hero-sibling {
     background-image: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: relative;
+    background-color: transparent;
+    padding-top: 140px;
+    padding-bottom: 160px;
+  }
+  .hero + section.hero-sibling h3 {
+    font-size: 49px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .hero {
+    display: none;
+  }
+  .hero + section.hero-sibling {
+    background-image: url("../images/hero-bg-middle.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -540,9 +579,17 @@ ul {
   border-radius: 0.625rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .bg-wave {
     background-image: url("../images/wave.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+}
+@media (min-width: 992px) {
+  .bg-wave {
+    background-image: url("../images/wave-middle.svg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
@@ -1004,6 +1051,366 @@ ul {
   background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 0%, rgba(46, 46, 120, 0.8) 0%);
 }
 
+.badge-circle-style {
+  position: relative;
+}
+.badge-circle-style.big {
+  width: 5.688rem;
+  height: 5.688rem;
+}
+.badge-circle-style.small {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.badge-circle-style::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(130, 130, 130, 0.8);
+  height: 100%;
+  z-index: 1;
+  border: 9px solid rgba(130, 130, 130, 0.8);
+  border-radius: 50%;
+}
+.badge-circle-style::before.blue {
+  background: rgba(18, 15, 110, 0.8);
+}
+.badge-circle-style .title-block {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+.badge-circle-style .title-block.big img {
+  width: 46px;
+}
+.badge-circle-style .title-block.small img {
+  width: 20px;
+}
+.badge-circle-style[data-type=progress][data-value="0"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 100%, rgba(37, 104, 183, 0.8) 100%);
+}
+.badge-circle-style[data-type=progress][data-value="1"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 99%, rgba(37, 104, 183, 0.8) 99%);
+}
+.badge-circle-style[data-type=progress][data-value="2"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 98%, rgba(37, 104, 183, 0.8) 98%);
+}
+.badge-circle-style[data-type=progress][data-value="3"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 97%, rgba(37, 104, 183, 0.8) 97%);
+}
+.badge-circle-style[data-type=progress][data-value="4"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 96%, rgba(37, 104, 183, 0.8) 96%);
+}
+.badge-circle-style[data-type=progress][data-value="5"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 95%, rgba(37, 104, 183, 0.8) 95%);
+}
+.badge-circle-style[data-type=progress][data-value="6"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 94%, rgba(37, 104, 183, 0.8) 94%);
+}
+.badge-circle-style[data-type=progress][data-value="7"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 93%, rgba(37, 104, 183, 0.8) 93%);
+}
+.badge-circle-style[data-type=progress][data-value="8"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 92%, rgba(37, 104, 183, 0.8) 92%);
+}
+.badge-circle-style[data-type=progress][data-value="9"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 91%, rgba(37, 104, 183, 0.8) 91%);
+}
+.badge-circle-style[data-type=progress][data-value="10"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 90%, rgba(37, 104, 183, 0.8) 90%);
+}
+.badge-circle-style[data-type=progress][data-value="11"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 89%, rgba(37, 104, 183, 0.8) 89%);
+}
+.badge-circle-style[data-type=progress][data-value="12"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 88%, rgba(37, 104, 183, 0.8) 88%);
+}
+.badge-circle-style[data-type=progress][data-value="13"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 87%, rgba(37, 104, 183, 0.8) 87%);
+}
+.badge-circle-style[data-type=progress][data-value="14"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 86%, rgba(37, 104, 183, 0.8) 86%);
+}
+.badge-circle-style[data-type=progress][data-value="15"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 85%, rgba(37, 104, 183, 0.8) 85%);
+}
+.badge-circle-style[data-type=progress][data-value="16"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 84%, rgba(37, 104, 183, 0.8) 84%);
+}
+.badge-circle-style[data-type=progress][data-value="17"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 83%, rgba(37, 104, 183, 0.8) 83%);
+}
+.badge-circle-style[data-type=progress][data-value="18"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 82%, rgba(37, 104, 183, 0.8) 82%);
+}
+.badge-circle-style[data-type=progress][data-value="19"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 81%, rgba(37, 104, 183, 0.8) 81%);
+}
+.badge-circle-style[data-type=progress][data-value="20"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 80%, rgba(37, 104, 183, 0.8) 80%);
+}
+.badge-circle-style[data-type=progress][data-value="21"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 79%, rgba(37, 104, 183, 0.8) 79%);
+}
+.badge-circle-style[data-type=progress][data-value="22"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 78%, rgba(37, 104, 183, 0.8) 78%);
+}
+.badge-circle-style[data-type=progress][data-value="23"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 77%, rgba(37, 104, 183, 0.8) 77%);
+}
+.badge-circle-style[data-type=progress][data-value="24"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 76%, rgba(37, 104, 183, 0.8) 76%);
+}
+.badge-circle-style[data-type=progress][data-value="25"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 75%, rgba(37, 104, 183, 0.8) 75%);
+}
+.badge-circle-style[data-type=progress][data-value="26"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 74%, rgba(37, 104, 183, 0.8) 74%);
+}
+.badge-circle-style[data-type=progress][data-value="27"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 73%, rgba(37, 104, 183, 0.8) 73%);
+}
+.badge-circle-style[data-type=progress][data-value="28"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 72%, rgba(37, 104, 183, 0.8) 72%);
+}
+.badge-circle-style[data-type=progress][data-value="29"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 71%, rgba(37, 104, 183, 0.8) 71%);
+}
+.badge-circle-style[data-type=progress][data-value="30"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 70%, rgba(37, 104, 183, 0.8) 70%);
+}
+.badge-circle-style[data-type=progress][data-value="31"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 69%, rgba(37, 104, 183, 0.8) 69%);
+}
+.badge-circle-style[data-type=progress][data-value="32"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 68%, rgba(37, 104, 183, 0.8) 68%);
+}
+.badge-circle-style[data-type=progress][data-value="33"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 67%, rgba(37, 104, 183, 0.8) 67%);
+}
+.badge-circle-style[data-type=progress][data-value="34"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 66%, rgba(37, 104, 183, 0.8) 66%);
+}
+.badge-circle-style[data-type=progress][data-value="35"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 65%, rgba(37, 104, 183, 0.8) 65%);
+}
+.badge-circle-style[data-type=progress][data-value="36"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 64%, rgba(37, 104, 183, 0.8) 64%);
+}
+.badge-circle-style[data-type=progress][data-value="37"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 63%, rgba(37, 104, 183, 0.8) 63%);
+}
+.badge-circle-style[data-type=progress][data-value="38"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 62%, rgba(37, 104, 183, 0.8) 62%);
+}
+.badge-circle-style[data-type=progress][data-value="39"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 61%, rgba(37, 104, 183, 0.8) 61%);
+}
+.badge-circle-style[data-type=progress][data-value="40"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 60%, rgba(37, 104, 183, 0.8) 60%);
+}
+.badge-circle-style[data-type=progress][data-value="41"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 59%, rgba(37, 104, 183, 0.8) 59%);
+}
+.badge-circle-style[data-type=progress][data-value="42"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 58%, rgba(37, 104, 183, 0.8) 58%);
+}
+.badge-circle-style[data-type=progress][data-value="43"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 57%, rgba(37, 104, 183, 0.8) 57%);
+}
+.badge-circle-style[data-type=progress][data-value="44"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 56%, rgba(37, 104, 183, 0.8) 56%);
+}
+.badge-circle-style[data-type=progress][data-value="45"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 55%, rgba(37, 104, 183, 0.8) 55%);
+}
+.badge-circle-style[data-type=progress][data-value="46"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 54%, rgba(37, 104, 183, 0.8) 54%);
+}
+.badge-circle-style[data-type=progress][data-value="47"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 53%, rgba(37, 104, 183, 0.8) 53%);
+}
+.badge-circle-style[data-type=progress][data-value="48"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 52%, rgba(37, 104, 183, 0.8) 52%);
+}
+.badge-circle-style[data-type=progress][data-value="49"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 51%, rgba(37, 104, 183, 0.8) 51%);
+}
+.badge-circle-style[data-type=progress][data-value="50"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 50%, rgba(37, 104, 183, 0.8) 50%);
+}
+.badge-circle-style[data-type=progress][data-value="51"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 49%, rgba(37, 104, 183, 0.8) 49%);
+}
+.badge-circle-style[data-type=progress][data-value="52"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 48%, rgba(37, 104, 183, 0.8) 48%);
+}
+.badge-circle-style[data-type=progress][data-value="53"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 47%, rgba(37, 104, 183, 0.8) 47%);
+}
+.badge-circle-style[data-type=progress][data-value="54"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 46%, rgba(37, 104, 183, 0.8) 46%);
+}
+.badge-circle-style[data-type=progress][data-value="55"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 45%, rgba(37, 104, 183, 0.8) 45%);
+}
+.badge-circle-style[data-type=progress][data-value="56"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 44%, rgba(37, 104, 183, 0.8) 44%);
+}
+.badge-circle-style[data-type=progress][data-value="57"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 43%, rgba(37, 104, 183, 0.8) 43%);
+}
+.badge-circle-style[data-type=progress][data-value="58"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 42%, rgba(37, 104, 183, 0.8) 42%);
+}
+.badge-circle-style[data-type=progress][data-value="59"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 41%, rgba(37, 104, 183, 0.8) 41%);
+}
+.badge-circle-style[data-type=progress][data-value="60"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 40%, rgba(37, 104, 183, 0.8) 40%);
+}
+.badge-circle-style[data-type=progress][data-value="61"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 39%, rgba(37, 104, 183, 0.8) 39%);
+}
+.badge-circle-style[data-type=progress][data-value="62"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 38%, rgba(37, 104, 183, 0.8) 38%);
+}
+.badge-circle-style[data-type=progress][data-value="63"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 37%, rgba(37, 104, 183, 0.8) 37%);
+}
+.badge-circle-style[data-type=progress][data-value="64"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 36%, rgba(37, 104, 183, 0.8) 36%);
+}
+.badge-circle-style[data-type=progress][data-value="65"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 35%, rgba(37, 104, 183, 0.8) 35%);
+}
+.badge-circle-style[data-type=progress][data-value="66"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 34%, rgba(37, 104, 183, 0.8) 34%);
+}
+.badge-circle-style[data-type=progress][data-value="67"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 33%, rgba(37, 104, 183, 0.8) 33%);
+}
+.badge-circle-style[data-type=progress][data-value="68"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 32%, rgba(37, 104, 183, 0.8) 32%);
+}
+.badge-circle-style[data-type=progress][data-value="69"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 31%, rgba(37, 104, 183, 0.8) 31%);
+}
+.badge-circle-style[data-type=progress][data-value="70"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 30%, rgba(37, 104, 183, 0.8) 30%);
+}
+.badge-circle-style[data-type=progress][data-value="71"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 29%, rgba(37, 104, 183, 0.8) 29%);
+}
+.badge-circle-style[data-type=progress][data-value="72"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 28%, rgba(37, 104, 183, 0.8) 28%);
+}
+.badge-circle-style[data-type=progress][data-value="73"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 27%, rgba(37, 104, 183, 0.8) 27%);
+}
+.badge-circle-style[data-type=progress][data-value="74"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 26%, rgba(37, 104, 183, 0.8) 26%);
+}
+.badge-circle-style[data-type=progress][data-value="75"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 25%, rgba(37, 104, 183, 0.8) 25%);
+}
+.badge-circle-style[data-type=progress][data-value="76"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 24%, rgba(37, 104, 183, 0.8) 24%);
+}
+.badge-circle-style[data-type=progress][data-value="77"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 23%, rgba(37, 104, 183, 0.8) 23%);
+}
+.badge-circle-style[data-type=progress][data-value="78"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 22%, rgba(37, 104, 183, 0.8) 22%);
+}
+.badge-circle-style[data-type=progress][data-value="79"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 21%, rgba(37, 104, 183, 0.8) 21%);
+}
+.badge-circle-style[data-type=progress][data-value="80"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 20%, rgba(37, 104, 183, 0.8) 20%);
+}
+.badge-circle-style[data-type=progress][data-value="81"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 19%, rgba(37, 104, 183, 0.8) 19%);
+}
+.badge-circle-style[data-type=progress][data-value="82"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 18%, rgba(37, 104, 183, 0.8) 18%);
+}
+.badge-circle-style[data-type=progress][data-value="83"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 17%, rgba(37, 104, 183, 0.8) 17%);
+}
+.badge-circle-style[data-type=progress][data-value="84"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 16%, rgba(37, 104, 183, 0.8) 16%);
+}
+.badge-circle-style[data-type=progress][data-value="85"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 15%, rgba(37, 104, 183, 0.8) 15%);
+}
+.badge-circle-style[data-type=progress][data-value="86"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 14%, rgba(37, 104, 183, 0.8) 14%);
+}
+.badge-circle-style[data-type=progress][data-value="87"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 13%, rgba(37, 104, 183, 0.8) 13%);
+}
+.badge-circle-style[data-type=progress][data-value="88"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 12%, rgba(37, 104, 183, 0.8) 12%);
+}
+.badge-circle-style[data-type=progress][data-value="89"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 11%, rgba(37, 104, 183, 0.8) 11%);
+}
+.badge-circle-style[data-type=progress][data-value="90"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 10%, rgba(37, 104, 183, 0.8) 10%);
+}
+.badge-circle-style[data-type=progress][data-value="91"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 9%, rgba(37, 104, 183, 0.8) 9%);
+}
+.badge-circle-style[data-type=progress][data-value="92"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 8%, rgba(37, 104, 183, 0.8) 8%);
+}
+.badge-circle-style[data-type=progress][data-value="93"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 7%, rgba(37, 104, 183, 0.8) 7%);
+}
+.badge-circle-style[data-type=progress][data-value="94"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 6%, rgba(37, 104, 183, 0.8) 6%);
+}
+.badge-circle-style[data-type=progress][data-value="95"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 5%, rgba(37, 104, 183, 0.8) 5%);
+}
+.badge-circle-style[data-type=progress][data-value="96"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 4%, rgba(37, 104, 183, 0.8) 4%);
+}
+.badge-circle-style[data-type=progress][data-value="97"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 3%, rgba(37, 104, 183, 0.8) 3%);
+}
+.badge-circle-style[data-type=progress][data-value="98"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 2%, rgba(37, 104, 183, 0.8) 2%);
+}
+.badge-circle-style[data-type=progress][data-value="99"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 1%, rgba(37, 104, 183, 0.8) 1%);
+}
+.badge-circle-style[data-type=progress][data-value="100"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 0%, rgba(37, 104, 183, 0.8) 0%);
+}
+
+.edit-circle-btn {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #F84281;
+  outline: 2px solid #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+  background: #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+}
+
 .modal-content {
   border-radius: 20px;
 }
@@ -1052,6 +1459,12 @@ ul {
   width: 39px;
   height: 39px;
   background-color: #F84281;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 1.25rem;
 }
 
 /* Custom select */
@@ -1154,7 +1567,6 @@ ul {
   height: 24px;
   border: 2px solid #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  vertical-align: text-bottom;
 }
 
 .input-group.search {
@@ -1183,6 +1595,12 @@ ul {
 }
 .input-group.search .form-control:focus {
   background-color: transparent;
+}
+
+.progress {
+  border-radius: 0.125rem;
+  height: 0.563rem;
+  background-color: #C4C4C4;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -48,6 +48,10 @@ h4 {
     background: #F7F8F9!important;
 }
 
+.bg-pink {
+    background: $pink!important;
+}
+
 .bg-gradient {
     background: linear-gradient(3.59deg, #1E1B3B 32.08%, #2D2E83 143.69%)!important;
 }
@@ -60,16 +64,28 @@ h4 {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%)!important;
 }
 
+.rounded-1 {
+    border-radius: 5px!important;
+}
+
+.rounded-2 {
+    border-radius: 6px!important;
+}
+
 .rounded {
     border-radius: 20px!important;
 }
 
-.shadow {
+.shadow-lg {
     box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5)!important;
 }
 
 .shadow-sm {
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25)!important;
+}
+
+.shadow {
+    box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.25)!important;
 }
 
 .font-size-8px {
@@ -146,6 +162,10 @@ h4 {
 
 .mt-100px {
     margin-top: -100px;
+}
+
+.mb-100px {
+    margin-bottom: 100px;
 }
 
 .mb-32px {
