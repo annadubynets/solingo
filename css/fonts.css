@@ -84,7 +84,6 @@
 
 .icon-user:before {
     content: "\e900";
-    color: #2e3a59;
 }
 
 .icon-business:before {
@@ -108,12 +107,10 @@
 
 .icon-home:before {
     content: "\e90a";
-    color: #fff;
 }
 
 .icon-layers:before {
     content: "\e90e";
-    color: #2e3a59;
 }
 
 .icon-arrow-down:before {
@@ -128,7 +125,6 @@
 
 .icon-badges:before {
     content: "\e903";
-    color: #2e3a59;
 }
 
 .icon-edit:before {
@@ -156,7 +152,6 @@
 
 .icon-star:before {
     content: "\e90c";
-    color: #2e3a59;
 }
 
 .icon-suitcase:before {
