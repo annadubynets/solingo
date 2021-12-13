@@ -1,0 +1,33 @@
+.carousel-indicators {
+    bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    @media (max-width: 767px) {
+        bottom: -50px;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+        bottom: 80px;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+    margin: 0 25px;
+    opacity: 1;
+    &.active {
+        background-color: $pink;
+        @media (max-width: 575px) {
+            font-size: 24px;
+        }
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    margin: 0 10px;
+}

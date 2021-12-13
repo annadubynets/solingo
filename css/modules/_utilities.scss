@@ -108,19 +108,23 @@
     margin-top: -100px;
 }
 
-.mb-100px {
-    margin-bottom: 100px;
-}
-
 .mb-32px {
     margin-bottom: 32px;
+}
+
+.mb-56px {
+    margin-bottom: 56px;
+}
+
+.mb-100px {
+    margin-bottom: 100px;
 }
 
 .min-vh-60 {
     min-height: 60vh;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .mb-lg-300px {
         margin-bottom: 300px;
     }

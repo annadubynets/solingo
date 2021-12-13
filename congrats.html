@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solingo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+        <div class="container">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+                <span class="icon-close"></span>
+              </button> -->
+            <a class="navbar-brand d-block" href="./index.html">
+                <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+            </a>
+            <div class="dropdown ms-auto">
+                <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><img src="images/united-kingdom.svg" alt="United Kingdom"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <p class="font-size-8px text-center">Learn from</p>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/french.svg" alt="French"></span></a></li>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/german.svg" alt="German"></span></a></li>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/saudi-arabia.svg" alt="Aaudi Arabia"></span></a></li>
+                </ul>
+            </div>
+            <!-- <div class="collapse navbar-collapse top-mobile-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learned</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms.html">T&C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+    <section class="congrats min-vh-100 pt-4 pb-140px">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center position-relative">
+                    <span><img src="images/bird.svg" alt="Bird"></span>
+                    <h2 class="mb-3 mt-3">Congratulations!</h2>
+                    <p class="text-pink pb-5">You finished the lesson</p>
+                    <p class="text-pink pb-4">Visit more places</p>
+
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#continueModal">Continue</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar footer-navbar fixed-bottom navbar-light justify-content-around d-lg-none d-flex">
+            <a href="account.html" class="nav-link text-center active"><span class="icon-user font-size-30px d-block pb-1"></span>Account</a>
+            <a href="learned.html" class="nav-link text-center"><span class="icon-layers font-size-30px d-block pb-1"></span>Learned</a>
+            <div class="icon-block text-center position-relative">
+                <a href="choose-language.html" class="nav-link">
+                    <div class="rounded-circle icon-circle d-flex justify-content-center align-items-center mb-1">
+                        <span class="icon-home font-size-30px d-block pb-1"></span>
+                    </div>
+                    Home
+                </a>
+            </div>
+            <a href="articles.html" class="nav-link text-center"><span class="icon-star font-size-30px d-block pb-1"></span>Articles</a>
+            <a href="badges.html" class="nav-link text-center"><span class="icon-badges font-size-30px d-block pb-1"></span>Badges</a>
+        </nav>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="continueModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="continueModalLabel" aria-hidden="true">
+        <div class="modal-dialog congrats-modal-bg px-4 pt-140px">
+            <div class="modal-content text-center pt-5 p-4 position-relative">
+                <!-- <div class="badge-circle-style big pink d-inline-block mb-2 img-style">
+                    <img src="images/english.png" alt="English" class="w-100 rounded-pill z-index-1">
+                    <div class="title-block small p-3">
+                        <img src="images/icons/tourist.svg" alt="Tourist">
+                    </div>
+                </div> -->
+                <h5 class="fw-bold text-primary mb-3">Tourist</h5>
+                <p class="text-primary font-size-14px pb-4">Congrats, you just earned a badge!</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

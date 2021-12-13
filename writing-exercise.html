@@ -88,54 +88,18 @@
                         <span class="ps-1"><span class="icon-walking pe-1"></span>13%</span>
                     </div>
 
-                    <div class="d-flex justify-content-center align-items-center mb-1">
-                        <span class="edit-circle-btn d-flex justify-content-center align-items-center">
-                            <span class="icon-edit font-size-14px"></span>
+                    <h4 class="mb-1 ms-2">
+                        Writte what you <span class="fw-normal">hear</span>
+                    </h4>
+                    <div class="d-flex justify-content-center mb-3">
+                        <span class="listen-circle-btn d-flex justify-content-center align-items-center">
+                            <span class="icon-listen text-white font-size-24px"></span>
                         </span>
-                        <h4 class="fw-normal mb-0 ms-2">
-                            How do you say?
-                        </h4>
-                    </div>
-                    <h2>I speak</h2>
-
-                    <div class="d-flex justify-content-center mt-4 mb-100px">
-                        <div class="card rounded-2 p-0 bg-light mx-2">
-                            <div class="card-body">
-                                <h4 class="text-pink mb-0">il</h4>
-                            </div>
-                        </div>
-
-                        <div class="card rounded-2 p-0 bg-light mx-2">
-                            <div class="card-body">
-                                <h4 class="text-pink mb-0">Parle</h4>
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="d-flex justify-content-between mb-4">
-                        <div class="card rounded-2 p-0 bg-light">
-                            <div class="card-body">
-                                <h4 class="mb-0">Je</h4>
-                            </div>
-                        </div>
-
-                        <div class="card rounded-2 p-0 bg-light">
-                            <div class="card-body">
-                                <h4 class="mb-0">il</h4>
-                            </div>
-                        </div>
-
-                        <div class="card rounded-2 p-0 bg-light">
-                            <div class="card-body">
-                                <h4 class="mb-0">Visite</h4>
-                            </div>
-                        </div>
-
-                        <div class="card rounded-2 p-0 bg-light">
-                            <div class="card-body">
-                                <h4 class="mb-0">Parle</h4>
-                            </div>
-                        </div>
+                    <div class="card bg-light rounded shadow-lg mb-56px">
+                        <label for="inputText" class="text-start text-primary font-size-11px">French</label>
+                        <input type="text" class="form-control unstyled-input text-center" id="inputText">
                     </div>
 
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wrongAnswer">Check</a>
@@ -173,7 +137,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#wrongAnswer">Try again</button>
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#continue">Try again</button>
                     </div>
                 </div>
             </div>
@@ -202,20 +166,15 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="correctAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="correctAnswerLabel" aria-hidden="true">
+    <div class="modal fade" id="continue" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wrongAnswerLabel" aria-hidden="true">
         <div class="modal-dialog px-4 pt-140px">
-            <div class="modal-content text-center pt-5 p-4">
-                <div class="img-style">
-                    <img src="images/correct-answer-bird.svg" alt="Correct Answer">
-                </div>
-                <span class="mb-1">
-                    <img src="images/circle-check.svg" alt="Correct!">
-                </span>
-                <h3 class="text-danger mb-4">Are you sure you whant to close this lesson? You will lose all your progress.</h3>
+
+            <div class="modal-content text-start pt-5 p-4">
+                <p class="font-size-14px text-dark mb-4">Are you sure you whant to close this lesson? You will lose all your progress.</p>
 
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#correctAnswer">Continue</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#continue">Continue</button>
                     </div>
                 </div>
             </div>

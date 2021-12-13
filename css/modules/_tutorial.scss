@@ -1,0 +1,34 @@
+.modal-tutorial {
+    .tutorial-header {
+        font-size: 26px;
+        color: $white;
+    }
+    .tutorial-text {
+        color: $white;
+        font-size: 18px;
+    }
+    .modal-content {
+        background: transparent;
+    }
+}
+
+.modal-content {
+    border-radius: 20px;
+}
+
+.modal-backdrop {
+    background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.95) 32.08%, rgba(45, 46, 131, 0.95) 143.69%);
+    &.show {
+        opacity: initial;
+    }
+}
+
+.modal-dialog {
+    &.congrats-modal-bg {
+        background: url('../images/modal-congrats-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+}
