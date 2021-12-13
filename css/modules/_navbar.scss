@@ -68,19 +68,21 @@
                 justify-content: center;
                 position: absolute;
                 top: -50px;
-                margin-left: -6px;
+                margin-left: -25px;
+                left: 50%;
             }
             &::after {
                 content: "";
                 display: block;
                 height: 9px;
-                width: 80px;
+                width: 70px;
                 position: absolute;
                 bottom: -30px;
                 left: 50%;
-                margin-left: -40px;
+                margin-left: -35px;
                 background: $pink;
                 border-radius: 10px;
+                top: 17px;
             }
         }
     }
