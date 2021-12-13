@@ -238,11 +238,11 @@ h4 {
   content: "";
   display: block;
   height: 9px;
-  width: 70px;
+  width: 64px;
   position: absolute;
   bottom: -30px;
   left: 50%;
-  margin-left: -35px;
+  margin-left: -32px;
   background: #F84281;
   border-radius: 10px;
   top: 17px;
@@ -1620,9 +1620,15 @@ h4 {
 }
 
 .return-circle {
+  background-color: #F84281;
   width: 39px;
   height: 39px;
-  background-color: #F84281;
+}
+@media (max-width: 320px) {
+  .return-circle {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .close-btn {

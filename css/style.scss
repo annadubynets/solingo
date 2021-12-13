@@ -390,9 +390,14 @@
 }
 
 .return-circle {
+    background-color: $pink;
     width: 39px;
     height: 39px;
-    background-color: $pink;
+
+    @media (max-width: 320px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .close-btn {
