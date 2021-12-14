@@ -38,6 +38,7 @@
                 @include absolute_fit_parent;
                 object-fit: cover;
                 border-radius: 50%;
+                width: 100%;
             }
 
             .progress-value {
