@@ -122,6 +122,11 @@ h4 {
   font-size: 20px;
   padding: 13px 60px;
 }
+@media (max-width: 414px) {
+  .btn-primary.col-to-action {
+    padding: 13px 40px;
+  }
+}
 
 .btn-info {
   font-size: 20px;
