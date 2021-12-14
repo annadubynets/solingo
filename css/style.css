@@ -1102,17 +1102,205 @@ h4 {
   display: inline-block;
   width: 100%;
 }
-.circle-progress.dark-border, .circle-progress .dark-border {
-  --border-color: #2C2A71;
+.circle-progress.royalblue-border,
+.circle-progress .royalblue-border {
+  --border-color: #2568B7;
 }
-.circle-progress.dark-color, .circle-progress .dark-color {
-  --color: #2C2A71;
+.circle-progress.royalblue-color,
+.circle-progress .royalblue-color {
+  --color: #2568B7;
 }
-.circle-progress.pink-border, .circle-progress .pink-border {
+.circle-progress.greenyellow-border,
+.circle-progress .greenyellow-border {
+  --border-color: #C9F648;
+}
+.circle-progress.greenyellow-color,
+.circle-progress .greenyellow-color {
+  --color: #C9F648;
+}
+.circle-progress.pink-border,
+.circle-progress .pink-border {
   --border-color: #F84281;
 }
-.circle-progress.pink-color, .circle-progress .pink-color {
+.circle-progress.pink-color,
+.circle-progress .pink-color {
   --color: #F84281;
+}
+.circle-progress.mediumorchid-border,
+.circle-progress .mediumorchid-border {
+  --border-color: #C948F6;
+}
+.circle-progress.mediumorchid-color,
+.circle-progress .mediumorchid-color {
+  --color: #C948F6;
+}
+.circle-progress.orange-border,
+.circle-progress .orange-border {
+  --border-color: #F66748;
+}
+.circle-progress.orange-color,
+.circle-progress .orange-color {
+  --color: #F66748;
+}
+.circle-progress.red-border,
+.circle-progress .red-border {
+  --border-color: #FF0000;
+}
+.circle-progress.red-color,
+.circle-progress .red-color {
+  --color: #FF0000;
+}
+.circle-progress.fuchsia-border,
+.circle-progress .fuchsia-border {
+  --border-color: #EC1D68;
+}
+.circle-progress.fuchsia-color,
+.circle-progress .fuchsia-color {
+  --color: #EC1D68;
+}
+.circle-progress.darkgoldenrod-border,
+.circle-progress .darkgoldenrod-border {
+  --border-color: #B77C25;
+}
+.circle-progress.darkgoldenrod-color,
+.circle-progress .darkgoldenrod-color {
+  --color: #B77C25;
+}
+.circle-progress.deepskyblue-border,
+.circle-progress .deepskyblue-border {
+  --border-color: #48CCF6;
+}
+.circle-progress.deepskyblue-color,
+.circle-progress .deepskyblue-color {
+  --color: #48CCF6;
+}
+.circle-progress.lightgreen-border,
+.circle-progress .lightgreen-border {
+  --border-color: #48F66E;
+}
+.circle-progress.lightgreen-color,
+.circle-progress .lightgreen-color {
+  --color: #48F66E;
+}
+.circle-progress.tomato-border,
+.circle-progress .tomato-border {
+  --border-color: #F64848;
+}
+.circle-progress.tomato-color,
+.circle-progress .tomato-color {
+  --color: #F64848;
+}
+.circle-progress.steelblue-border,
+.circle-progress .steelblue-border {
+  --border-color: #4864F6;
+}
+.circle-progress.steelblue-color,
+.circle-progress .steelblue-color {
+  --color: #4864F6;
+}
+.circle-progress.mediumaquamarine-border,
+.circle-progress .mediumaquamarine-border {
+  --border-color: #7EBBA9;
+}
+.circle-progress.mediumaquamarine-color,
+.circle-progress .mediumaquamarine-color {
+  --color: #7EBBA9;
+}
+.circle-progress.mediumpurple-border,
+.circle-progress .mediumpurple-border {
+  --border-color: #B469FF;
+}
+.circle-progress.mediumpurple-color,
+.circle-progress .mediumpurple-color {
+  --color: #B469FF;
+}
+.circle-progress.gold-border,
+.circle-progress .gold-border {
+  --border-color: #F6DA48;
+}
+.circle-progress.gold-color,
+.circle-progress .gold-color {
+  --color: #F6DA48;
+}
+.circle-progress.mediumturquoise-border,
+.circle-progress .mediumturquoise-border {
+  --border-color: #48D1C1;
+}
+.circle-progress.mediumturquoise-color,
+.circle-progress .mediumturquoise-color {
+  --color: #48D1C1;
+}
+.circle-progress.green-border,
+.circle-progress .green-border {
+  --border-color: #25B73C;
+}
+.circle-progress.green-color,
+.circle-progress .green-color {
+  --color: #25B73C;
+}
+.circle-progress.magenta-border,
+.circle-progress .magenta-border {
+  --border-color: #F648D0;
+}
+.circle-progress.magenta-color,
+.circle-progress .magenta-color {
+  --color: #F648D0;
+}
+.circle-progress.sandybrown-border,
+.circle-progress .sandybrown-border {
+  --border-color: #F6B048;
+}
+.circle-progress.sandybrown-color,
+.circle-progress .sandybrown-color {
+  --color: #F6B048;
+}
+.circle-progress.lawngreen-border,
+.circle-progress .lawngreen-border {
+  --border-color: #91EC1D;
+}
+.circle-progress.lawngreen-color,
+.circle-progress .lawngreen-color {
+  --color: #91EC1D;
+}
+.circle-progress.moccasin-border,
+.circle-progress .moccasin-border {
+  --border-color: #FFF966;
+}
+.circle-progress.moccasin-color,
+.circle-progress .moccasin-color {
+  --color: #FFF966;
+}
+.circle-progress.mediumspringgreen-border,
+.circle-progress .mediumspringgreen-border {
+  --border-color: #1DEC95;
+}
+.circle-progress.mediumspringgreen-color,
+.circle-progress .mediumspringgreen-color {
+  --color: #1DEC95;
+}
+.circle-progress.lightseagreen-border,
+.circle-progress .lightseagreen-border {
+  --border-color: #25B7A5;
+}
+.circle-progress.lightseagreen-color,
+.circle-progress .lightseagreen-color {
+  --color: #25B7A5;
+}
+.circle-progress.yellowgreen-border,
+.circle-progress .yellowgreen-border {
+  --border-color: #B6EC1D;
+}
+.circle-progress.yellowgreen-color,
+.circle-progress .yellowgreen-color {
+  --color: #B6EC1D;
+}
+.circle-progress.slateblue-border,
+.circle-progress .slateblue-border {
+  --border-color: #5946A3;
+}
+.circle-progress.slateblue-color,
+.circle-progress .slateblue-color {
+  --color: #5946A3;
 }
 .circle-progress .circle-progress-container {
   display: block;
