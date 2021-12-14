@@ -3,6 +3,7 @@
 @import "fonts.css";
 @import "progress";
 @import "modules/variables";
+@import "modules/mixins";
 @import "modules/typography";
 @import "modules/buttons";
 @import "modules/navbar";
@@ -15,6 +16,7 @@
 @import "modules/card";
 @import "modules/choose-level-control";
 @import "modules/choose-lesson-control";
+@import "modules/circle-progress";
 .img-style {
     position: absolute;
     top: -50px;
