@@ -5,3 +5,41 @@
     bottom: 0;
     right: 0;
 }
+
+@mixin export_circle_progress_colors {
+    $colours: "royalblue" $royalblue,
+              "greenyellow" $greenyellow,
+              "pink" $pink,
+              "mediumorchid" $mediumorchid,
+              "orange" $orange, 
+              "red" $red,
+              "fuchsia" $fuchsia,
+              "darkgoldenrod" $darkgoldenrod,
+              "deepskyblue" $deepskyblue,
+              "lightgreen" $lightgreen,
+              "tomato" $tomato,
+              "steelblue" $steelblue,
+              "mediumaquamarine" $mediumaquamarine,
+              "mediumpurple" $mediumpurple,
+              "gold" $gold,
+              "mediumturquoise" $mediumturquoise,
+              "green" $green, 
+              "magenta" $magenta, 
+              "sandybrown" $sandybrown, 
+              "lawngreen" $lawngreen, 
+              "moccasin" $moccasin, 
+              "mediumspringgreen" $mediumspringgreen, 
+              "lightseagreen" $lightseagreen, 
+              "yellowgreen" $yellowgreen, 
+              "slateblue" $slateblue;
+    @each $i in $colours {
+        &.#{nth($i, 1)}-border,
+        .#{nth($i, 1)}-border {
+            --border-color: #{nth($i, 2)};
+        }
+        &.#{nth($i, 1)}-color,
+        .#{nth($i, 1)}-color {
+            --color: #{nth($i, 2)};
+        }
+    }
+}

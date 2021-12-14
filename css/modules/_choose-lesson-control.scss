@@ -3,10 +3,12 @@
     display: inline-block;
     width: 100%;
 
+    @include export_circle_progress_colors;
+
     .choose-lesson-control-container {
         display: block;
         position: relative;
-        border: 3px solid #2C2A71;
+        border: 3px solid var(--border-color, #2C2A71);
         border-radius: 50%;
 
         width: 100%;
