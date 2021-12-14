@@ -1085,10 +1085,22 @@ h4 {
   display: inline-block;
   width: 100%;
 }
+.circle-progress.dark-border, .circle-progress .dark-border {
+  --border-color: #2C2A71;
+}
+.circle-progress.dark-color, .circle-progress .dark-color {
+  --color: #2C2A71;
+}
+.circle-progress.pink-border, .circle-progress .pink-border {
+  --border-color: #F84281;
+}
+.circle-progress.pink-color, .circle-progress .pink-color {
+  --color: #F84281;
+}
 .circle-progress .circle-progress-container {
   display: block;
   position: relative;
-  border: 3px solid #2C2A71;
+  border: 3px solid var(--border-color, #2C2A71);
   border-radius: 50%;
   width: 100%;
 }
@@ -1105,7 +1117,6 @@ h4 {
   right: 0;
   border: 3px solid #FFFFFF;
   border-radius: 50%;
-  background-color: #2C2A71;
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-background-image {
   position: absolute;
@@ -1132,7 +1143,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 100%, rgba(46, 46, 120, 0.8) 100%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 100%, var(--color, #2e2e78) 100%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="1"]::after {
   position: absolute;
@@ -1142,7 +1154,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 99%, rgba(46, 46, 120, 0.8) 99%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 99%, var(--color, #2e2e78) 99%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="2"]::after {
   position: absolute;
@@ -1152,7 +1165,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 98%, rgba(46, 46, 120, 0.8) 98%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 98%, var(--color, #2e2e78) 98%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="3"]::after {
   position: absolute;
@@ -1162,7 +1176,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 97%, rgba(46, 46, 120, 0.8) 97%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 97%, var(--color, #2e2e78) 97%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="4"]::after {
   position: absolute;
@@ -1172,7 +1187,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 96%, rgba(46, 46, 120, 0.8) 96%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 96%, var(--color, #2e2e78) 96%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="5"]::after {
   position: absolute;
@@ -1182,7 +1198,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 95%, rgba(46, 46, 120, 0.8) 95%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 95%, var(--color, #2e2e78) 95%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="6"]::after {
   position: absolute;
@@ -1192,7 +1209,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 94%, rgba(46, 46, 120, 0.8) 94%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 94%, var(--color, #2e2e78) 94%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="7"]::after {
   position: absolute;
@@ -1202,7 +1220,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 93%, rgba(46, 46, 120, 0.8) 93%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 93%, var(--color, #2e2e78) 93%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="8"]::after {
   position: absolute;
@@ -1212,7 +1231,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 92%, rgba(46, 46, 120, 0.8) 92%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 92%, var(--color, #2e2e78) 92%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="9"]::after {
   position: absolute;
@@ -1222,7 +1242,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 91%, rgba(46, 46, 120, 0.8) 91%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 91%, var(--color, #2e2e78) 91%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="10"]::after {
   position: absolute;
@@ -1232,7 +1253,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 90%, rgba(46, 46, 120, 0.8) 90%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 90%, var(--color, #2e2e78) 90%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="11"]::after {
   position: absolute;
@@ -1242,7 +1264,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 89%, rgba(46, 46, 120, 0.8) 89%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 89%, var(--color, #2e2e78) 89%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="12"]::after {
   position: absolute;
@@ -1252,7 +1275,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 88%, rgba(46, 46, 120, 0.8) 88%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 88%, var(--color, #2e2e78) 88%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="13"]::after {
   position: absolute;
@@ -1262,7 +1286,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 87%, rgba(46, 46, 120, 0.8) 87%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 87%, var(--color, #2e2e78) 87%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="14"]::after {
   position: absolute;
@@ -1272,7 +1297,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 86%, rgba(46, 46, 120, 0.8) 86%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 86%, var(--color, #2e2e78) 86%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="15"]::after {
   position: absolute;
@@ -1282,7 +1308,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 85%, rgba(46, 46, 120, 0.8) 85%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 85%, var(--color, #2e2e78) 85%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="16"]::after {
   position: absolute;
@@ -1292,7 +1319,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 84%, rgba(46, 46, 120, 0.8) 84%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 84%, var(--color, #2e2e78) 84%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="17"]::after {
   position: absolute;
@@ -1302,7 +1330,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 83%, rgba(46, 46, 120, 0.8) 83%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 83%, var(--color, #2e2e78) 83%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="18"]::after {
   position: absolute;
@@ -1312,7 +1341,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 82%, rgba(46, 46, 120, 0.8) 82%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 82%, var(--color, #2e2e78) 82%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="19"]::after {
   position: absolute;
@@ -1322,7 +1352,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 81%, rgba(46, 46, 120, 0.8) 81%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 81%, var(--color, #2e2e78) 81%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="20"]::after {
   position: absolute;
@@ -1332,7 +1363,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 80%, rgba(46, 46, 120, 0.8) 80%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 80%, var(--color, #2e2e78) 80%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="21"]::after {
   position: absolute;
@@ -1342,7 +1374,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 79%, rgba(46, 46, 120, 0.8) 79%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 79%, var(--color, #2e2e78) 79%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="22"]::after {
   position: absolute;
@@ -1352,7 +1385,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 78%, rgba(46, 46, 120, 0.8) 78%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 78%, var(--color, #2e2e78) 78%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="23"]::after {
   position: absolute;
@@ -1362,7 +1396,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 77%, rgba(46, 46, 120, 0.8) 77%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 77%, var(--color, #2e2e78) 77%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="24"]::after {
   position: absolute;
@@ -1372,7 +1407,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 76%, rgba(46, 46, 120, 0.8) 76%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 76%, var(--color, #2e2e78) 76%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="25"]::after {
   position: absolute;
@@ -1382,7 +1418,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 75%, rgba(46, 46, 120, 0.8) 75%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 75%, var(--color, #2e2e78) 75%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="26"]::after {
   position: absolute;
@@ -1392,7 +1429,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 74%, rgba(46, 46, 120, 0.8) 74%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 74%, var(--color, #2e2e78) 74%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="27"]::after {
   position: absolute;
@@ -1402,7 +1440,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 73%, rgba(46, 46, 120, 0.8) 73%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 73%, var(--color, #2e2e78) 73%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="28"]::after {
   position: absolute;
@@ -1412,7 +1451,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 72%, rgba(46, 46, 120, 0.8) 72%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 72%, var(--color, #2e2e78) 72%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="29"]::after {
   position: absolute;
@@ -1422,7 +1462,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 71%, rgba(46, 46, 120, 0.8) 71%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 71%, var(--color, #2e2e78) 71%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="30"]::after {
   position: absolute;
@@ -1432,7 +1473,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 70%, rgba(46, 46, 120, 0.8) 70%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 70%, var(--color, #2e2e78) 70%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="31"]::after {
   position: absolute;
@@ -1442,7 +1484,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 69%, rgba(46, 46, 120, 0.8) 69%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 69%, var(--color, #2e2e78) 69%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="32"]::after {
   position: absolute;
@@ -1452,7 +1495,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 68%, rgba(46, 46, 120, 0.8) 68%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 68%, var(--color, #2e2e78) 68%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="33"]::after {
   position: absolute;
@@ -1462,7 +1506,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 67%, rgba(46, 46, 120, 0.8) 67%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 67%, var(--color, #2e2e78) 67%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="34"]::after {
   position: absolute;
@@ -1472,7 +1517,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 66%, rgba(46, 46, 120, 0.8) 66%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 66%, var(--color, #2e2e78) 66%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="35"]::after {
   position: absolute;
@@ -1482,7 +1528,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 65%, rgba(46, 46, 120, 0.8) 65%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 65%, var(--color, #2e2e78) 65%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="36"]::after {
   position: absolute;
@@ -1492,7 +1539,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 64%, rgba(46, 46, 120, 0.8) 64%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 64%, var(--color, #2e2e78) 64%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="37"]::after {
   position: absolute;
@@ -1502,7 +1550,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 63%, rgba(46, 46, 120, 0.8) 63%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 63%, var(--color, #2e2e78) 63%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="38"]::after {
   position: absolute;
@@ -1512,7 +1561,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 62%, rgba(46, 46, 120, 0.8) 62%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 62%, var(--color, #2e2e78) 62%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="39"]::after {
   position: absolute;
@@ -1522,7 +1572,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 61%, rgba(46, 46, 120, 0.8) 61%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 61%, var(--color, #2e2e78) 61%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="40"]::after {
   position: absolute;
@@ -1532,7 +1583,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 60%, rgba(46, 46, 120, 0.8) 60%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 60%, var(--color, #2e2e78) 60%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="41"]::after {
   position: absolute;
@@ -1542,7 +1594,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 59%, rgba(46, 46, 120, 0.8) 59%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 59%, var(--color, #2e2e78) 59%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="42"]::after {
   position: absolute;
@@ -1552,7 +1605,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 58%, rgba(46, 46, 120, 0.8) 58%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 58%, var(--color, #2e2e78) 58%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="43"]::after {
   position: absolute;
@@ -1562,7 +1616,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 57%, rgba(46, 46, 120, 0.8) 57%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 57%, var(--color, #2e2e78) 57%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="44"]::after {
   position: absolute;
@@ -1572,7 +1627,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 56%, rgba(46, 46, 120, 0.8) 56%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 56%, var(--color, #2e2e78) 56%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="45"]::after {
   position: absolute;
@@ -1582,7 +1638,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 55%, rgba(46, 46, 120, 0.8) 55%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 55%, var(--color, #2e2e78) 55%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="46"]::after {
   position: absolute;
@@ -1592,7 +1649,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 54%, rgba(46, 46, 120, 0.8) 54%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 54%, var(--color, #2e2e78) 54%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="47"]::after {
   position: absolute;
@@ -1602,7 +1660,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 53%, rgba(46, 46, 120, 0.8) 53%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 53%, var(--color, #2e2e78) 53%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="48"]::after {
   position: absolute;
@@ -1612,7 +1671,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 52%, rgba(46, 46, 120, 0.8) 52%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 52%, var(--color, #2e2e78) 52%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="49"]::after {
   position: absolute;
@@ -1622,7 +1682,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 51%, rgba(46, 46, 120, 0.8) 51%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 51%, var(--color, #2e2e78) 51%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="50"]::after {
   position: absolute;
@@ -1632,7 +1693,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 50%, rgba(46, 46, 120, 0.8) 50%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 50%, var(--color, #2e2e78) 50%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="51"]::after {
   position: absolute;
@@ -1642,7 +1704,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 49%, rgba(46, 46, 120, 0.8) 49%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 49%, var(--color, #2e2e78) 49%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="52"]::after {
   position: absolute;
@@ -1652,7 +1715,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 48%, rgba(46, 46, 120, 0.8) 48%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 48%, var(--color, #2e2e78) 48%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="53"]::after {
   position: absolute;
@@ -1662,7 +1726,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 47%, rgba(46, 46, 120, 0.8) 47%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 47%, var(--color, #2e2e78) 47%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="54"]::after {
   position: absolute;
@@ -1672,7 +1737,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 46%, rgba(46, 46, 120, 0.8) 46%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 46%, var(--color, #2e2e78) 46%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="55"]::after {
   position: absolute;
@@ -1682,7 +1748,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 45%, rgba(46, 46, 120, 0.8) 45%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 45%, var(--color, #2e2e78) 45%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="56"]::after {
   position: absolute;
@@ -1692,7 +1759,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 44%, rgba(46, 46, 120, 0.8) 44%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 44%, var(--color, #2e2e78) 44%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="57"]::after {
   position: absolute;
@@ -1702,7 +1770,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 43%, rgba(46, 46, 120, 0.8) 43%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 43%, var(--color, #2e2e78) 43%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="58"]::after {
   position: absolute;
@@ -1712,7 +1781,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 42%, rgba(46, 46, 120, 0.8) 42%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 42%, var(--color, #2e2e78) 42%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="59"]::after {
   position: absolute;
@@ -1722,7 +1792,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 41%, rgba(46, 46, 120, 0.8) 41%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 41%, var(--color, #2e2e78) 41%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="60"]::after {
   position: absolute;
@@ -1732,7 +1803,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 40%, rgba(46, 46, 120, 0.8) 40%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 40%, var(--color, #2e2e78) 40%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="61"]::after {
   position: absolute;
@@ -1742,7 +1814,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 39%, rgba(46, 46, 120, 0.8) 39%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 39%, var(--color, #2e2e78) 39%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="62"]::after {
   position: absolute;
@@ -1752,7 +1825,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 38%, rgba(46, 46, 120, 0.8) 38%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 38%, var(--color, #2e2e78) 38%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="63"]::after {
   position: absolute;
@@ -1762,7 +1836,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 37%, rgba(46, 46, 120, 0.8) 37%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 37%, var(--color, #2e2e78) 37%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="64"]::after {
   position: absolute;
@@ -1772,7 +1847,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 36%, rgba(46, 46, 120, 0.8) 36%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 36%, var(--color, #2e2e78) 36%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="65"]::after {
   position: absolute;
@@ -1782,7 +1858,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 35%, rgba(46, 46, 120, 0.8) 35%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 35%, var(--color, #2e2e78) 35%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="66"]::after {
   position: absolute;
@@ -1792,7 +1869,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 34%, rgba(46, 46, 120, 0.8) 34%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 34%, var(--color, #2e2e78) 34%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="67"]::after {
   position: absolute;
@@ -1802,7 +1880,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 33%, rgba(46, 46, 120, 0.8) 33%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 33%, var(--color, #2e2e78) 33%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="68"]::after {
   position: absolute;
@@ -1812,7 +1891,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 32%, rgba(46, 46, 120, 0.8) 32%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 32%, var(--color, #2e2e78) 32%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="69"]::after {
   position: absolute;
@@ -1822,7 +1902,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 31%, rgba(46, 46, 120, 0.8) 31%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 31%, var(--color, #2e2e78) 31%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="70"]::after {
   position: absolute;
@@ -1832,7 +1913,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 30%, rgba(46, 46, 120, 0.8) 30%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 30%, var(--color, #2e2e78) 30%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="71"]::after {
   position: absolute;
@@ -1842,7 +1924,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 29%, rgba(46, 46, 120, 0.8) 29%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 29%, var(--color, #2e2e78) 29%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="72"]::after {
   position: absolute;
@@ -1852,7 +1935,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 28%, rgba(46, 46, 120, 0.8) 28%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 28%, var(--color, #2e2e78) 28%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="73"]::after {
   position: absolute;
@@ -1862,7 +1946,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 27%, rgba(46, 46, 120, 0.8) 27%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 27%, var(--color, #2e2e78) 27%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="74"]::after {
   position: absolute;
@@ -1872,7 +1957,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 26%, rgba(46, 46, 120, 0.8) 26%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 26%, var(--color, #2e2e78) 26%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="75"]::after {
   position: absolute;
@@ -1882,7 +1968,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 25%, rgba(46, 46, 120, 0.8) 25%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 25%, var(--color, #2e2e78) 25%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="76"]::after {
   position: absolute;
@@ -1892,7 +1979,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 24%, rgba(46, 46, 120, 0.8) 24%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 24%, var(--color, #2e2e78) 24%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="77"]::after {
   position: absolute;
@@ -1902,7 +1990,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 23%, rgba(46, 46, 120, 0.8) 23%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 23%, var(--color, #2e2e78) 23%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="78"]::after {
   position: absolute;
@@ -1912,7 +2001,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 22%, rgba(46, 46, 120, 0.8) 22%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 22%, var(--color, #2e2e78) 22%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="79"]::after {
   position: absolute;
@@ -1922,7 +2012,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 21%, rgba(46, 46, 120, 0.8) 21%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 21%, var(--color, #2e2e78) 21%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="80"]::after {
   position: absolute;
@@ -1932,7 +2023,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 20%, rgba(46, 46, 120, 0.8) 20%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 20%, var(--color, #2e2e78) 20%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="81"]::after {
   position: absolute;
@@ -1942,7 +2034,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 19%, rgba(46, 46, 120, 0.8) 19%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 19%, var(--color, #2e2e78) 19%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="82"]::after {
   position: absolute;
@@ -1952,7 +2045,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 18%, rgba(46, 46, 120, 0.8) 18%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 18%, var(--color, #2e2e78) 18%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="83"]::after {
   position: absolute;
@@ -1962,7 +2056,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 17%, rgba(46, 46, 120, 0.8) 17%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 17%, var(--color, #2e2e78) 17%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="84"]::after {
   position: absolute;
@@ -1972,7 +2067,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 16%, rgba(46, 46, 120, 0.8) 16%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 16%, var(--color, #2e2e78) 16%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="85"]::after {
   position: absolute;
@@ -1982,7 +2078,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 15%, rgba(46, 46, 120, 0.8) 15%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 15%, var(--color, #2e2e78) 15%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="86"]::after {
   position: absolute;
@@ -1992,7 +2089,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 14%, rgba(46, 46, 120, 0.8) 14%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 14%, var(--color, #2e2e78) 14%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="87"]::after {
   position: absolute;
@@ -2002,7 +2100,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 13%, rgba(46, 46, 120, 0.8) 13%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 13%, var(--color, #2e2e78) 13%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="88"]::after {
   position: absolute;
@@ -2012,7 +2111,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 12%, rgba(46, 46, 120, 0.8) 12%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 12%, var(--color, #2e2e78) 12%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="89"]::after {
   position: absolute;
@@ -2022,7 +2122,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 11%, rgba(46, 46, 120, 0.8) 11%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 11%, var(--color, #2e2e78) 11%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="90"]::after {
   position: absolute;
@@ -2032,7 +2133,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 10%, rgba(46, 46, 120, 0.8) 10%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 10%, var(--color, #2e2e78) 10%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="91"]::after {
   position: absolute;
@@ -2042,7 +2144,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 9%, rgba(46, 46, 120, 0.8) 9%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 9%, var(--color, #2e2e78) 9%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="92"]::after {
   position: absolute;
@@ -2052,7 +2155,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 8%, rgba(46, 46, 120, 0.8) 8%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 8%, var(--color, #2e2e78) 8%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="93"]::after {
   position: absolute;
@@ -2062,7 +2166,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 7%, rgba(46, 46, 120, 0.8) 7%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 7%, var(--color, #2e2e78) 7%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="94"]::after {
   position: absolute;
@@ -2072,7 +2177,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 6%, rgba(46, 46, 120, 0.8) 6%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 6%, var(--color, #2e2e78) 6%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="95"]::after {
   position: absolute;
@@ -2082,7 +2188,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 5%, rgba(46, 46, 120, 0.8) 5%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 5%, var(--color, #2e2e78) 5%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="96"]::after {
   position: absolute;
@@ -2092,7 +2199,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 4%, rgba(46, 46, 120, 0.8) 4%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 4%, var(--color, #2e2e78) 4%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="97"]::after {
   position: absolute;
@@ -2102,7 +2210,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 3%, rgba(46, 46, 120, 0.8) 3%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 3%, var(--color, #2e2e78) 3%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="98"]::after {
   position: absolute;
@@ -2112,7 +2221,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 2%, rgba(46, 46, 120, 0.8) 2%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 2%, var(--color, #2e2e78) 2%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="99"]::after {
   position: absolute;
@@ -2122,7 +2232,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 1%, rgba(46, 46, 120, 0.8) 1%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 1%, var(--color, #2e2e78) 1%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="100"]::after {
   position: absolute;
@@ -2132,7 +2243,8 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 0%, rgba(46, 46, 120, 0.8) 0%);
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 0%, var(--color, #2e2e78) 0%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="0"]::after {
   position: absolute;
@@ -2142,7 +2254,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 100%, rgba(46, 46, 120, 0.8) 100%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 100%, var(--color, rgba(46, 46, 120, 0.8)) 100%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="1"]::after {
   position: absolute;
@@ -2152,7 +2264,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 99%, rgba(46, 46, 120, 0.8) 99%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 99%, var(--color, rgba(46, 46, 120, 0.8)) 99%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="2"]::after {
   position: absolute;
@@ -2162,7 +2274,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 98%, rgba(46, 46, 120, 0.8) 98%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 98%, var(--color, rgba(46, 46, 120, 0.8)) 98%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="3"]::after {
   position: absolute;
@@ -2172,7 +2284,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 97%, rgba(46, 46, 120, 0.8) 97%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 97%, var(--color, rgba(46, 46, 120, 0.8)) 97%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="4"]::after {
   position: absolute;
@@ -2182,7 +2294,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 96%, rgba(46, 46, 120, 0.8) 96%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 96%, var(--color, rgba(46, 46, 120, 0.8)) 96%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="5"]::after {
   position: absolute;
@@ -2192,7 +2304,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 95%, rgba(46, 46, 120, 0.8) 95%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 95%, var(--color, rgba(46, 46, 120, 0.8)) 95%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="6"]::after {
   position: absolute;
@@ -2202,7 +2314,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 94%, rgba(46, 46, 120, 0.8) 94%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 94%, var(--color, rgba(46, 46, 120, 0.8)) 94%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="7"]::after {
   position: absolute;
@@ -2212,7 +2324,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 93%, rgba(46, 46, 120, 0.8) 93%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 93%, var(--color, rgba(46, 46, 120, 0.8)) 93%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="8"]::after {
   position: absolute;
@@ -2222,7 +2334,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 92%, rgba(46, 46, 120, 0.8) 92%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 92%, var(--color, rgba(46, 46, 120, 0.8)) 92%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="9"]::after {
   position: absolute;
@@ -2232,7 +2344,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 91%, rgba(46, 46, 120, 0.8) 91%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 91%, var(--color, rgba(46, 46, 120, 0.8)) 91%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="10"]::after {
   position: absolute;
@@ -2242,7 +2354,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 90%, rgba(46, 46, 120, 0.8) 90%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 90%, var(--color, rgba(46, 46, 120, 0.8)) 90%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="11"]::after {
   position: absolute;
@@ -2252,7 +2364,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 89%, rgba(46, 46, 120, 0.8) 89%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 89%, var(--color, rgba(46, 46, 120, 0.8)) 89%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="12"]::after {
   position: absolute;
@@ -2262,7 +2374,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 88%, rgba(46, 46, 120, 0.8) 88%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 88%, var(--color, rgba(46, 46, 120, 0.8)) 88%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="13"]::after {
   position: absolute;
@@ -2272,7 +2384,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 87%, rgba(46, 46, 120, 0.8) 87%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 87%, var(--color, rgba(46, 46, 120, 0.8)) 87%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="14"]::after {
   position: absolute;
@@ -2282,7 +2394,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 86%, rgba(46, 46, 120, 0.8) 86%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 86%, var(--color, rgba(46, 46, 120, 0.8)) 86%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="15"]::after {
   position: absolute;
@@ -2292,7 +2404,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 85%, rgba(46, 46, 120, 0.8) 85%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 85%, var(--color, rgba(46, 46, 120, 0.8)) 85%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="16"]::after {
   position: absolute;
@@ -2302,7 +2414,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 84%, rgba(46, 46, 120, 0.8) 84%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 84%, var(--color, rgba(46, 46, 120, 0.8)) 84%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="17"]::after {
   position: absolute;
@@ -2312,7 +2424,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 83%, rgba(46, 46, 120, 0.8) 83%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 83%, var(--color, rgba(46, 46, 120, 0.8)) 83%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="18"]::after {
   position: absolute;
@@ -2322,7 +2434,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 82%, rgba(46, 46, 120, 0.8) 82%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 82%, var(--color, rgba(46, 46, 120, 0.8)) 82%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="19"]::after {
   position: absolute;
@@ -2332,7 +2444,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 81%, rgba(46, 46, 120, 0.8) 81%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 81%, var(--color, rgba(46, 46, 120, 0.8)) 81%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="20"]::after {
   position: absolute;
@@ -2342,7 +2454,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 80%, rgba(46, 46, 120, 0.8) 80%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 80%, var(--color, rgba(46, 46, 120, 0.8)) 80%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="21"]::after {
   position: absolute;
@@ -2352,7 +2464,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 79%, rgba(46, 46, 120, 0.8) 79%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 79%, var(--color, rgba(46, 46, 120, 0.8)) 79%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="22"]::after {
   position: absolute;
@@ -2362,7 +2474,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 78%, rgba(46, 46, 120, 0.8) 78%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 78%, var(--color, rgba(46, 46, 120, 0.8)) 78%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="23"]::after {
   position: absolute;
@@ -2372,7 +2484,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 77%, rgba(46, 46, 120, 0.8) 77%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 77%, var(--color, rgba(46, 46, 120, 0.8)) 77%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="24"]::after {
   position: absolute;
@@ -2382,7 +2494,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 76%, rgba(46, 46, 120, 0.8) 76%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 76%, var(--color, rgba(46, 46, 120, 0.8)) 76%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="25"]::after {
   position: absolute;
@@ -2392,7 +2504,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 75%, rgba(46, 46, 120, 0.8) 75%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 75%, var(--color, rgba(46, 46, 120, 0.8)) 75%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="26"]::after {
   position: absolute;
@@ -2402,7 +2514,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 74%, rgba(46, 46, 120, 0.8) 74%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 74%, var(--color, rgba(46, 46, 120, 0.8)) 74%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="27"]::after {
   position: absolute;
@@ -2412,7 +2524,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 73%, rgba(46, 46, 120, 0.8) 73%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 73%, var(--color, rgba(46, 46, 120, 0.8)) 73%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="28"]::after {
   position: absolute;
@@ -2422,7 +2534,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 72%, rgba(46, 46, 120, 0.8) 72%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 72%, var(--color, rgba(46, 46, 120, 0.8)) 72%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="29"]::after {
   position: absolute;
@@ -2432,7 +2544,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 71%, rgba(46, 46, 120, 0.8) 71%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 71%, var(--color, rgba(46, 46, 120, 0.8)) 71%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="30"]::after {
   position: absolute;
@@ -2442,7 +2554,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 70%, rgba(46, 46, 120, 0.8) 70%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 70%, var(--color, rgba(46, 46, 120, 0.8)) 70%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="31"]::after {
   position: absolute;
@@ -2452,7 +2564,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 69%, rgba(46, 46, 120, 0.8) 69%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 69%, var(--color, rgba(46, 46, 120, 0.8)) 69%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="32"]::after {
   position: absolute;
@@ -2462,7 +2574,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 68%, rgba(46, 46, 120, 0.8) 68%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 68%, var(--color, rgba(46, 46, 120, 0.8)) 68%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="33"]::after {
   position: absolute;
@@ -2472,7 +2584,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 67%, rgba(46, 46, 120, 0.8) 67%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 67%, var(--color, rgba(46, 46, 120, 0.8)) 67%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="34"]::after {
   position: absolute;
@@ -2482,7 +2594,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 66%, rgba(46, 46, 120, 0.8) 66%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 66%, var(--color, rgba(46, 46, 120, 0.8)) 66%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="35"]::after {
   position: absolute;
@@ -2492,7 +2604,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 65%, rgba(46, 46, 120, 0.8) 65%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 65%, var(--color, rgba(46, 46, 120, 0.8)) 65%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="36"]::after {
   position: absolute;
@@ -2502,7 +2614,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 64%, rgba(46, 46, 120, 0.8) 64%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 64%, var(--color, rgba(46, 46, 120, 0.8)) 64%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="37"]::after {
   position: absolute;
@@ -2512,7 +2624,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 63%, rgba(46, 46, 120, 0.8) 63%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 63%, var(--color, rgba(46, 46, 120, 0.8)) 63%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="38"]::after {
   position: absolute;
@@ -2522,7 +2634,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 62%, rgba(46, 46, 120, 0.8) 62%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 62%, var(--color, rgba(46, 46, 120, 0.8)) 62%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="39"]::after {
   position: absolute;
@@ -2532,7 +2644,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 61%, rgba(46, 46, 120, 0.8) 61%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 61%, var(--color, rgba(46, 46, 120, 0.8)) 61%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="40"]::after {
   position: absolute;
@@ -2542,7 +2654,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 60%, rgba(46, 46, 120, 0.8) 60%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 60%, var(--color, rgba(46, 46, 120, 0.8)) 60%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="41"]::after {
   position: absolute;
@@ -2552,7 +2664,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 59%, rgba(46, 46, 120, 0.8) 59%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 59%, var(--color, rgba(46, 46, 120, 0.8)) 59%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="42"]::after {
   position: absolute;
@@ -2562,7 +2674,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 58%, rgba(46, 46, 120, 0.8) 58%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 58%, var(--color, rgba(46, 46, 120, 0.8)) 58%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="43"]::after {
   position: absolute;
@@ -2572,7 +2684,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 57%, rgba(46, 46, 120, 0.8) 57%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 57%, var(--color, rgba(46, 46, 120, 0.8)) 57%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="44"]::after {
   position: absolute;
@@ -2582,7 +2694,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 56%, rgba(46, 46, 120, 0.8) 56%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 56%, var(--color, rgba(46, 46, 120, 0.8)) 56%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="45"]::after {
   position: absolute;
@@ -2592,7 +2704,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 55%, rgba(46, 46, 120, 0.8) 55%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 55%, var(--color, rgba(46, 46, 120, 0.8)) 55%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="46"]::after {
   position: absolute;
@@ -2602,7 +2714,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 54%, rgba(46, 46, 120, 0.8) 54%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 54%, var(--color, rgba(46, 46, 120, 0.8)) 54%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="47"]::after {
   position: absolute;
@@ -2612,7 +2724,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 53%, rgba(46, 46, 120, 0.8) 53%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 53%, var(--color, rgba(46, 46, 120, 0.8)) 53%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="48"]::after {
   position: absolute;
@@ -2622,7 +2734,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 52%, rgba(46, 46, 120, 0.8) 52%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 52%, var(--color, rgba(46, 46, 120, 0.8)) 52%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="49"]::after {
   position: absolute;
@@ -2632,7 +2744,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 51%, rgba(46, 46, 120, 0.8) 51%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 51%, var(--color, rgba(46, 46, 120, 0.8)) 51%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="50"]::after {
   position: absolute;
@@ -2642,7 +2754,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 50%, rgba(46, 46, 120, 0.8) 50%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 50%, var(--color, rgba(46, 46, 120, 0.8)) 50%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="51"]::after {
   position: absolute;
@@ -2652,7 +2764,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 49%, rgba(46, 46, 120, 0.8) 49%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 49%, var(--color, rgba(46, 46, 120, 0.8)) 49%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="52"]::after {
   position: absolute;
@@ -2662,7 +2774,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 48%, rgba(46, 46, 120, 0.8) 48%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 48%, var(--color, rgba(46, 46, 120, 0.8)) 48%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="53"]::after {
   position: absolute;
@@ -2672,7 +2784,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 47%, rgba(46, 46, 120, 0.8) 47%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 47%, var(--color, rgba(46, 46, 120, 0.8)) 47%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="54"]::after {
   position: absolute;
@@ -2682,7 +2794,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 46%, rgba(46, 46, 120, 0.8) 46%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 46%, var(--color, rgba(46, 46, 120, 0.8)) 46%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="55"]::after {
   position: absolute;
@@ -2692,7 +2804,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 45%, rgba(46, 46, 120, 0.8) 45%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 45%, var(--color, rgba(46, 46, 120, 0.8)) 45%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="56"]::after {
   position: absolute;
@@ -2702,7 +2814,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 44%, rgba(46, 46, 120, 0.8) 44%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 44%, var(--color, rgba(46, 46, 120, 0.8)) 44%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="57"]::after {
   position: absolute;
@@ -2712,7 +2824,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 43%, rgba(46, 46, 120, 0.8) 43%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 43%, var(--color, rgba(46, 46, 120, 0.8)) 43%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="58"]::after {
   position: absolute;
@@ -2722,7 +2834,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 42%, rgba(46, 46, 120, 0.8) 42%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 42%, var(--color, rgba(46, 46, 120, 0.8)) 42%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="59"]::after {
   position: absolute;
@@ -2732,7 +2844,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 41%, rgba(46, 46, 120, 0.8) 41%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 41%, var(--color, rgba(46, 46, 120, 0.8)) 41%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="60"]::after {
   position: absolute;
@@ -2742,7 +2854,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 40%, rgba(46, 46, 120, 0.8) 40%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 40%, var(--color, rgba(46, 46, 120, 0.8)) 40%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="61"]::after {
   position: absolute;
@@ -2752,7 +2864,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 39%, rgba(46, 46, 120, 0.8) 39%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 39%, var(--color, rgba(46, 46, 120, 0.8)) 39%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="62"]::after {
   position: absolute;
@@ -2762,7 +2874,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 38%, rgba(46, 46, 120, 0.8) 38%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 38%, var(--color, rgba(46, 46, 120, 0.8)) 38%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="63"]::after {
   position: absolute;
@@ -2772,7 +2884,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 37%, rgba(46, 46, 120, 0.8) 37%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 37%, var(--color, rgba(46, 46, 120, 0.8)) 37%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="64"]::after {
   position: absolute;
@@ -2782,7 +2894,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 36%, rgba(46, 46, 120, 0.8) 36%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 36%, var(--color, rgba(46, 46, 120, 0.8)) 36%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="65"]::after {
   position: absolute;
@@ -2792,7 +2904,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 35%, rgba(46, 46, 120, 0.8) 35%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 35%, var(--color, rgba(46, 46, 120, 0.8)) 35%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="66"]::after {
   position: absolute;
@@ -2802,7 +2914,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 34%, rgba(46, 46, 120, 0.8) 34%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 34%, var(--color, rgba(46, 46, 120, 0.8)) 34%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="67"]::after {
   position: absolute;
@@ -2812,7 +2924,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 33%, rgba(46, 46, 120, 0.8) 33%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 33%, var(--color, rgba(46, 46, 120, 0.8)) 33%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="68"]::after {
   position: absolute;
@@ -2822,7 +2934,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 32%, rgba(46, 46, 120, 0.8) 32%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 32%, var(--color, rgba(46, 46, 120, 0.8)) 32%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="69"]::after {
   position: absolute;
@@ -2832,7 +2944,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 31%, rgba(46, 46, 120, 0.8) 31%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 31%, var(--color, rgba(46, 46, 120, 0.8)) 31%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="70"]::after {
   position: absolute;
@@ -2842,7 +2954,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 30%, rgba(46, 46, 120, 0.8) 30%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 30%, var(--color, rgba(46, 46, 120, 0.8)) 30%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="71"]::after {
   position: absolute;
@@ -2852,7 +2964,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 29%, rgba(46, 46, 120, 0.8) 29%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 29%, var(--color, rgba(46, 46, 120, 0.8)) 29%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="72"]::after {
   position: absolute;
@@ -2862,7 +2974,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 28%, rgba(46, 46, 120, 0.8) 28%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 28%, var(--color, rgba(46, 46, 120, 0.8)) 28%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="73"]::after {
   position: absolute;
@@ -2872,7 +2984,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 27%, rgba(46, 46, 120, 0.8) 27%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 27%, var(--color, rgba(46, 46, 120, 0.8)) 27%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="74"]::after {
   position: absolute;
@@ -2882,7 +2994,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 26%, rgba(46, 46, 120, 0.8) 26%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 26%, var(--color, rgba(46, 46, 120, 0.8)) 26%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="75"]::after {
   position: absolute;
@@ -2892,7 +3004,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 25%, rgba(46, 46, 120, 0.8) 25%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 25%, var(--color, rgba(46, 46, 120, 0.8)) 25%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="76"]::after {
   position: absolute;
@@ -2902,7 +3014,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 24%, rgba(46, 46, 120, 0.8) 24%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 24%, var(--color, rgba(46, 46, 120, 0.8)) 24%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="77"]::after {
   position: absolute;
@@ -2912,7 +3024,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 23%, rgba(46, 46, 120, 0.8) 23%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 23%, var(--color, rgba(46, 46, 120, 0.8)) 23%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="78"]::after {
   position: absolute;
@@ -2922,7 +3034,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 22%, rgba(46, 46, 120, 0.8) 22%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 22%, var(--color, rgba(46, 46, 120, 0.8)) 22%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="79"]::after {
   position: absolute;
@@ -2932,7 +3044,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 21%, rgba(46, 46, 120, 0.8) 21%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 21%, var(--color, rgba(46, 46, 120, 0.8)) 21%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="80"]::after {
   position: absolute;
@@ -2942,7 +3054,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 20%, rgba(46, 46, 120, 0.8) 20%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 20%, var(--color, rgba(46, 46, 120, 0.8)) 20%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="81"]::after {
   position: absolute;
@@ -2952,7 +3064,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 19%, rgba(46, 46, 120, 0.8) 19%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 19%, var(--color, rgba(46, 46, 120, 0.8)) 19%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="82"]::after {
   position: absolute;
@@ -2962,7 +3074,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 18%, rgba(46, 46, 120, 0.8) 18%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 18%, var(--color, rgba(46, 46, 120, 0.8)) 18%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="83"]::after {
   position: absolute;
@@ -2972,7 +3084,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 17%, rgba(46, 46, 120, 0.8) 17%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 17%, var(--color, rgba(46, 46, 120, 0.8)) 17%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="84"]::after {
   position: absolute;
@@ -2982,7 +3094,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 16%, rgba(46, 46, 120, 0.8) 16%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 16%, var(--color, rgba(46, 46, 120, 0.8)) 16%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="85"]::after {
   position: absolute;
@@ -2992,7 +3104,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 15%, rgba(46, 46, 120, 0.8) 15%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 15%, var(--color, rgba(46, 46, 120, 0.8)) 15%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="86"]::after {
   position: absolute;
@@ -3002,7 +3114,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 14%, rgba(46, 46, 120, 0.8) 14%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 14%, var(--color, rgba(46, 46, 120, 0.8)) 14%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="87"]::after {
   position: absolute;
@@ -3012,7 +3124,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 13%, rgba(46, 46, 120, 0.8) 13%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 13%, var(--color, rgba(46, 46, 120, 0.8)) 13%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="88"]::after {
   position: absolute;
@@ -3022,7 +3134,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 12%, rgba(46, 46, 120, 0.8) 12%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 12%, var(--color, rgba(46, 46, 120, 0.8)) 12%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="89"]::after {
   position: absolute;
@@ -3032,7 +3144,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 11%, rgba(46, 46, 120, 0.8) 11%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 11%, var(--color, rgba(46, 46, 120, 0.8)) 11%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="90"]::after {
   position: absolute;
@@ -3042,7 +3154,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 10%, rgba(46, 46, 120, 0.8) 10%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 10%, var(--color, rgba(46, 46, 120, 0.8)) 10%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="91"]::after {
   position: absolute;
@@ -3052,7 +3164,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 9%, rgba(46, 46, 120, 0.8) 9%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 9%, var(--color, rgba(46, 46, 120, 0.8)) 9%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="92"]::after {
   position: absolute;
@@ -3062,7 +3174,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 8%, rgba(46, 46, 120, 0.8) 8%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 8%, var(--color, rgba(46, 46, 120, 0.8)) 8%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="93"]::after {
   position: absolute;
@@ -3072,7 +3184,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 7%, rgba(46, 46, 120, 0.8) 7%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 7%, var(--color, rgba(46, 46, 120, 0.8)) 7%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="94"]::after {
   position: absolute;
@@ -3082,7 +3194,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 6%, rgba(46, 46, 120, 0.8) 6%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 6%, var(--color, rgba(46, 46, 120, 0.8)) 6%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="95"]::after {
   position: absolute;
@@ -3092,7 +3204,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 5%, rgba(46, 46, 120, 0.8) 5%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 5%, var(--color, rgba(46, 46, 120, 0.8)) 5%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="96"]::after {
   position: absolute;
@@ -3102,7 +3214,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 4%, rgba(46, 46, 120, 0.8) 4%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 4%, var(--color, rgba(46, 46, 120, 0.8)) 4%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="97"]::after {
   position: absolute;
@@ -3112,7 +3224,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 3%, rgba(46, 46, 120, 0.8) 3%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 3%, var(--color, rgba(46, 46, 120, 0.8)) 3%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="98"]::after {
   position: absolute;
@@ -3122,7 +3234,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 2%, rgba(46, 46, 120, 0.8) 2%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 2%, var(--color, rgba(46, 46, 120, 0.8)) 2%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="99"]::after {
   position: absolute;
@@ -3132,7 +3244,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 1%, rgba(46, 46, 120, 0.8) 1%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 1%, var(--color, rgba(46, 46, 120, 0.8)) 1%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="100"]::after {
   position: absolute;
@@ -3142,7 +3254,7 @@ h4 {
   right: 0;
   content: "";
   border-radius: 50%;
-  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 0%, rgba(46, 46, 120, 0.8) 0%);
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 0%, var(--color, rgba(46, 46, 120, 0.8)) 0%);
 }
 .circle-progress .circle-progress-container .circle-progress-body .progress-label {
   position: absolute;
@@ -4100,7 +4212,6 @@ h4 {
   width: 33px;
   height: 33px;
   border: 1px solid #F84281;
-  outline: 2px solid #FFFFFF;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   background: #FFFFFF;
   border-radius: 50%;
@@ -4110,11 +4221,39 @@ h4 {
 .listen-circle-btn {
   width: 90px;
   height: 90px;
-  outline: 4px solid rgba(255, 171, 200, 0.5);
-  border: 4px solid #FFFFFF;
-  background: #F84281;
+  border: 4px solid rgba(255, 171, 200, 0.5);
   border-radius: 50%;
   position: relative;
+}
+.listen-circle-btn .circle-btn-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+}
+.listen-circle-btn .circle-btn-container .circle-btn-body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 171, 200, 0.5);
+}
+.listen-circle-btn .circle-btn-container .circle-btn-body span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #F84281;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .number-circle {

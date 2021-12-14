@@ -3,10 +3,23 @@
     display: inline-block;
     width: 100%;
 
+    $colours:
+        "dark" $midnightblue,
+        "pink" $pink;
+    
+    @each $i in $colours{
+        &.#{nth($i, 1)}-border, .#{nth($i, 1)}-border {
+            --border-color: #{nth($i, 2)};
+        }
+        &.#{nth($i, 1)}-color, .#{nth($i, 1)}-color {
+            --color: #{nth($i, 2)};
+        }
+    }
+
     .circle-progress-container {
         display: block;
         position: relative;
-        border: 3px solid #2C2A71;
+        border: 3px solid var(--border-color, #2C2A71);
         border-radius: 50%;
         width: 100%;
         
@@ -20,7 +33,6 @@
             @include absolute_fit_parent;
             border: 3px solid $white;
             border-radius: 50%;
-            background-color: #2C2A71;
 
             .progress-background-image {
                 @include absolute_fit_parent;
@@ -40,7 +52,8 @@
                             @include absolute_fit_parent;
                             content: '';
                             border-radius: 50%;
-                            background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) $topProgress * 1%, rgba(46, 46, 120, 0.8) $topProgress * 1%);
+                            opacity: 0.8;
+                            background: linear-gradient(180deg, rgb(92, 92, 98) $topProgress * 1%, var(--color, rgb(46, 46, 120)) $topProgress * 1%);
                         }
                     }
                 }
@@ -54,7 +67,7 @@
                                 @include absolute_fit_parent;
                                 content: '';
                                 border-radius: 50%;
-                                background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) $topProgress * 1%, rgba(46, 46, 120, 0.8) $topProgress * 1%);
+                                background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) $topProgress * 1%, var(--color, rgba(46, 46, 120, 0.8)) $topProgress * 1%);
                             }
                         }
                     }
