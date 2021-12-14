@@ -16,6 +16,9 @@
     &.col-to-action {
         font-size: 20px;
         padding: 13px 60px;
+        @media (max-width: 414px) {
+            padding: 13px 40px;
+        }
     }
 }
 
