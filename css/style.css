@@ -3682,13 +3682,6 @@ h4 {
   border-radius: 50%;
 }
 
-.img-style {
-  position: absolute;
-  top: -50px;
-  right: 0;
-  left: 0;
-}
-
 .landing {
   background-image: url("../images/footer-bg.png");
   background-repeat: no-repeat;
@@ -4832,10 +4825,10 @@ h4 {
   background-color: #C4C4C4;
 }
 
-.wow-backdrop {
+.modal .wow-backdrop {
   position: relative;
 }
-.wow-backdrop::before {
+.modal .wow-backdrop::before {
   content: "";
   position: absolute;
   height: calc(100% + 104px + 64px);
@@ -4848,7 +4841,7 @@ h4 {
   background-position: center;
   background-image: url("../images/wow-backdrop.png");
 }
-.wow-backdrop::after {
+.modal .wow-backdrop::after {
   content: "";
   position: absolute;
   background-image: url("../images/wow-confetti.svg");
@@ -4860,6 +4853,16 @@ h4 {
   top: -104px;
   right: 0;
   left: calc((100% - 100vw) / 2);
+  pointer-events: none;
+}
+.modal .top-icon-block {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0;
+}
+.modal .top-icon-block > * {
+  max-width: 90px;
 }
 
 /*# sourceMappingURL=style.css.map */

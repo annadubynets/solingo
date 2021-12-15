@@ -17,12 +17,7 @@
 @import "modules/choose-level-control";
 @import "modules/choose-lesson-control";
 @import "modules/circle-progress";
-.img-style {
-    position: absolute;
-    top: -50px;
-    right: 0;
-    left: 0;
-}
+
 
 .landing {
     background-image: url('../images/footer-bg.png');
@@ -554,33 +549,46 @@
     background-color: #C4C4C4;
 }
 
-.wow-backdrop {
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        height: calc(100% + 104px + 64px);
-        width: 100vw;
-        z-index: -1;
-        top: -104px;
-        right: 0;
-        left: calc((100% - 100vw) / 2);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url('../images/wow-backdrop.png');
+.modal {
+    .wow-backdrop {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            height: calc(100% + 104px + 64px);
+            width: 100vw;
+            z-index: -1;
+            top: -104px;
+            right: 0;
+            left: calc((100% - 100vw) / 2);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../images/wow-backdrop.png');
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../images/wow-confetti.svg');
+            height: calc(100% + 104px + 64px);
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+            z-index: 1;
+            top: -104px;
+            right: 0;
+            left: calc((100% - 100vw) / 2);
+            pointer-events: none;
+        }
     }
 
-    &::after {
-        content: '';
+    .top-icon-block {
         position: absolute;
-        background-image: url('../images/wow-confetti.svg');
-        height: calc(100% + 104px + 64px);
-        width: 100vw;
-        background-repeat: no-repeat;
-        background-position: 50% 30%;
-        z-index: 1;
-        top: -104px;
+        top: -50px;
         right: 0;
-        left: calc((100% - 100vw) / 2);
+        left: 0;
+        &>* {
+            max-width: 90px;
+        }
     }
 }

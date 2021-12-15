@@ -128,7 +128,7 @@
     <div class="modal fade" id="correctAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="correctAnswerLabel" aria-hidden="true">
         <div class="modal-dialog px-4 pt-140px">
             <div class="modal-content wow-backdrop text-center pt-5 p-4">
-                <div class="img-style">
+                <div class="top-icon-block">
                     <img src="images/correct-answer-bird.svg" alt="Correct Answer">
                 </div>
                 <span class="mb-1">
@@ -138,7 +138,38 @@
 
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#correctAnswer">Continue</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#continueModal">Continue</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="continueModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="continueModalLabel" aria-hidden="true">
+        <div class="modal-dialog congrats-modal-bg px-4 pt-140px">
+            <div class="modal-content wow-backdrop text-center pt-5 p-4 position-relative">
+                <div class="top-icon-block">
+                <div class="circle-progress d-inline-block">
+                    <div class="circle-progress-container pink-color border-0">
+                        <div class="circle-progress-body border-0">
+                            <img src="images/english.png" alt="English" class="progress-background-image badge-border">
+                            <div class="progress-value horizontal" data-value="100"></div>
+                            <div class="progress-label">
+                                <img src="images/icons/tourist.svg" alt="Tourist">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <h5 class="fw-bold text-primary mb-3">Tourist</h5>
+                <p class="text-primary font-size-14px pb-4">Congrats, you just earned a badge!</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <a href="congrats.html" class="btn btn-primary" data-bs-target="#continueModal">Continue</a>
                     </div>
                 </div>
             </div>
