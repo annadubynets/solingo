@@ -534,6 +534,9 @@ h4 {
 .form-control.unstyled-input {
   box-shadow: none;
   color: #F84281;
+  border-radius: 0;
+  padding: 23px 0 0 0;
+  border-bottom: 2px solid #F84281;
 }
 .form-control.unstyled-input:focus {
   box-shadow: none;
