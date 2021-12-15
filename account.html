@@ -80,7 +80,7 @@
                         </div>
                     </a>
 
-                    <a data-bs-toggle="modal" data-bs-target="#navigation">
+                    <a data-bs-toggle="modal" data-bs-target="#start-tutorial">
                         <div class="card bg-light shadow-lg rounded mb-5">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="font-size-16 text-primary fw-bold">Tutorial</p>
@@ -146,6 +146,31 @@
                 <div class="row justify-content-center">
                     <div class="col-6 text-center">
                         <button type="button" class="btn btn-primary w-100 px-0" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal modal-tutorial tutorial-img fade" id="start-tutorial" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="start-tutorialLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="close pe-3 pt-2 mb-0" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-close font-size-30px text-white"></span>
+            </button>
+        </div>
+        <div class="modal-dialog px-4">
+            <div class="modal-content text-center pt-5 p-4">
+                <div class="text-center pb-3">
+                    <img src="images/intro-logo.svg" alt="Logo" class="w-50">
+                </div>
+                <span class="text-white hero-heading pb-5">Powered by <span><img src="images/speekoo.svg" alt="speekoo"></span></span>
+                <h1 class="mb-4 mt-5 text-start">Welcome to Solingo!</h1>
+                <p class="pb-5 text-white text-start">Let's start with a little tutorial</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#navigation">Start Tutorial</button>
                     </div>
                 </div>
             </div>
@@ -279,25 +304,25 @@
                                             <div class="circle-btn-container">
                                                 <div class="circle-btn-body">
                                                     <span class="icon-listen text-white font-size-24px"></span>
-                                                </div>
-                                            </div>
-                                        </span>
-                                    </div>
-
-                                    <div class="card bg-light rounded shadow-lg mb-56px">
-                                        <input type="text" class="form-control unstyled-input text-center" id="inputText" placeholder="I Speak" readonly>
-                                    </div>
-
-                                    <div class="text-center">
-                                        <button type="button" class="btn btn-info">Continue</button>
                                     </div>
                                 </div>
+                                </span>
+                            </div>
+
+                            <div class="card bg-light rounded shadow-lg mb-56px">
+                                <input type="text" class="form-control unstyled-input text-center" id="inputText" placeholder="I Speak" readonly>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-info">Continue</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <script src="js/jquery-1.12.4.min.js"></script>
