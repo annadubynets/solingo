@@ -553,3 +553,34 @@
     height: 0.563rem;
     background-color: #C4C4C4;
 }
+
+.wow-backdrop {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        height: calc(100% + 104px + 64px);
+        width: 100vw;
+        z-index: -1;
+        top: -104px;
+        right: 0;
+        left: calc((100% - 100vw) / 2);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/wow-backdrop.png');
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/wow-confetti.svg');
+        height: calc(100% + 104px + 64px);
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
+        z-index: 1;
+        top: -104px;
+        right: 0;
+        left: calc((100% - 100vw) / 2);
+    }
+}
