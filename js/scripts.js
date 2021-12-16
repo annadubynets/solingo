@@ -321,6 +321,9 @@ $(function() {
 });
 
 $(function() {
+    /**
+     * Initializes the unlock popovers on chose lessons page
+     */
     var popovers = document.querySelectorAll('.show-simple-popover');
     popovers.forEach(function(elem) {
         new bootstrap.Popover(elem, {
@@ -328,4 +331,21 @@ $(function() {
             template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close"></span></div><div class="popover-body"></div></div>`
         });
     });
-})
+});
+
+
+$(function() {
+    /**
+     * Manages the unlock instructions on articles page
+     */
+    var lockedArticleThumbnails = document.querySelectorAll('.article-thumbnail.disabled');
+    lockedArticleThumbnails.forEach(function(thumbnailElem) {
+
+        const instructionsElem = thumbnailElem.querySelector('.unlock-instruction');
+        if (instructionsElem) {
+            thumbnailElem.addEventListener('click', function(e) {
+                instructionsElem.classList.toggle('show');
+            });
+        }
+    });
+});

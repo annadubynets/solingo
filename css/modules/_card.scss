@@ -43,25 +43,6 @@
                 color: $midnightblue;
             }
         }
-        &.disabled {
-            &::after {
-                background: rgba(98, 96, 96, 0.4);
-                font-family: 'icomoon';
-                content: "\e905";
-                font-size: 1.5rem;
-                color: rgba(255, 255, 255, 0.8);
-                width: 100%;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                border-radius: 0.7rem;
-                text-align: center;
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                z-index: 3;
-            }
-        }
     }
 }
 
