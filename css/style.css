@@ -103,8 +103,16 @@ h4 {
 }
 
 @media (min-width: 1200px) {
+  h1 {
+    font-size: 3.563rem;
+  }
+
   h2 {
     font-size: 2.75rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
   }
 
   .title {
@@ -117,6 +125,11 @@ h4 {
 
   .pt-22px {
     padding-top: 90px !important;
+  }
+
+  .row-cols-5 > * {
+    flex: 0 0 auto;
+    width: 10%;
   }
 }
 .btn {
@@ -144,6 +157,13 @@ h4 {
     padding: 13px 40px;
   }
 }
+@media (min-width: 1200px) {
+  .btn-primary {
+    font-size: 31px;
+    padding: 17px 46px;
+    border-radius: 42px;
+  }
+}
 
 .btn-info {
   font-size: 20px;
@@ -152,7 +172,13 @@ h4 {
   border: 3px solid #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.14);
   border-radius: 27px;
-  padding: 9px 30px;
+  padding: 13px 30px;
+}
+@media (min-width: 1200px) {
+  .btn-info {
+    padding: 18px 30px;
+    border-radius: 42px;
+  }
 }
 
 .btn-secondary {
@@ -166,6 +192,11 @@ h4 {
 
 .modal .btn {
   font-size: 16px;
+}
+@media (min-width: 1200px) {
+  .modal .btn {
+    font-size: 22px;
+  }
 }
 .modal .btn-primary {
   padding: 8px 30px;
@@ -339,6 +370,10 @@ h4 {
   border-radius: 6px !important;
 }
 
+.rounded-3 {
+  border-radius: 16px !important;
+}
+
 .rounded, .choose-level-control .level-img, .choose-level-control {
   border-radius: 20px !important;
 }
@@ -391,11 +426,6 @@ h4 {
   font-size: 30px;
 }
 
-@media (min-width: 1201px) {
-  .font-size-xl-30px {
-    font-size: 30px;
-  }
-}
 .font-size-36px {
   font-size: 36px;
 }
@@ -457,6 +487,23 @@ h4 {
     margin-bottom: 300px;
   }
 }
+@media (min-width: 1200px) {
+  .font-size-10px {
+    font-size: 14px;
+  }
+
+  .font-size-11px {
+    font-size: 17px;
+  }
+
+  .font-size-13px {
+    font-size: 24px;
+  }
+
+  .font-size-xl-30px {
+    font-size: 30px;
+  }
+}
 .modal-tutorial .tutorial-header {
   font-size: 26px;
   color: #FFFFFF;
@@ -464,6 +511,11 @@ h4 {
 .modal-tutorial .tutorial-text {
   color: #FFFFFF;
   font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .modal-tutorial .tutorial-text {
+    font-size: 28px;
+  }
 }
 .modal-tutorial .modal-content {
   background: transparent;
@@ -645,6 +697,12 @@ h4 {
   font-size: 12px;
   color: #464482;
 }
+.card.article card-title {
+  font-size: 13px;
+}
+.card.article .card-text {
+  font-size: 10px;
+}
 
 .articles .card {
   background: none;
@@ -670,6 +728,17 @@ h4 {
   color: #2C2A71;
 }
 
+@media (min-width: 1200px) {
+  .card .card-text {
+    font-size: 19px;
+  }
+  .card.article .card-title {
+    font-size: 26px;
+  }
+  .card.article .card-text {
+    font-size: 22px !important;
+  }
+}
 .choose-level-control {
   display: block;
   position: relative;
@@ -3924,7 +3993,19 @@ h4 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
 }
+.article-circle .icon-style {
+  font-size: 24px;
+}
 
+@media (min-width: 1200px) {
+  .article-circle {
+    width: 94px;
+    height: 94px;
+  }
+  .article-circle .icon-style {
+    font-size: 36px;
+  }
+}
 .hero-heading {
   position: relative;
 }
@@ -3947,6 +4028,14 @@ h4 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .main {
+    background-image: url("../images/languages-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
 }
 
 .main-blue {
@@ -4780,7 +4869,21 @@ h4 {
   background-size: cover;
   background-position: center;
 }
+.congrats p {
+  font-size: 18px;
+}
 
+@media (min-width: 1200px) {
+  .congrats {
+    background: url("../images/intro-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .congrats p {
+    font-size: 28px;
+  }
+}
 .close {
   border: none !important;
   background-color: transparent !important;
@@ -4833,7 +4936,7 @@ h4 {
   font-size: 10px;
   display: inline-block;
   right: 10px;
-  top: 16px;
+  top: 24px;
 }
 .custom-select .select-selected::before {
   font-family: "icomoon";
@@ -4843,7 +4946,7 @@ h4 {
   font-size: 14px;
   display: inline-block;
   left: 10px;
-  top: 13px;
+  top: 18px;
 }
 .custom-select .select-selected.select-arrow-active {
   border: 3px solid #2C2A71;
@@ -4875,7 +4978,7 @@ h4 {
   font-weight: 400;
   font-size: 14px;
   color: #9E9E9E;
-  padding: 12px 50px;
+  padding: 18px 50px;
   border-radius: 10px;
   cursor: pointer;
   user-select: none;

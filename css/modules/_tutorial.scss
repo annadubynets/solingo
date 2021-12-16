@@ -6,6 +6,9 @@
     .tutorial-text {
         color: $white;
         font-size: 18px;
+        @media (min-width: 1200px) {
+            font-size: 28px;
+        }
     }
     .modal-content {
         background: transparent;
