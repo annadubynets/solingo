@@ -28,37 +28,37 @@ ul {
 
 h1 {
   font-weight: 800;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #FFFFFF;
 }
 
 h2 {
   font-weight: 800;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #2C2A71;
 }
 
 h3 {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #2C2A71;
 }
 
 h4 {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #2C2A71;
 }
 
 .title {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #F74783;
 }
 
 .description {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #2C2A71;
 }
 
@@ -102,6 +102,23 @@ h4 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%) !important;
 }
 
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .pt-22px {
+    padding-top: 90px !important;
+  }
+}
 .btn {
   font-weight: 500;
   border-radius: 27px;
