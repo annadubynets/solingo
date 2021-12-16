@@ -56,6 +56,11 @@ h4 {
   color: #F74783;
 }
 
+.subtitle {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
 .description {
   font-weight: 500;
   font-size: 0.875rem;
@@ -102,6 +107,12 @@ h4 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%) !important;
 }
 
+@media (min-width: 576px) {
+  .subtitle {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 1200px) {
   h1 {
     font-size: 3.563rem;
@@ -159,7 +170,7 @@ h4 {
 }
 @media (min-width: 1200px) {
   .btn-primary {
-    font-size: 31px;
+    font-size: 20px;
     padding: 17px 46px;
     border-radius: 42px;
   }
@@ -189,6 +200,13 @@ h4 {
   box-shadow: 0px 3.23944px 3.23944px rgba(0, 0, 0, 0.25), inset 0px 3.23944px 16.1972px rgba(0, 0, 0, 0.14);
   padding: 8px 30px;
 }
+@media (min-width: 1200px) {
+  .btn-secondary {
+    font-size: 20px;
+    padding: 18px 30px;
+    border-radius: 42px;
+  }
+}
 
 .modal .btn {
   font-size: 16px;
@@ -199,10 +217,10 @@ h4 {
   }
 }
 .modal .btn-primary {
-  padding: 8px 30px;
+  padding: 9px 30px;
 }
 .modal .btn-secondary {
-  padding: 8px 30px;
+  padding: 9px 30px;
 }
 
 .btn-link {
