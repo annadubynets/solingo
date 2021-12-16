@@ -324,7 +324,7 @@ $(function() {
     var popovers = document.querySelectorAll('.show-simple-popover');
     popovers.forEach(function(elem) {
         new bootstrap.Popover(elem, {
-            trigger: 'click',
+            trigger: 'focus',
             template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close"></span></div><div class="popover-body"></div></div>`
         });
     });
