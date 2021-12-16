@@ -1,0 +1,56 @@
+.article-thumbnail {
+    .unlock-instruction {
+        display: none;
+        @include absolute_fit_parent();
+
+        opacity: 80%;
+        background-color: rgba(46, 46, 120, 0.9);
+        z-index: 4;
+        border-radius: 0.8rem;
+        border: 3px solid #2E2E78;
+
+        .icon-close {
+            color: $white;
+            position: absolute;
+            right: 0;
+            margin-top: 0.375rem;
+            margin-right: 0.375rem;
+            font-size: 16px;
+        }
+
+        .unlock-message {
+            @include absolute_fit_parent();
+            display: grid;
+            place-items: center;
+            color: $white;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+
+    &.disabled {
+        cursor: pointer;
+        &::after {
+            background: rgba(98, 96, 96, 0.4);
+            font-family: 'icomoon';
+            content: "\e905";
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            border-radius: 0.7rem;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            z-index: 3;
+        }
+
+        .unlock-instruction.show {
+            display: block;
+        }
+    }
+}

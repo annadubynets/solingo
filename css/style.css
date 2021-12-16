@@ -669,23 +669,6 @@ h4 {
   font-size: 0.8rem;
   color: #2C2A71;
 }
-.articles .card.disabled::after {
-  background: rgba(98, 96, 96, 0.4);
-  font-family: "icomoon";
-  content: "";
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  border-radius: 0.7rem;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  z-index: 3;
-}
 
 .choose-level-control {
   display: block;
@@ -3733,6 +3716,64 @@ h4 {
   margin-top: 0.375rem;
   margin-right: 0.375rem;
   font-size: 16px;
+}
+
+.article-thumbnail .unlock-instruction {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 80%;
+  background-color: rgba(46, 46, 120, 0.9);
+  z-index: 4;
+  border-radius: 0.8rem;
+  border: 3px solid #2E2E78;
+}
+.article-thumbnail .unlock-instruction .icon-close {
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  margin-top: 0.375rem;
+  margin-right: 0.375rem;
+  font-size: 16px;
+}
+.article-thumbnail .unlock-instruction .unlock-message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.article-thumbnail.disabled {
+  cursor: pointer;
+}
+.article-thumbnail.disabled::after {
+  background: rgba(98, 96, 96, 0.4);
+  font-family: "icomoon";
+  content: "";
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 0.7rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.article-thumbnail.disabled .unlock-instruction.show {
+  display: block;
 }
 
 .landing {
