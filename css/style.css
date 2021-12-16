@@ -3699,6 +3699,20 @@ h4 {
   border-radius: 50%;
 }
 
+.simple-popover {
+  border-radius: 12px;
+  opacity: 0.9;
+  background-color: #2E2E78;
+  color: #FFFFFF;
+}
+.simple-popover .popover-body {
+  padding-top: 0;
+}
+.simple-popover .icon-close {
+  margin-top: 0.375rem;
+  margin-right: 0.375rem;
+}
+
 .landing {
   background-image: url("../images/footer-bg.png");
   background-repeat: no-repeat;

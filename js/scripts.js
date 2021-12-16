@@ -321,11 +321,11 @@ $(function() {
 });
 
 $(function() {
-    var popovers = document.querySelectorAll('.with-unlock-instruction');
+    var popovers = document.querySelectorAll('.show-simple-popover');
     popovers.forEach(function(elem) {
-        console.log('test')
         new bootstrap.Popover(elem, {
-            trigger: 'focus'
+            trigger: 'click',
+            template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close"></span></div><div class="popover-body"></div></div>`
         });
     });
 })
