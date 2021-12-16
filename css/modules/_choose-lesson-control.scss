@@ -92,5 +92,13 @@
                 border-radius: 50%;
             }
         }
+
+        &:focus {
+            .choose-lesson-control-container {
+                border-width: 5px;
+            }
+        }
     }
+
+    
 }
