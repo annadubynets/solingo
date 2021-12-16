@@ -450,6 +450,21 @@ h4 {
 }
 .modal-tutorial .modal-content {
   background: transparent;
+  border: none;
+}
+.modal-tutorial.tutorial-img {
+  background: url("/images/welcome-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 414px) {
+  .modal-tutorial.tutorial-img {
+    background: url("/images/welcome-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .modal-content {

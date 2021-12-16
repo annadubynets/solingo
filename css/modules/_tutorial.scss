@@ -9,11 +9,20 @@
     }
     .modal-content {
         background: transparent;
+        border: none;
     }
-    // &.tutorial-img {
-    //     background: url('/images/tutorial-img.svg');
-    //     background-repeat: no-repeat;
-    // }
+    &.tutorial-img {
+        background: url('/images/welcome-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media (min-width: 414px) {
+            background: url('/images/welcome-bg-desktop.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
 }
 
 .modal-content {
