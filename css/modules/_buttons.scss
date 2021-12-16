@@ -21,7 +21,7 @@
         }
     }
     @media (min-width: 1200px) {
-        font-size: 31px;
+        font-size: 20px;
         padding: 17px 46px;
         border-radius: 42px;
     }
@@ -48,6 +48,11 @@
     border: 2.42958px solid #9C9C9C;
     box-shadow: 0px 3.23944px 3.23944px rgba(0, 0, 0, 0.25), inset 0px 3.23944px 16.1972px rgba(0, 0, 0, 0.14);
     padding: 8px 30px;
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        padding: 18px 30px;
+        border-radius: 42px;
+    }
 }
 
 .modal {
@@ -58,10 +63,10 @@
         }
     }
     .btn-primary {
-        padding: 8px 30px;
+        padding: 9px 30px;
     }
     .btn-secondary {
-        padding: 8px 30px;
+        padding: 9px 30px;
     }
 }
 
