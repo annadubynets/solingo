@@ -93,4 +93,10 @@
             }
         }
     }
+
+    &:focus {
+        .choose-lesson-control-container {
+            border-width: 5px;
+        }
+    }
 }
