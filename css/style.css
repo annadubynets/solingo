@@ -157,6 +157,13 @@ h4 {
     padding: 13px 40px;
   }
 }
+@media (min-width: 1200px) {
+  .btn-primary {
+    font-size: 31px;
+    padding: 17px 46px;
+    border-radius: 42px;
+  }
+}
 
 .btn-info {
   font-size: 20px;
@@ -3970,6 +3977,14 @@ h4 {
   background-position: bottom;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  .main {
+    background-image: url("../images/languages-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+}
 
 .main-blue {
   background-image: url("../images/decor.svg");
@@ -4802,7 +4817,21 @@ h4 {
   background-size: cover;
   background-position: center;
 }
+.congrats p {
+  font-size: 18px;
+}
 
+@media (min-width: 1200px) {
+  .congrats {
+    background: url("../images/intro-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .congrats p {
+    font-size: 28px;
+  }
+}
 .close {
   border: none !important;
   background-color: transparent !important;

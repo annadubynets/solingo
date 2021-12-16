@@ -20,6 +20,11 @@
             padding: 13px 40px;
         }
     }
+    @media (min-width: 1200px) {
+        font-size: 31px;
+        padding: 17px 46px;
+        border-radius: 42px;
+    }
 }
 
 .btn-info {
