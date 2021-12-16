@@ -226,7 +226,6 @@ h4 {
 }
 .footer-navbar .nav-link.active span {
   transform: translateY(-9px) scale(1.1);
-  font-weight: 800;
   color: white;
   background: linear-gradient(180deg, #FA3F81 0%, #EE5B88 100%);
   border-radius: 50%;
@@ -4842,7 +4841,7 @@ h4 {
   left: calc((100% - 100vw) / 2);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/wow-backdrop.png");
+  background-image: url("../images/wow-backdrop.svg");
 }
 .modal .wow-backdrop::after {
   content: "";
