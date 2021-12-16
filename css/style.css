@@ -111,6 +111,10 @@ h4 {
     font-size: 2.75rem;
   }
 
+  h4 {
+    font-size: 1.75rem;
+  }
+
   .title {
     font-size: 1rem;
   }
@@ -121,6 +125,11 @@ h4 {
 
   .pt-22px {
     padding-top: 90px !important;
+  }
+
+  .row-cols-5 > * {
+    flex: 0 0 auto;
+    width: 10%;
   }
 }
 .btn {
@@ -399,11 +408,6 @@ h4 {
   font-size: 30px;
 }
 
-@media (min-width: 1201px) {
-  .font-size-xl-30px {
-    font-size: 30px;
-  }
-}
 .font-size-36px {
   font-size: 36px;
 }
@@ -463,6 +467,23 @@ h4 {
 @media (min-width: 992px) {
   .mb-lg-300px {
     margin-bottom: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .font-size-10px {
+    font-size: 14px;
+  }
+
+  .font-size-11px {
+    font-size: 17px;
+  }
+
+  .font-size-13px {
+    font-size: 24px;
+  }
+
+  .font-size-xl-30px {
+    font-size: 30px;
   }
 }
 .modal-tutorial .tutorial-header {
@@ -658,6 +679,12 @@ h4 {
   font-size: 12px;
   color: #464482;
 }
+.card.article card-title {
+  font-size: 13px;
+}
+.card.article .card-text {
+  font-size: 10px;
+}
 
 .articles .card {
   background: none;
@@ -700,6 +727,17 @@ h4 {
   z-index: 3;
 }
 
+@media (min-width: 1200px) {
+  .card .card-text {
+    font-size: 19px;
+  }
+  .card.article .card-title {
+    font-size: 26px;
+  }
+  .card.article .card-text {
+    font-size: 22px !important;
+  }
+}
 .choose-level-control {
   display: block;
   position: relative;
@@ -3896,7 +3934,19 @@ h4 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
 }
+.article-circle .icon-style {
+  font-size: 24px;
+}
 
+@media (min-width: 1200px) {
+  .article-circle {
+    width: 94px;
+    height: 94px;
+  }
+  .article-circle .icon-style {
+    font-size: 36px;
+  }
+}
 .hero-heading {
   position: relative;
 }

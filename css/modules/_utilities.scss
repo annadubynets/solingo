@@ -66,12 +66,6 @@
     font-size: 30px;
 }
 
-@media (min-width: 1201px) {
-    .font-size-xl-30px {
-        font-size: 30px;
-    }
-}
-
 .font-size-36px {
     font-size: 36px;
 }
@@ -131,5 +125,20 @@
 @media (min-width: 992px) {
     .mb-lg-300px {
         margin-bottom: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .font-size-10px {
+        font-size: 14px;
+    }
+    .font-size-11px {
+        font-size: 17px;
+    }
+    .font-size-13px {
+        font-size: 24px;
+    }
+    .font-size-xl-30px {
+        font-size: 30px;
     }
 }
