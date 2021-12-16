@@ -457,7 +457,7 @@
             font-size: 10px;
             display: inline-block;
             right: 10px;
-            top: 16px;
+            top: 24px;
         }
         &::before {
             font-family: 'icomoon';
@@ -467,7 +467,7 @@
             font-size: 14px;
             display: inline-block;
             left: 10px;
-            top: 13px;
+            top: 18px;
         }
         &.select-arrow-active {
             border: 3px solid $midnightblue;
@@ -500,7 +500,7 @@
         font-weight: 400;
         font-size: 14px;
         color: #9E9E9E;
-        padding: 12px 50px;
+        padding: 18px 50px;
         border-radius: 10px;
         cursor: pointer;
         user-select: none;

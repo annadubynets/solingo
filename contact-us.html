@@ -31,8 +31,8 @@
     </nav>
     <section class="main-blue min-vh-100 pt-22px pb-140px">
         <div class="container">
-            <div class="row mb-4">
-                <div class="col-12 text-center position-relative">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-9 col-12 text-center position-relative">
                     <div class="return-link">
                         <a href="account.html" class="return-circle rounded-circle d-flex justify-content-center align-items-center">
                             <span class="icon-back font-size-14px"></span>
@@ -42,17 +42,18 @@
                 </div>
             </div>
             <div class="row justify-content-center px-lg-3 px-4">
-                <div class="col-lg-6 col-12 px-1 px-lg-2">
+                <div class="col-lg-9 col-12 px-1 px-lg-2">
                     <div class="card bg-light py-lg-4 py-3 px-0 mb-5">
-                        <p class="text-start pb-4 px-lg-4 px-3">Do you have any issue on Mind+ store? <span class="text-pink">We will give you straight answers!</span></p>
-                        <p class="text-start pb-3 px-lg-4 px-3">Contact us using our contact form below</p>
+                        <p class="text-start pb-lg-2 pb-4 px-lg-4 px-3">Do you have any issue on Mind+ store? <span class="text-pink">We will give you straight answers!</span></p>
+                        <p class="text-start px-lg-4 px-3">Contact us using our contact form below</p>
                     </div>
-                    <form>
-                        <div class="mb-3 text-start">
+                    <form class="row">
+                        <div class="col-12 col-lg-6 mb-3 text-start">
                             <label for="inputEmail" class="form-label">Email</label>
                             <input type="email" class="form-control bg-light" id="inputEmail" placeholder="example@mind+.com">
                         </div>
-                        <div class="mb-3 text-start">
+
+                        <div class="col-12 col-lg-6 mb-3 text-start">
                             <label for="selectLanguage" class="form-label">Select an issue</label>
                             <div class="custom-select profile-select" id="selectLanguage">
                                 <select>
@@ -62,13 +63,14 @@
                                   </select>
                             </div>
                         </div>
-                        <div class="mb-4 text-start">
+
+                        <div class="col-12 mb-4 text-start">
                             <label for="textareaMessage" class="form-label">Describe your issue</label>
                             <textarea class="form-control bg-light" id="textareaMessage" rows="4" placeholder="Describe your issue"></textarea>
                         </div>
 
-                        <label for="textAttachment" class="form-label">Attachment</label>
-                        <div class="py-2">
+                        <div class="col-12 col-lg-6 py-2 order-lg-0 order-0">
+                            <label for="textAttachment" class="form-label">Attachment</label>
                             <div class="d-flex align-items-center">
                                 <button class="btn btn-light chose-attachment-file-btn">Choose files</button>
                                 <p class="text-muted ps-4 attachment-file-name">No file chosen</p>
@@ -76,15 +78,13 @@
                             </div>
                         </div>
 
-                        <div class="row justify-content-center">
-                            <div class="col-6 text-center mt-5 mb-3">
-                                <button type="button" class="btn btn-primary w-100 px-0">Send</button>
-                            </div>
+                        <div class="col-6 text-center mx-auto mt-5 mb-3 order-lg-1 order-1">
+                            <button type="button" class="btn btn-primary w-100 px-0">Send</button>
                         </div>
 
-                        <div class="mb-3 text-start">
+                        <div class="col-12 col-lg-6 mb-3 text-start order-lg-0 order-2">
                             <label for="inputUser" class="form-label text-dark">User</label>
-                            <div class="card bg-light rounded text-center p-3">
+                            <div class="card bg-light shadow-lg rounded-3 text-center p-3">
                                 <p class="font-size-14px text-primary">Wi-Fi User not detected</p>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
             </div>
         </div>
         </div>
-        <nav class="navbar footer-navbar fixed-bottom navbar-light justify-content-around align-items-end d-lg-none d-flex">
+        <nav class="navbar footer-navbar fixed-bottom navbar-light justify-content-around align-items-end d-flex">
             <a href="account.html" class="nav-link text-center active"><span class="icon-user font-size-30px d-block"></span>Account</a>
             <a href="vocabulary.html" class="nav-link text-center"><span class="icon-layers font-size-30px d-block"></span>Learned</a>
             <a href="choose-language.html" class="nav-link text-center"><span class="icon-home font-size-30px d-block pb-1"></span>Home</a>
