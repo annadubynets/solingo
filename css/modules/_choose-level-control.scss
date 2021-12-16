@@ -29,8 +29,9 @@
         justify-content: center;
         align-items: start;
         padding-left: 25px;
+        padding-right: 25px;
 
-        background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:lighten'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M320 83.8854L317.881 90H320V83.8854ZM101.368 90H0V0H132.554L101.368 90Z' fill='%23EEF7FE' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E%0A");
+        background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 133 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:lighten'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M132.554 0H0V90H101.368L132.554 0Z' fill='%23EEF7FE' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
         background-size: cover;
         border-top-left-radius: 20px;
