@@ -31,7 +31,9 @@
               "mediumspringgreen" $mediumspringgreen, 
               "lightseagreen" $lightseagreen, 
               "yellowgreen" $yellowgreen, 
-              "slateblue" $slateblue;
+              "slateblue" $slateblue,
+              "transparent" rgba(0,0,0,0);
+
     @each $i in $colours {
         &.#{nth($i, 1)}-border,
         .#{nth($i, 1)}-border {

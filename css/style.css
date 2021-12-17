@@ -404,7 +404,7 @@ h4 {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25) !important;
 }
 
-.shadow {
+.shadow, .simple-popover {
   box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.25) !important;
 }
 
@@ -446,6 +446,10 @@ h4 {
 
 .font-size-36px {
   font-size: 36px;
+}
+
+.font-size-44px {
+  font-size: 44px;
 }
 
 .pt-22px {
@@ -1027,6 +1031,14 @@ h4 {
 .choose-lesson-control .slateblue-color {
   --color: #5946A3;
 }
+.choose-lesson-control.transparent-border,
+.choose-lesson-control .transparent-border {
+  --border-color: rgba(0, 0, 0, 0);
+}
+.choose-lesson-control.transparent-color,
+.choose-lesson-control .transparent-color {
+  --color: rgba(0, 0, 0, 0);
+}
 .choose-lesson-control .choose-lesson-control-container {
   display: block;
   position: relative;
@@ -1405,224 +1417,284 @@ h4 {
   border-width: 5px;
 }
 
-.circle-progress {
+.circle-progress, .badge-control {
   max-width: 113px;
   display: inline-block;
   width: 100%;
 }
-.circle-progress.royalblue-border,
-.circle-progress .royalblue-border {
+.circle-progress.royalblue-border, .royalblue-border.badge-control,
+.circle-progress .royalblue-border,
+.badge-control .royalblue-border {
   --border-color: #2568B7;
 }
-.circle-progress.royalblue-color,
-.circle-progress .royalblue-color {
+.circle-progress.royalblue-color, .royalblue-color.badge-control,
+.circle-progress .royalblue-color,
+.badge-control .royalblue-color {
   --color: #2568B7;
 }
-.circle-progress.greenyellow-border,
-.circle-progress .greenyellow-border {
+.circle-progress.greenyellow-border, .greenyellow-border.badge-control,
+.circle-progress .greenyellow-border,
+.badge-control .greenyellow-border {
   --border-color: #C9F648;
 }
-.circle-progress.greenyellow-color,
-.circle-progress .greenyellow-color {
+.circle-progress.greenyellow-color, .greenyellow-color.badge-control,
+.circle-progress .greenyellow-color,
+.badge-control .greenyellow-color {
   --color: #C9F648;
 }
-.circle-progress.pink-border,
-.circle-progress .pink-border {
+.circle-progress.pink-border, .pink-border.badge-control,
+.circle-progress .pink-border,
+.badge-control .pink-border {
   --border-color: #F84281;
 }
-.circle-progress.pink-color,
-.circle-progress .pink-color {
+.circle-progress.pink-color, .pink-color.badge-control,
+.circle-progress .pink-color,
+.badge-control .pink-color {
   --color: #F84281;
 }
-.circle-progress.mediumorchid-border,
-.circle-progress .mediumorchid-border {
+.circle-progress.mediumorchid-border, .mediumorchid-border.badge-control,
+.circle-progress .mediumorchid-border,
+.badge-control .mediumorchid-border {
   --border-color: #C948F6;
 }
-.circle-progress.mediumorchid-color,
-.circle-progress .mediumorchid-color {
+.circle-progress.mediumorchid-color, .mediumorchid-color.badge-control,
+.circle-progress .mediumorchid-color,
+.badge-control .mediumorchid-color {
   --color: #C948F6;
 }
-.circle-progress.orange-border,
-.circle-progress .orange-border {
+.circle-progress.orange-border, .orange-border.badge-control,
+.circle-progress .orange-border,
+.badge-control .orange-border {
   --border-color: #F66748;
 }
-.circle-progress.orange-color,
-.circle-progress .orange-color {
+.circle-progress.orange-color, .orange-color.badge-control,
+.circle-progress .orange-color,
+.badge-control .orange-color {
   --color: #F66748;
 }
-.circle-progress.red-border,
-.circle-progress .red-border {
+.circle-progress.red-border, .red-border.badge-control,
+.circle-progress .red-border,
+.badge-control .red-border {
   --border-color: #FF0000;
 }
-.circle-progress.red-color,
-.circle-progress .red-color {
+.circle-progress.red-color, .red-color.badge-control,
+.circle-progress .red-color,
+.badge-control .red-color {
   --color: #FF0000;
 }
-.circle-progress.fuchsia-border,
-.circle-progress .fuchsia-border {
+.circle-progress.fuchsia-border, .fuchsia-border.badge-control,
+.circle-progress .fuchsia-border,
+.badge-control .fuchsia-border {
   --border-color: #EC1D68;
 }
-.circle-progress.fuchsia-color,
-.circle-progress .fuchsia-color {
+.circle-progress.fuchsia-color, .fuchsia-color.badge-control,
+.circle-progress .fuchsia-color,
+.badge-control .fuchsia-color {
   --color: #EC1D68;
 }
-.circle-progress.darkgoldenrod-border,
-.circle-progress .darkgoldenrod-border {
+.circle-progress.darkgoldenrod-border, .darkgoldenrod-border.badge-control,
+.circle-progress .darkgoldenrod-border,
+.badge-control .darkgoldenrod-border {
   --border-color: #B77C25;
 }
-.circle-progress.darkgoldenrod-color,
-.circle-progress .darkgoldenrod-color {
+.circle-progress.darkgoldenrod-color, .darkgoldenrod-color.badge-control,
+.circle-progress .darkgoldenrod-color,
+.badge-control .darkgoldenrod-color {
   --color: #B77C25;
 }
-.circle-progress.deepskyblue-border,
-.circle-progress .deepskyblue-border {
+.circle-progress.deepskyblue-border, .deepskyblue-border.badge-control,
+.circle-progress .deepskyblue-border,
+.badge-control .deepskyblue-border {
   --border-color: #48CCF6;
 }
-.circle-progress.deepskyblue-color,
-.circle-progress .deepskyblue-color {
+.circle-progress.deepskyblue-color, .deepskyblue-color.badge-control,
+.circle-progress .deepskyblue-color,
+.badge-control .deepskyblue-color {
   --color: #48CCF6;
 }
-.circle-progress.lightgreen-border,
-.circle-progress .lightgreen-border {
+.circle-progress.lightgreen-border, .lightgreen-border.badge-control,
+.circle-progress .lightgreen-border,
+.badge-control .lightgreen-border {
   --border-color: #48F66E;
 }
-.circle-progress.lightgreen-color,
-.circle-progress .lightgreen-color {
+.circle-progress.lightgreen-color, .lightgreen-color.badge-control,
+.circle-progress .lightgreen-color,
+.badge-control .lightgreen-color {
   --color: #48F66E;
 }
-.circle-progress.tomato-border,
-.circle-progress .tomato-border {
+.circle-progress.tomato-border, .tomato-border.badge-control,
+.circle-progress .tomato-border,
+.badge-control .tomato-border {
   --border-color: #F64848;
 }
-.circle-progress.tomato-color,
-.circle-progress .tomato-color {
+.circle-progress.tomato-color, .tomato-color.badge-control,
+.circle-progress .tomato-color,
+.badge-control .tomato-color {
   --color: #F64848;
 }
-.circle-progress.steelblue-border,
-.circle-progress .steelblue-border {
+.circle-progress.steelblue-border, .steelblue-border.badge-control,
+.circle-progress .steelblue-border,
+.badge-control .steelblue-border {
   --border-color: #4864F6;
 }
-.circle-progress.steelblue-color,
-.circle-progress .steelblue-color {
+.circle-progress.steelblue-color, .steelblue-color.badge-control,
+.circle-progress .steelblue-color,
+.badge-control .steelblue-color {
   --color: #4864F6;
 }
-.circle-progress.mediumaquamarine-border,
-.circle-progress .mediumaquamarine-border {
+.circle-progress.mediumaquamarine-border, .mediumaquamarine-border.badge-control,
+.circle-progress .mediumaquamarine-border,
+.badge-control .mediumaquamarine-border {
   --border-color: #7EBBA9;
 }
-.circle-progress.mediumaquamarine-color,
-.circle-progress .mediumaquamarine-color {
+.circle-progress.mediumaquamarine-color, .mediumaquamarine-color.badge-control,
+.circle-progress .mediumaquamarine-color,
+.badge-control .mediumaquamarine-color {
   --color: #7EBBA9;
 }
-.circle-progress.mediumpurple-border,
-.circle-progress .mediumpurple-border {
+.circle-progress.mediumpurple-border, .mediumpurple-border.badge-control,
+.circle-progress .mediumpurple-border,
+.badge-control .mediumpurple-border {
   --border-color: #B469FF;
 }
-.circle-progress.mediumpurple-color,
-.circle-progress .mediumpurple-color {
+.circle-progress.mediumpurple-color, .mediumpurple-color.badge-control,
+.circle-progress .mediumpurple-color,
+.badge-control .mediumpurple-color {
   --color: #B469FF;
 }
-.circle-progress.gold-border,
-.circle-progress .gold-border {
+.circle-progress.gold-border, .gold-border.badge-control,
+.circle-progress .gold-border,
+.badge-control .gold-border {
   --border-color: #F6DA48;
 }
-.circle-progress.gold-color,
-.circle-progress .gold-color {
+.circle-progress.gold-color, .gold-color.badge-control,
+.circle-progress .gold-color,
+.badge-control .gold-color {
   --color: #F6DA48;
 }
-.circle-progress.mediumturquoise-border,
-.circle-progress .mediumturquoise-border {
+.circle-progress.mediumturquoise-border, .mediumturquoise-border.badge-control,
+.circle-progress .mediumturquoise-border,
+.badge-control .mediumturquoise-border {
   --border-color: #48D1C1;
 }
-.circle-progress.mediumturquoise-color,
-.circle-progress .mediumturquoise-color {
+.circle-progress.mediumturquoise-color, .mediumturquoise-color.badge-control,
+.circle-progress .mediumturquoise-color,
+.badge-control .mediumturquoise-color {
   --color: #48D1C1;
 }
-.circle-progress.green-border,
-.circle-progress .green-border {
+.circle-progress.green-border, .green-border.badge-control,
+.circle-progress .green-border,
+.badge-control .green-border {
   --border-color: #25B73C;
 }
-.circle-progress.green-color,
-.circle-progress .green-color {
+.circle-progress.green-color, .green-color.badge-control,
+.circle-progress .green-color,
+.badge-control .green-color {
   --color: #25B73C;
 }
-.circle-progress.magenta-border,
-.circle-progress .magenta-border {
+.circle-progress.magenta-border, .magenta-border.badge-control,
+.circle-progress .magenta-border,
+.badge-control .magenta-border {
   --border-color: #F648D0;
 }
-.circle-progress.magenta-color,
-.circle-progress .magenta-color {
+.circle-progress.magenta-color, .magenta-color.badge-control,
+.circle-progress .magenta-color,
+.badge-control .magenta-color {
   --color: #F648D0;
 }
-.circle-progress.sandybrown-border,
-.circle-progress .sandybrown-border {
+.circle-progress.sandybrown-border, .sandybrown-border.badge-control,
+.circle-progress .sandybrown-border,
+.badge-control .sandybrown-border {
   --border-color: #F6B048;
 }
-.circle-progress.sandybrown-color,
-.circle-progress .sandybrown-color {
+.circle-progress.sandybrown-color, .sandybrown-color.badge-control,
+.circle-progress .sandybrown-color,
+.badge-control .sandybrown-color {
   --color: #F6B048;
 }
-.circle-progress.lawngreen-border,
-.circle-progress .lawngreen-border {
+.circle-progress.lawngreen-border, .lawngreen-border.badge-control,
+.circle-progress .lawngreen-border,
+.badge-control .lawngreen-border {
   --border-color: #91EC1D;
 }
-.circle-progress.lawngreen-color,
-.circle-progress .lawngreen-color {
+.circle-progress.lawngreen-color, .lawngreen-color.badge-control,
+.circle-progress .lawngreen-color,
+.badge-control .lawngreen-color {
   --color: #91EC1D;
 }
-.circle-progress.moccasin-border,
-.circle-progress .moccasin-border {
+.circle-progress.moccasin-border, .moccasin-border.badge-control,
+.circle-progress .moccasin-border,
+.badge-control .moccasin-border {
   --border-color: #FFF966;
 }
-.circle-progress.moccasin-color,
-.circle-progress .moccasin-color {
+.circle-progress.moccasin-color, .moccasin-color.badge-control,
+.circle-progress .moccasin-color,
+.badge-control .moccasin-color {
   --color: #FFF966;
 }
-.circle-progress.mediumspringgreen-border,
-.circle-progress .mediumspringgreen-border {
+.circle-progress.mediumspringgreen-border, .mediumspringgreen-border.badge-control,
+.circle-progress .mediumspringgreen-border,
+.badge-control .mediumspringgreen-border {
   --border-color: #1DEC95;
 }
-.circle-progress.mediumspringgreen-color,
-.circle-progress .mediumspringgreen-color {
+.circle-progress.mediumspringgreen-color, .mediumspringgreen-color.badge-control,
+.circle-progress .mediumspringgreen-color,
+.badge-control .mediumspringgreen-color {
   --color: #1DEC95;
 }
-.circle-progress.lightseagreen-border,
-.circle-progress .lightseagreen-border {
+.circle-progress.lightseagreen-border, .lightseagreen-border.badge-control,
+.circle-progress .lightseagreen-border,
+.badge-control .lightseagreen-border {
   --border-color: #25B7A5;
 }
-.circle-progress.lightseagreen-color,
-.circle-progress .lightseagreen-color {
+.circle-progress.lightseagreen-color, .lightseagreen-color.badge-control,
+.circle-progress .lightseagreen-color,
+.badge-control .lightseagreen-color {
   --color: #25B7A5;
 }
-.circle-progress.yellowgreen-border,
-.circle-progress .yellowgreen-border {
+.circle-progress.yellowgreen-border, .yellowgreen-border.badge-control,
+.circle-progress .yellowgreen-border,
+.badge-control .yellowgreen-border {
   --border-color: #B6EC1D;
 }
-.circle-progress.yellowgreen-color,
-.circle-progress .yellowgreen-color {
+.circle-progress.yellowgreen-color, .yellowgreen-color.badge-control,
+.circle-progress .yellowgreen-color,
+.badge-control .yellowgreen-color {
   --color: #B6EC1D;
 }
-.circle-progress.slateblue-border,
-.circle-progress .slateblue-border {
+.circle-progress.slateblue-border, .slateblue-border.badge-control,
+.circle-progress .slateblue-border,
+.badge-control .slateblue-border {
   --border-color: #5946A3;
 }
-.circle-progress.slateblue-color,
-.circle-progress .slateblue-color {
+.circle-progress.slateblue-color, .slateblue-color.badge-control,
+.circle-progress .slateblue-color,
+.badge-control .slateblue-color {
   --color: #5946A3;
 }
-.circle-progress .circle-progress-container {
+.circle-progress.transparent-border, .transparent-border.badge-control,
+.circle-progress .transparent-border,
+.badge-control .transparent-border {
+  --border-color: rgba(0, 0, 0, 0);
+}
+.circle-progress.transparent-color, .transparent-color.badge-control,
+.circle-progress .transparent-color,
+.badge-control .transparent-color {
+  --color: rgba(0, 0, 0, 0);
+}
+.circle-progress .circle-progress-container, .badge-control .circle-progress-container {
   display: block;
   position: relative;
   border: 3px solid var(--border-color, #2C2A71);
   border-radius: 50%;
   width: 100%;
 }
-.circle-progress .circle-progress-container::before {
+.circle-progress .circle-progress-container::before, .badge-control .circle-progress-container::before {
   content: "";
   display: block;
   padding-top: 100%;
 }
-.circle-progress .circle-progress-container .circle-progress-body {
+.circle-progress .circle-progress-container .circle-progress-body, .badge-control .circle-progress-container .circle-progress-body {
   position: absolute;
   left: 0;
   top: 0;
@@ -1631,7 +1703,7 @@ h4 {
   border: 3px solid #FFFFFF;
   border-radius: 50%;
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-background-image {
+.circle-progress .circle-progress-container .circle-progress-body .progress-background-image, .badge-control .circle-progress-container .circle-progress-body .progress-background-image {
   position: absolute;
   left: 0;
   top: 0;
@@ -1641,7 +1713,7 @@ h4 {
   border-radius: 50%;
   width: 100%;
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value, .badge-control .circle-progress-container .circle-progress-body .progress-value {
   position: absolute;
   left: 0;
   top: 0;
@@ -1649,7 +1721,7 @@ h4 {
   right: 0;
   border-radius: 50%;
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="0"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="0"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="0"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1660,7 +1732,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 100%, var(--color, #2e2e78) 100%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="1"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="1"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="1"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1671,7 +1743,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 99%, var(--color, #2e2e78) 99%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="2"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="2"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="2"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1682,7 +1754,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 98%, var(--color, #2e2e78) 98%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="3"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="3"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="3"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1693,7 +1765,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 97%, var(--color, #2e2e78) 97%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="4"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="4"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="4"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1704,7 +1776,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 96%, var(--color, #2e2e78) 96%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="5"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="5"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="5"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1715,7 +1787,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 95%, var(--color, #2e2e78) 95%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="6"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="6"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="6"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1726,7 +1798,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 94%, var(--color, #2e2e78) 94%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="7"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="7"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="7"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1737,7 +1809,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 93%, var(--color, #2e2e78) 93%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="8"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="8"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="8"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1748,7 +1820,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 92%, var(--color, #2e2e78) 92%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="9"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="9"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="9"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1759,7 +1831,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 91%, var(--color, #2e2e78) 91%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="10"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="10"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="10"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1770,7 +1842,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 90%, var(--color, #2e2e78) 90%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="11"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="11"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="11"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1781,7 +1853,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 89%, var(--color, #2e2e78) 89%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="12"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="12"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="12"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1792,7 +1864,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 88%, var(--color, #2e2e78) 88%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="13"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="13"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="13"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1803,7 +1875,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 87%, var(--color, #2e2e78) 87%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="14"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="14"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="14"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1814,7 +1886,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 86%, var(--color, #2e2e78) 86%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="15"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="15"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="15"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1825,7 +1897,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 85%, var(--color, #2e2e78) 85%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="16"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="16"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="16"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1836,7 +1908,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 84%, var(--color, #2e2e78) 84%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="17"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="17"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="17"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1847,7 +1919,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 83%, var(--color, #2e2e78) 83%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="18"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="18"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="18"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1858,7 +1930,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 82%, var(--color, #2e2e78) 82%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="19"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="19"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="19"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1869,7 +1941,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 81%, var(--color, #2e2e78) 81%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="20"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="20"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="20"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1880,7 +1952,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 80%, var(--color, #2e2e78) 80%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="21"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="21"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="21"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1891,7 +1963,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 79%, var(--color, #2e2e78) 79%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="22"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="22"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="22"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1902,7 +1974,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 78%, var(--color, #2e2e78) 78%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="23"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="23"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="23"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1913,7 +1985,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 77%, var(--color, #2e2e78) 77%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="24"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="24"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="24"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1924,7 +1996,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 76%, var(--color, #2e2e78) 76%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="25"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="25"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="25"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1935,7 +2007,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 75%, var(--color, #2e2e78) 75%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="26"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="26"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="26"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1946,7 +2018,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 74%, var(--color, #2e2e78) 74%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="27"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="27"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="27"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1957,7 +2029,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 73%, var(--color, #2e2e78) 73%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="28"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="28"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="28"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1968,7 +2040,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 72%, var(--color, #2e2e78) 72%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="29"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="29"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="29"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1979,7 +2051,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 71%, var(--color, #2e2e78) 71%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="30"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="30"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="30"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -1990,7 +2062,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 70%, var(--color, #2e2e78) 70%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="31"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="31"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="31"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2001,7 +2073,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 69%, var(--color, #2e2e78) 69%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="32"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="32"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="32"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2012,7 +2084,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 68%, var(--color, #2e2e78) 68%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="33"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="33"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="33"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2023,7 +2095,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 67%, var(--color, #2e2e78) 67%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="34"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="34"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="34"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2034,7 +2106,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 66%, var(--color, #2e2e78) 66%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="35"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="35"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="35"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2045,7 +2117,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 65%, var(--color, #2e2e78) 65%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="36"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="36"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="36"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2056,7 +2128,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 64%, var(--color, #2e2e78) 64%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="37"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="37"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="37"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2067,7 +2139,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 63%, var(--color, #2e2e78) 63%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="38"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="38"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="38"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2078,7 +2150,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 62%, var(--color, #2e2e78) 62%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="39"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="39"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="39"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2089,7 +2161,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 61%, var(--color, #2e2e78) 61%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="40"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="40"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="40"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2100,7 +2172,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 60%, var(--color, #2e2e78) 60%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="41"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="41"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="41"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2111,7 +2183,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 59%, var(--color, #2e2e78) 59%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="42"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="42"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="42"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2122,7 +2194,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 58%, var(--color, #2e2e78) 58%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="43"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="43"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="43"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2133,7 +2205,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 57%, var(--color, #2e2e78) 57%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="44"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="44"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="44"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2144,7 +2216,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 56%, var(--color, #2e2e78) 56%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="45"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="45"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="45"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2155,7 +2227,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 55%, var(--color, #2e2e78) 55%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="46"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="46"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="46"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2166,7 +2238,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 54%, var(--color, #2e2e78) 54%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="47"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="47"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="47"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2177,7 +2249,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 53%, var(--color, #2e2e78) 53%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="48"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="48"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="48"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2188,7 +2260,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 52%, var(--color, #2e2e78) 52%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="49"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="49"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="49"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2199,7 +2271,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 51%, var(--color, #2e2e78) 51%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="50"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="50"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="50"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2210,7 +2282,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 50%, var(--color, #2e2e78) 50%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="51"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="51"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="51"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2221,7 +2293,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 49%, var(--color, #2e2e78) 49%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="52"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="52"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="52"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2232,7 +2304,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 48%, var(--color, #2e2e78) 48%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="53"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="53"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="53"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2243,7 +2315,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 47%, var(--color, #2e2e78) 47%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="54"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="54"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="54"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2254,7 +2326,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 46%, var(--color, #2e2e78) 46%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="55"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="55"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="55"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2265,7 +2337,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 45%, var(--color, #2e2e78) 45%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="56"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="56"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="56"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2276,7 +2348,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 44%, var(--color, #2e2e78) 44%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="57"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="57"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="57"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2287,7 +2359,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 43%, var(--color, #2e2e78) 43%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="58"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="58"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="58"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2298,7 +2370,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 42%, var(--color, #2e2e78) 42%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="59"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="59"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="59"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2309,7 +2381,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 41%, var(--color, #2e2e78) 41%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="60"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="60"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="60"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2320,7 +2392,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 40%, var(--color, #2e2e78) 40%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="61"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="61"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="61"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2331,7 +2403,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 39%, var(--color, #2e2e78) 39%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="62"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="62"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="62"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2342,7 +2414,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 38%, var(--color, #2e2e78) 38%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="63"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="63"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="63"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2353,7 +2425,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 37%, var(--color, #2e2e78) 37%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="64"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="64"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="64"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2364,7 +2436,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 36%, var(--color, #2e2e78) 36%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="65"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="65"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="65"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2375,7 +2447,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 35%, var(--color, #2e2e78) 35%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="66"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="66"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="66"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2386,7 +2458,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 34%, var(--color, #2e2e78) 34%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="67"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="67"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="67"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2397,7 +2469,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 33%, var(--color, #2e2e78) 33%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="68"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="68"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="68"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2408,7 +2480,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 32%, var(--color, #2e2e78) 32%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="69"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="69"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="69"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2419,7 +2491,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 31%, var(--color, #2e2e78) 31%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="70"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="70"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="70"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2430,7 +2502,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 30%, var(--color, #2e2e78) 30%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="71"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="71"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="71"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2441,7 +2513,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 29%, var(--color, #2e2e78) 29%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="72"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="72"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="72"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2452,7 +2524,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 28%, var(--color, #2e2e78) 28%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="73"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="73"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="73"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2463,7 +2535,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 27%, var(--color, #2e2e78) 27%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="74"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="74"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="74"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2474,7 +2546,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 26%, var(--color, #2e2e78) 26%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="75"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="75"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="75"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2485,7 +2557,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 25%, var(--color, #2e2e78) 25%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="76"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="76"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="76"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2496,7 +2568,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 24%, var(--color, #2e2e78) 24%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="77"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="77"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="77"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2507,7 +2579,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 23%, var(--color, #2e2e78) 23%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="78"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="78"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="78"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2518,7 +2590,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 22%, var(--color, #2e2e78) 22%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="79"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="79"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="79"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2529,7 +2601,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 21%, var(--color, #2e2e78) 21%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="80"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="80"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="80"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2540,7 +2612,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 20%, var(--color, #2e2e78) 20%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="81"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="81"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="81"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2551,7 +2623,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 19%, var(--color, #2e2e78) 19%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="82"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="82"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="82"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2562,7 +2634,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 18%, var(--color, #2e2e78) 18%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="83"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="83"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="83"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2573,7 +2645,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 17%, var(--color, #2e2e78) 17%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="84"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="84"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="84"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2584,7 +2656,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 16%, var(--color, #2e2e78) 16%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="85"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="85"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="85"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2595,7 +2667,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 15%, var(--color, #2e2e78) 15%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="86"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="86"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="86"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2606,7 +2678,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 14%, var(--color, #2e2e78) 14%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="87"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="87"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="87"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2617,7 +2689,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 13%, var(--color, #2e2e78) 13%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="88"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="88"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="88"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2628,7 +2700,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 12%, var(--color, #2e2e78) 12%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="89"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="89"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="89"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2639,7 +2711,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 11%, var(--color, #2e2e78) 11%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="90"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="90"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="90"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2650,7 +2722,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 10%, var(--color, #2e2e78) 10%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="91"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="91"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="91"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2661,7 +2733,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 9%, var(--color, #2e2e78) 9%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="92"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="92"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="92"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2672,7 +2744,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 8%, var(--color, #2e2e78) 8%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="93"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="93"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="93"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2683,7 +2755,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 7%, var(--color, #2e2e78) 7%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="94"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="94"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="94"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2694,7 +2766,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 6%, var(--color, #2e2e78) 6%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="95"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="95"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="95"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2705,7 +2777,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 5%, var(--color, #2e2e78) 5%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="96"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="96"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="96"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2716,7 +2788,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 4%, var(--color, #2e2e78) 4%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="97"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="97"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="97"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2727,7 +2799,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 3%, var(--color, #2e2e78) 3%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="98"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="98"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="98"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2738,7 +2810,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 2%, var(--color, #2e2e78) 2%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="99"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="99"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="99"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2749,7 +2821,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 1%, var(--color, #2e2e78) 1%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="100"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="100"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="100"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2760,7 +2832,7 @@ h4 {
   opacity: 0.8;
   background: linear-gradient(180deg, #5c5c62 0%, var(--color, #2e2e78) 0%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="0"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="0"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="0"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2770,7 +2842,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 100%, var(--color, rgba(46, 46, 120, 0.8)) 100%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="1"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="1"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="1"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2780,7 +2852,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 99%, var(--color, rgba(46, 46, 120, 0.8)) 99%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="2"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="2"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="2"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2790,7 +2862,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 98%, var(--color, rgba(46, 46, 120, 0.8)) 98%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="3"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="3"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="3"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2800,7 +2872,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 97%, var(--color, rgba(46, 46, 120, 0.8)) 97%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="4"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="4"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="4"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2810,7 +2882,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 96%, var(--color, rgba(46, 46, 120, 0.8)) 96%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="5"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="5"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="5"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2820,7 +2892,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 95%, var(--color, rgba(46, 46, 120, 0.8)) 95%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="6"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="6"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="6"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2830,7 +2902,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 94%, var(--color, rgba(46, 46, 120, 0.8)) 94%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="7"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="7"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="7"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2840,7 +2912,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 93%, var(--color, rgba(46, 46, 120, 0.8)) 93%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="8"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="8"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="8"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2850,7 +2922,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 92%, var(--color, rgba(46, 46, 120, 0.8)) 92%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="9"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="9"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="9"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2860,7 +2932,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 91%, var(--color, rgba(46, 46, 120, 0.8)) 91%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="10"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="10"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="10"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2870,7 +2942,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 90%, var(--color, rgba(46, 46, 120, 0.8)) 90%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="11"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="11"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="11"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2880,7 +2952,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 89%, var(--color, rgba(46, 46, 120, 0.8)) 89%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="12"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="12"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="12"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2890,7 +2962,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 88%, var(--color, rgba(46, 46, 120, 0.8)) 88%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="13"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="13"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="13"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2900,7 +2972,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 87%, var(--color, rgba(46, 46, 120, 0.8)) 87%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="14"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="14"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="14"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2910,7 +2982,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 86%, var(--color, rgba(46, 46, 120, 0.8)) 86%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="15"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="15"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="15"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2920,7 +2992,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 85%, var(--color, rgba(46, 46, 120, 0.8)) 85%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="16"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="16"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="16"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2930,7 +3002,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 84%, var(--color, rgba(46, 46, 120, 0.8)) 84%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="17"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="17"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="17"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2940,7 +3012,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 83%, var(--color, rgba(46, 46, 120, 0.8)) 83%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="18"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="18"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="18"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2950,7 +3022,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 82%, var(--color, rgba(46, 46, 120, 0.8)) 82%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="19"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="19"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="19"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2960,7 +3032,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 81%, var(--color, rgba(46, 46, 120, 0.8)) 81%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="20"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="20"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="20"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2970,7 +3042,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 80%, var(--color, rgba(46, 46, 120, 0.8)) 80%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="21"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="21"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="21"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2980,7 +3052,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 79%, var(--color, rgba(46, 46, 120, 0.8)) 79%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="22"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="22"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="22"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2990,7 +3062,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 78%, var(--color, rgba(46, 46, 120, 0.8)) 78%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="23"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="23"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="23"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3000,7 +3072,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 77%, var(--color, rgba(46, 46, 120, 0.8)) 77%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="24"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="24"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="24"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3010,7 +3082,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 76%, var(--color, rgba(46, 46, 120, 0.8)) 76%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="25"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="25"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="25"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3020,7 +3092,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 75%, var(--color, rgba(46, 46, 120, 0.8)) 75%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="26"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="26"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="26"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3030,7 +3102,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 74%, var(--color, rgba(46, 46, 120, 0.8)) 74%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="27"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="27"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="27"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3040,7 +3112,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 73%, var(--color, rgba(46, 46, 120, 0.8)) 73%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="28"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="28"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="28"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3050,7 +3122,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 72%, var(--color, rgba(46, 46, 120, 0.8)) 72%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="29"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="29"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="29"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3060,7 +3132,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 71%, var(--color, rgba(46, 46, 120, 0.8)) 71%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="30"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="30"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="30"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3070,7 +3142,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 70%, var(--color, rgba(46, 46, 120, 0.8)) 70%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="31"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="31"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="31"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3080,7 +3152,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 69%, var(--color, rgba(46, 46, 120, 0.8)) 69%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="32"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="32"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="32"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3090,7 +3162,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 68%, var(--color, rgba(46, 46, 120, 0.8)) 68%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="33"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="33"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="33"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3100,7 +3172,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 67%, var(--color, rgba(46, 46, 120, 0.8)) 67%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="34"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="34"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="34"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3110,7 +3182,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 66%, var(--color, rgba(46, 46, 120, 0.8)) 66%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="35"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="35"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="35"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3120,7 +3192,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 65%, var(--color, rgba(46, 46, 120, 0.8)) 65%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="36"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="36"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="36"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3130,7 +3202,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 64%, var(--color, rgba(46, 46, 120, 0.8)) 64%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="37"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="37"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="37"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3140,7 +3212,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 63%, var(--color, rgba(46, 46, 120, 0.8)) 63%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="38"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="38"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="38"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3150,7 +3222,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 62%, var(--color, rgba(46, 46, 120, 0.8)) 62%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="39"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="39"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="39"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3160,7 +3232,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 61%, var(--color, rgba(46, 46, 120, 0.8)) 61%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="40"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="40"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="40"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3170,7 +3242,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 60%, var(--color, rgba(46, 46, 120, 0.8)) 60%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="41"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="41"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="41"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3180,7 +3252,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 59%, var(--color, rgba(46, 46, 120, 0.8)) 59%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="42"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="42"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="42"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3190,7 +3262,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 58%, var(--color, rgba(46, 46, 120, 0.8)) 58%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="43"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="43"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="43"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3200,7 +3272,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 57%, var(--color, rgba(46, 46, 120, 0.8)) 57%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="44"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="44"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="44"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3210,7 +3282,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 56%, var(--color, rgba(46, 46, 120, 0.8)) 56%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="45"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="45"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="45"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3220,7 +3292,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 55%, var(--color, rgba(46, 46, 120, 0.8)) 55%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="46"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="46"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="46"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3230,7 +3302,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 54%, var(--color, rgba(46, 46, 120, 0.8)) 54%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="47"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="47"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="47"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3240,7 +3312,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 53%, var(--color, rgba(46, 46, 120, 0.8)) 53%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="48"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="48"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="48"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3250,7 +3322,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 52%, var(--color, rgba(46, 46, 120, 0.8)) 52%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="49"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="49"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="49"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3260,7 +3332,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 51%, var(--color, rgba(46, 46, 120, 0.8)) 51%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="50"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="50"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="50"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3270,7 +3342,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 50%, var(--color, rgba(46, 46, 120, 0.8)) 50%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="51"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="51"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="51"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3280,7 +3352,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 49%, var(--color, rgba(46, 46, 120, 0.8)) 49%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="52"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="52"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="52"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3290,7 +3362,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 48%, var(--color, rgba(46, 46, 120, 0.8)) 48%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="53"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="53"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="53"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3300,7 +3372,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 47%, var(--color, rgba(46, 46, 120, 0.8)) 47%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="54"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="54"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="54"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3310,7 +3382,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 46%, var(--color, rgba(46, 46, 120, 0.8)) 46%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="55"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="55"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="55"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3320,7 +3392,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 45%, var(--color, rgba(46, 46, 120, 0.8)) 45%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="56"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="56"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="56"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3330,7 +3402,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 44%, var(--color, rgba(46, 46, 120, 0.8)) 44%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="57"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="57"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="57"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3340,7 +3412,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 43%, var(--color, rgba(46, 46, 120, 0.8)) 43%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="58"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="58"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="58"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3350,7 +3422,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 42%, var(--color, rgba(46, 46, 120, 0.8)) 42%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="59"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="59"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="59"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3360,7 +3432,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 41%, var(--color, rgba(46, 46, 120, 0.8)) 41%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="60"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="60"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="60"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3370,7 +3442,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 40%, var(--color, rgba(46, 46, 120, 0.8)) 40%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="61"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="61"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="61"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3380,7 +3452,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 39%, var(--color, rgba(46, 46, 120, 0.8)) 39%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="62"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="62"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="62"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3390,7 +3462,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 38%, var(--color, rgba(46, 46, 120, 0.8)) 38%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="63"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="63"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="63"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3400,7 +3472,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 37%, var(--color, rgba(46, 46, 120, 0.8)) 37%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="64"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="64"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="64"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3410,7 +3482,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 36%, var(--color, rgba(46, 46, 120, 0.8)) 36%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="65"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="65"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="65"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3420,7 +3492,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 35%, var(--color, rgba(46, 46, 120, 0.8)) 35%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="66"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="66"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="66"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3430,7 +3502,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 34%, var(--color, rgba(46, 46, 120, 0.8)) 34%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="67"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="67"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="67"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3440,7 +3512,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 33%, var(--color, rgba(46, 46, 120, 0.8)) 33%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="68"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="68"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="68"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3450,7 +3522,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 32%, var(--color, rgba(46, 46, 120, 0.8)) 32%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="69"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="69"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="69"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3460,7 +3532,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 31%, var(--color, rgba(46, 46, 120, 0.8)) 31%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="70"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="70"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="70"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3470,7 +3542,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 30%, var(--color, rgba(46, 46, 120, 0.8)) 30%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="71"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="71"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="71"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3480,7 +3552,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 29%, var(--color, rgba(46, 46, 120, 0.8)) 29%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="72"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="72"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="72"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3490,7 +3562,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 28%, var(--color, rgba(46, 46, 120, 0.8)) 28%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="73"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="73"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="73"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3500,7 +3572,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 27%, var(--color, rgba(46, 46, 120, 0.8)) 27%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="74"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="74"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="74"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3510,7 +3582,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 26%, var(--color, rgba(46, 46, 120, 0.8)) 26%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="75"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="75"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="75"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3520,7 +3592,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 25%, var(--color, rgba(46, 46, 120, 0.8)) 25%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="76"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="76"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="76"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3530,7 +3602,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 24%, var(--color, rgba(46, 46, 120, 0.8)) 24%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="77"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="77"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="77"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3540,7 +3612,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 23%, var(--color, rgba(46, 46, 120, 0.8)) 23%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="78"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="78"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="78"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3550,7 +3622,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 22%, var(--color, rgba(46, 46, 120, 0.8)) 22%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="79"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="79"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="79"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3560,7 +3632,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 21%, var(--color, rgba(46, 46, 120, 0.8)) 21%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="80"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="80"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="80"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3570,7 +3642,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 20%, var(--color, rgba(46, 46, 120, 0.8)) 20%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="81"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="81"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="81"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3580,7 +3652,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 19%, var(--color, rgba(46, 46, 120, 0.8)) 19%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="82"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="82"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="82"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3590,7 +3662,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 18%, var(--color, rgba(46, 46, 120, 0.8)) 18%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="83"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="83"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="83"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3600,7 +3672,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 17%, var(--color, rgba(46, 46, 120, 0.8)) 17%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="84"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="84"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="84"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3610,7 +3682,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 16%, var(--color, rgba(46, 46, 120, 0.8)) 16%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="85"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="85"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="85"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3620,7 +3692,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 15%, var(--color, rgba(46, 46, 120, 0.8)) 15%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="86"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="86"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="86"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3630,7 +3702,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 14%, var(--color, rgba(46, 46, 120, 0.8)) 14%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="87"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="87"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="87"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3640,7 +3712,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 13%, var(--color, rgba(46, 46, 120, 0.8)) 13%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="88"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="88"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="88"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3650,7 +3722,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 12%, var(--color, rgba(46, 46, 120, 0.8)) 12%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="89"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="89"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="89"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3660,7 +3732,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 11%, var(--color, rgba(46, 46, 120, 0.8)) 11%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="90"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="90"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="90"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3670,7 +3742,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 10%, var(--color, rgba(46, 46, 120, 0.8)) 10%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="91"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="91"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="91"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3680,7 +3752,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 9%, var(--color, rgba(46, 46, 120, 0.8)) 9%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="92"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="92"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="92"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3690,7 +3762,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 8%, var(--color, rgba(46, 46, 120, 0.8)) 8%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="93"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="93"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="93"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3700,7 +3772,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 7%, var(--color, rgba(46, 46, 120, 0.8)) 7%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="94"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="94"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="94"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3710,7 +3782,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 6%, var(--color, rgba(46, 46, 120, 0.8)) 6%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="95"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="95"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="95"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3720,7 +3792,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 5%, var(--color, rgba(46, 46, 120, 0.8)) 5%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="96"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="96"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="96"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3730,7 +3802,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 4%, var(--color, rgba(46, 46, 120, 0.8)) 4%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="97"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="97"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="97"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3740,7 +3812,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 3%, var(--color, rgba(46, 46, 120, 0.8)) 3%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="98"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="98"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="98"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3750,7 +3822,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 2%, var(--color, rgba(46, 46, 120, 0.8)) 2%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="99"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="99"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="99"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3760,7 +3832,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 1%, var(--color, rgba(46, 46, 120, 0.8)) 1%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="100"]::after {
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="100"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="100"]::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3770,7 +3842,7 @@ h4 {
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 0%, var(--color, rgba(46, 46, 120, 0.8)) 0%);
 }
-.circle-progress .circle-progress-container .circle-progress-body .progress-label {
+.circle-progress .circle-progress-container .circle-progress-body .progress-label, .badge-control .circle-progress-container .circle-progress-body .progress-label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3784,7 +3856,7 @@ h4 {
   font-size: 16px;
   font-weight: 500;
 }
-.circle-progress.disabled .circle-progress-body::after {
+.circle-progress.disabled .circle-progress-body::after, .disabled.badge-control .circle-progress-body::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -3801,6 +3873,16 @@ h4 {
   border-radius: 50%;
 }
 
+.badge-control .circle-progress-container {
+  border: 5px solid transparent;
+}
+.badge-control .circle-progress-container .circle-progress-body {
+  border: none;
+}
+.badge-control:focus .circle-progress-container {
+  border: 5px solid #2C2A71;
+}
+
 .simple-popover {
   border-radius: 12px;
   opacity: 0.9;
@@ -3815,6 +3897,10 @@ h4 {
   margin-top: 0.375rem;
   margin-right: 0.375rem;
   font-size: 16px;
+}
+
+.simple-popover-content {
+  display: none;
 }
 
 .article-thumbnail .unlock-instruction {

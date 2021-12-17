@@ -322,14 +322,26 @@ $(function() {
 
 $(function() {
     /**
-     * Initializes the unlock popovers on chose lessons page
+     * Initializes the unlock popovers on chose lessons page and badges
      */
     var popovers = document.querySelectorAll('.show-simple-popover');
     popovers.forEach(function(elem) {
-        new bootstrap.Popover(elem, {
+        const htmlPopoverContent = elem.querySelector('.simple-popover-content');
+
+        const options = {
             trigger: 'focus',
-            template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close"></span></div><div class="popover-body"></div></div>`
-        });
+            template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close"></span></div><div class="popover-body"></div></div>`,
+        }
+        
+        if (htmlPopoverContent) {
+            const contentHtml = htmlPopoverContent.innerHTML;
+            htmlPopoverContent.remove();
+
+            options['html'] = true;
+            options['content'] = contentHtml;
+        }
+
+        new bootstrap.Popover(elem, options);
     });
 });
 

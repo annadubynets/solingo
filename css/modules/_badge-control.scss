@@ -1,0 +1,17 @@
+.badge-control {
+    @extend .circle-progress;
+
+    .circle-progress-container {
+        border: 5px solid transparent;
+
+        .circle-progress-body {
+            border: none;
+        }
+    }
+
+    &:focus {
+        .circle-progress-container {
+            border: 5px solid #2C2A71;
+        }
+    }
+}
