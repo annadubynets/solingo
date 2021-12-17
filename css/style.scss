@@ -621,3 +621,54 @@
         }
     }
 }
+
+.footer {
+    .list-items {
+        .list-item {
+            padding: 0 16px;
+            .list-link {
+                font-size: 14px;
+            }
+        }
+    }
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+.card-img {
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
+}
+
+@media (min-width: 992px) {
+    .card-img {
+        object-fit: cover;
+        object-position: top;
+        height: 65vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        .read-more-list {
+            li {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .footer {
+        .list-items {
+            .list-item {
+                padding: 0 30px;
+                .list-link {
+                    font-size: 25px;
+                }
+            }
+        }
+        .copyright {
+            font-size: 22px;
+        }
+    }
+}

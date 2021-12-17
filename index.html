@@ -12,8 +12,15 @@
 
 <body class="landing">
     <header>
-        <nav class="navbar fixed-top position-absolute d-lg-none">
-            <a class="navbar-brand mx-auto" href="index.html"><img src="images/logo.svg" class="navbar-brand-img" alt="Solingo"></a>
+        <nav class="navbar fixed-top position-absolute d-lg-none d-block">
+            <div class="container">
+                <a class="navbar-brand mx-auto" href="index.html"><img src="images/logo.svg" class="navbar-brand-img" alt="Solingo"></a>
+            </div>
+        </nav>
+        <nav class="navbar fixed-top position-absolute text-start d-lg-block d-none">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/footer-logo-desktop.svg" class="navbar-brand-img" alt="Solingo"></a>
+            </div>
         </nav>
     </header>
     <main>
@@ -38,12 +45,14 @@
         <section class="mb-lg-300px">
             <div class="container">
                 <div class="row justify-content-center pt-lg-5 mt-lg-5 mb-4">
-                    <div class="col-lg-8 col-xl-9 col-xxl-8 col-12 px-4">
+                    <div class="col-lg-8 col-xl-9 col-xxl-10 col-12 px-4">
                         <div class="card">
                             <p class="font-size-12px font-size-xl-30px text-center pb-3">
                                 Learn in a fun and simple way 6 different languages: <span class="text-pink d-inline-block">Spanish, Italian, French, Chinese, Japanese, German</span>
                             </p>
-                            <img src="images/languages.svg" alt="languages" class="w-100">
+                            <div class="text-center">
+                                <img src="images/languages.svg" alt="languages" class="w-50">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,28 +81,49 @@
                         </div>
                     </div>
                 </div>
+                <div class="row justify-content-center d-lg-block d-none">
+                    <div class="col-lg-8 col-xl-9 col-xxl-10 col-12 px-4 mx-auto">
+                        <div class="card p-5">
+                            <ul class="read-more-list px-4">
+                                <li>Start learning languages now: <span>ads-free</span> and <span>without in-app purchases!</span></li>
+                                <li>Each language has more than <span>20 levels</span> and each level has <span>12 lessons</span></li>
+                                <li>The cost will be added to your mobile bill.
+                                </li>
+                                <li><span>Get full access to learn in 6</span> different languages and save your progress for only XX / daily (VAT Incl.)
+                                </li>
+                                <li>If you wish to unsubscribe you may do so at any time from the “<a href="account.html" class="text-pink text-decoration-underline">Account</a>” section.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer class="footer d-lg-none d-block">
+        <footer class="footer">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <ul class="mt-5 mb-4">
-                            <li class="d-inline px-2">
-                                <a href="contact-us.html" class="font-size-14 text-primary text-decoration-underline">Contact us</a>
+                        <ul class="list-items mt-5 mb-4">
+                            <li class="list-item d-inline">
+                                <a href="contact-us.html" class="list-link text-primary text-decoration-underline">Contact us</a>
                             </li>
-                            <li class="d-inline px-2">
-                                <a href="faq.html" class="font-size-14 text-primary text-decoration-underline">FAQ</a>
+                            <li class="list-item d-inline">
+                                <a href="faq.html" class="list-link text-primary text-decoration-underline">FAQ</a>
                             </li>
-                            <li class="d-inline px-2">
-                                <a href="terms.html" class="font-size-14 text-primary text-decoration-underline">T&C</a>
+                            <li class="list-item d-inline">
+                                <a href="terms.html" class="list-link text-primary text-decoration-underline">T&C</a>
                             </li>
                         </ul>
 
-                        <img src="images/footer-logo.svg" alt="logo">
+                        <div class="d-lg-none d-block">
+                            <img src="images/footer-logo.svg" alt="logo">
+                        </div>
+                        <div class="d-lg-block d-none">
+                            <img src="images/footer-logo-desktop.svg" alt="logo">
+                        </div>
 
-                        <p class="font-size-12px py-1">©Solingo 2021 All rights reserved</p>
+                        <p class="copyright py-1">©Solingo 2021 All rights reserved</p>
                     </div>
                 </div>
             </div>
