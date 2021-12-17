@@ -125,18 +125,21 @@
 .read-more-list {
     list-style-type: none;
     li {
+        position: relative;
         font-size: 0.75rem;
         font-weight: 500;
         color: $midnightblue;
         text-align: start;
         margin-bottom: 0.5rem;
         &::before {
+            position: absolute;
             font-family: 'icomoon';
             content: "\e909";
             color: $hotpink;
-            font-size: 0.25rem;
-            margin: 0 0.3rem 0 -1rem;
+            font-size: 4px;
             vertical-align: middle;
+            top: 6px;
+            left: -16px;
         }
         span,
         a {
@@ -656,6 +659,11 @@
         .read-more-list {
             li {
                 font-size: 1.5rem;
+                &::before {
+                    font-size: 6px;
+                    top: 12px;
+                    left: -22px;
+                }
             }
         }
     }

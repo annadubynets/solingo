@@ -4091,6 +4091,7 @@ h4 {
   list-style-type: none;
 }
 .read-more-list li {
+  position: relative;
   font-size: 0.75rem;
   font-weight: 500;
   color: #2C2A71;
@@ -4098,12 +4099,14 @@ h4 {
   margin-bottom: 0.5rem;
 }
 .read-more-list li::before {
+  position: absolute;
   font-family: "icomoon";
   content: "";
   color: #FF4F86;
-  font-size: 0.25rem;
-  margin: 0 0.3rem 0 -1rem;
+  font-size: 4px;
   vertical-align: middle;
+  top: 6px;
+  left: -16px;
 }
 .read-more-list li span,
 .read-more-list li a {
@@ -5212,6 +5215,11 @@ h4 {
 @media (min-width: 1200px) {
   .card .read-more-list li {
     font-size: 1.5rem;
+  }
+  .card .read-more-list li::before {
+    font-size: 6px;
+    top: 12px;
+    left: -22px;
   }
 
   .footer .list-items .list-item {
