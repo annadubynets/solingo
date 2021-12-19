@@ -545,11 +545,11 @@ h4 {
 }
 .modal-tutorial .modal-dialog {
   height: 100%;
-  padding-top: 42px;
+  padding-top: 50px;
 }
 @media (min-width: 992px) {
   .modal-tutorial .modal-dialog {
-    padding-top: 50px;
+    padding-top: 55px;
   }
 }
 .modal-tutorial .modal-dialog.media-dialog-body {
