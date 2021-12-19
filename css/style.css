@@ -577,14 +577,14 @@ h4 {
   border: none;
 }
 .modal-tutorial.tutorial-img {
-  background: url("/images/welcome-bg.png");
+  background: url("../images/welcome-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-width: 414px) {
   .modal-tutorial.tutorial-img {
-    background: url("/images/welcome-bg-desktop.png");
+    background: url("../images/welcome-bg-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -599,7 +599,7 @@ h4 {
   display: block;
   width: 73px;
   height: 73px;
-  background-image: url("/images/tutorial-hand.svg");
+  background-image: url("../images/tutorial-hand.svg");
   background-size: cover;
 }
 .modal-tutorial .tutorial-background {
