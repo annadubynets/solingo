@@ -1,4 +1,25 @@
 .modal-tutorial {
+    .close-btn-container {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+    .modal-dialog {
+        height: 100%;
+        padding-top: 42px;
+        @media (min-width: 992px) {
+            padding-top: 50px;
+        }
+
+        &.media-dialog-body {
+            max-width: initial;
+
+            .modal-content {
+                max-width: 500px;
+                margin: auto;
+            }
+        }
+    }
     .tutorial-header {
         font-size: 26px;
         color: $white;
@@ -24,6 +45,178 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+        }
+    }
+
+    .tutorial-hand-pointer {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 73px;
+            height: 73px;
+
+            background-image: url('/images/tutorial-hand.svg');
+            background-size: cover;
+        }
+    }
+
+   
+
+    .tutorial-background {
+        @include absolute_fit_parent();
+        @extend .main-blue;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        z-index: -1;
+
+        .slide-header {
+            background: linear-gradient(3.59deg, #1E1B3B 32.08%, #2D2E83 143.69%) !important;
+            min-height: 56px;
+        }
+
+        .footer-navbar {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .slide-overlay {
+            background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.95) 32.08%, rgba(45, 46, 131, 0.95) 143.69%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .slide-content {
+            margin-bottom: auto;
+            display: none;
+            padding-top: 20px;
+            max-height: calc(100vh - 63px - 56px); // minus header and footer
+            
+            overflow-y: hidden;
+
+            &.active {
+                display: block;
+                opacity: 1;
+            }
+        }
+
+
+        .choose-language-bg {
+            padding-top: 80px;
+
+            .tutorial-hand-pointer {
+                &::after {
+                    top: 30px;
+                    right: -66px;
+                }
+            }
+        }
+
+        .choose-level-bg {
+            .tutorial-hand-pointer {
+                &::after {
+                    bottom: -60px;
+                    left: 50%;
+                }
+            }
+        }
+
+        .choose-lesson-bg {
+
+            .tutorial-hand-pointer {
+                &::after {
+                    top: 30px;
+                    right: -66px;
+                }
+            }
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -50px;
+    }
+
+    .carousel-inner {
+        min-height: 488px;
+
+        @media (max-width: 320px) {
+            min-height: 460px;
+        }
+
+        @media (min-width: 1200px) {
+            min-height: 570px;
+        }
+
+        .carousel-item {
+            @include absolute_fit_parent();
+
+            &.chose-global-language-slide {
+                .tutorial-hand-pointer {
+                    &::after {
+                        top: 25%;
+                        right: -73px;
+                    }
+                }
+            }
+
+            @media (min-width: 768px) {
+                .language-picker {
+                    transform: scale(2) translateY(46px);
+                }
+            }
+
+            &.listening-exercise-slide {
+                .card.disabled {
+                    opacity: 0.15;
+                }
+
+                .moving-card {
+                    top: 38px;
+                    left: 10%;
+                }
+
+                .tutorial-hand-pointer {
+                    &::after {
+                        top: 25%;
+                        right: -73px;
+                        @media (max-width: 340px) {
+                            right: -68px;
+                        }
+                    }
+                }
+            }
+
+            &.writing-exercise-slide {
+                .tutorial-hand-pointer {
+                    &::after {
+                        top: 20%;
+                        right: -80px;
+                    }
+                }
+
+                .form-control.unstyled-input {
+                    border-bottom: none;
+                    padding: 8px 0 8px 0;
+                }
+
+                @media (max-width: 320px) {
+                    .mb-47px {
+                        margin-bottom: 30px;
+                    }
+
+                    .form-control.unstyled-input {
+                        border-bottom: none;
+                        padding: 4px 0 4px 0;
+                    }
+                }
+            }
         }
     }
 }

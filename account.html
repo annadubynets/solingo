@@ -162,8 +162,8 @@
                 <span class="icon-close font-size-30px text-white"></span>
             </button>
         </div>
-        <div class="modal-dialog px-4">
-            <div class="modal-content text-center pt-5 p-4">
+        <div class="modal-dialog py-0 px-4">
+            <div class="modal-content text-center pt-2 p-4">
                 <div class="text-center pb-3">
                     <img src="images/intro-logo.svg" alt="Logo" class="w-50">
                 </div>
@@ -173,7 +173,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-12 d-grid text-center">
-                        <button type="button" class="btn btn-info" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#navigation">Start Tutorial</button>
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-tutorial">Start Tutorial</button>
                     </div>
                 </div>
             </div>
@@ -181,14 +181,342 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal modal-tutorial fade" id="navigation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="navigationLabel" aria-hidden="true">
-        <div class="text-end">
-            <button type="button" class="close pe-3 pt-2 mb-0" data-bs-dismiss="modal" aria-label="Close">
+    <div class="modal modal-tutorial bg-white fade" id="modal-tutorial" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="navigationLabel" aria-hidden="true">
+        <div class="close-btn-container text-end">
+            <button type="button" class="close pe-3 pt-3 mb-0" data-bs-dismiss="modal" aria-label="Close">
                 <span class="icon-close font-size-30px text-white"></span>
             </button>
         </div>
 
-        <div class="modal-dialog progress-dialog my-0">
+        <div class="modal-dialog media-dialog-body m-0">
+            <div class="tutorial-background">
+                <div class="w-100 slide-header">
+                    <div class="container h-100 align-items-center justify-content-between d-flex">
+                        <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+    
+                        <button class="btn dropdown-toggle text-dark" type="button">
+                            <span><img src="images/united-kingdom.svg" alt="United Kingdom"></span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="container slide-content">
+                    
+                </div>
+    
+                <div class="container slide-content choose-language-bg">
+                    <div class="row justify-content-center px-lg-3 px-4 position-relative">
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4 position-relative z-index-1">
+                            <a class="circle-progress transparent-border tutorial-hand-pointer">
+                                <div class="circle-progress-container">
+                                    <div class="circle-progress-body">
+                                        <img src="images/english.png" alt="English" class="progress-background-image">
+                                        <div class="progress-value" data-value="80"></div>
+                                        <div class="progress-label">
+                                            <span>English</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="circle-progress">
+                                <div class="circle-progress-container">
+                                    <div class="circle-progress-body">
+                                        <img src="images/italian.png" alt="Italian" class="progress-background-image">
+                                        <div class="progress-value" data-value="49"></div>
+                                        <div class="progress-label">
+                                            <span>Italian</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="circle-progress">
+                                <div class="circle-progress-container">
+                                    <div class="circle-progress-body">
+                                        <img src="images/german.png" alt="German" class="progress-background-image">
+                                        <div class="progress-value" data-value="20"></div>
+                                        <div class="progress-label">
+                                            <span>German</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="circle-progress">
+                                <div class="circle-progress-container">
+                                    <div class="circle-progress-body">
+                                        <img src="images/french.png" alt="French" class="progress-background-image">
+                                        <div class="progress-value" data-value="40"></div>
+                                        <div class="progress-label">
+                                            <span>French</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="circle-progress">
+                                <div class="circle-progress-container">
+                                    <div class="circle-progress-body">
+                                        <img src="images/chinese.png" alt="Chinese" class="progress-background-image">
+                                        <div class="progress-value" data-value="50"></div>
+                                        <div class="progress-label">
+                                            <span>Chinese</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="circle-progress">
+                                <div class="circle-progress-container">
+                                    <div class="circle-progress-body">
+                                        <img src="images/spanish.png" alt="Spanish" class="progress-background-image">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span>Spanish</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="circle-progress">
+                                <div class="circle-progress-container">
+                                    <div class="circle-progress-body">
+                                        <img src="images/japanese.png" alt="Japanese" class="progress-background-image">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span>Japanese</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container slide-content choose-level-bg">
+                    <div class="row justify-content-center mb-4 mb-lg-5">
+                        <div class="col-md-10 col-lg-8 col-12 text-center position-relative">
+                            <div class="return-link">
+                                <a class="return-circle rounded-circle d-flex justify-content-center align-items-center">
+                                    <span class="icon-back font-size-14px"></span>
+                                </a>
+                            </div>
+                            <h2>Choose a level</h2>
+                            <p class="text-secondary font-size-13px">Choose what level suits you!</p>
+                        </div>
+                    </div>
+    
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-12">
+                            <div class="row">
+    
+                                <div class="col-md-6 col-12 text-center mb-lg-4 mb-0 pb-4 position-relative z-index-1">
+                                    <a class="choose-level-control tutorial-hand-pointer">
+                                        <img src="images/paris.png" alt="Paris" class="level-img">
+                                        <div class="level-label">
+                                            <h2 class="text-primary mb-0">Paris</h2>
+                                            <span class="text-secondary">Level 1</span>
+                                        </div>
+                                        <div class="language-flag">
+                                            <img src="images/french-flag.svg" alt="French" class="flag-style rounded-circle">
+                                        </div>
+                                    </a>
+                                </div>
+    
+                                <div class="col-md-6 col-12 text-center mb-lg-4 mb-0 pb-4">
+                                    <a class="choose-level-control disabled">
+                                        <img src="images/nizza.png" alt="Nizza" class="level-img">
+                                        <div class="level-label">
+                                            <h2 class="text-primary mb-0">Nizza</h2>
+                                            <span class="text-secondary">Level 2</span>
+                                        </div>
+                                        <div class="language-flag">
+                                            <img src="images/french-flag.svg" alt="French" class="flag-style rounded-circle">
+                                        </div>
+                                    </a>
+                                </div>
+    
+                                <div class="col-md-6 col-12 text-center mb-lg-4 mb-0 pb-4">
+                                    <a class="choose-level-control disabled">
+                                        <img src="images/lyon.png" alt="Lyon" class="level-img">
+                                        <div class="level-label">
+                                            <h2 class="text-primary mb-0">Lyon</h2>
+                                            <span class="text-secondary">Level 3</span>
+                                        </div>
+                                        <div class="language-flag">
+                                            <img src="images/french-flag.svg" alt="French" class="flag-style rounded-circle">
+                                        </div>
+                                    </a>
+                                </div>
+    
+                                <div class="col-md-6 col-12 text-center mb-lg-4 mb-0 pb-4">
+                                    <a class="choose-level-control disabled">
+                                        <img src="images/bordeaux.png" alt="Bordeaux" class="level-img">
+                                        <div class="level-label">
+                                            <h2 class="text-primary mb-0">Bordeaux</h2>
+                                            <span class="text-secondary">Level 4</span>
+                                        </div>
+                                        <div class="language-flag">
+                                            <img src="images/french-flag.svg" alt="French" class="flag-style rounded-circle">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container slide-content choose-lesson-bg">
+                    <div class="row justify-content-center position-relative">
+                        <div class="col-lg-7 col-12 text-center position-relative">
+                            <div class="return-link">
+                                <a class="return-circle rounded-circle d-flex justify-content-center align-items-center">
+                                    <span class="icon-back font-size-14px"></span>
+                                </a>
+                            </div>
+                            <h2>Choose a lesson
+                            </h2>
+                            <p class="text-secondary font-size-13px">Pick up from last time or revision!</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center px-lg-3 px-4 position-relative">
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4 position-relative z-index-1">
+                            <a class="choose-lesson-control transparent-border tutorial-hand-pointer">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">1</span>
+                                            <span class="icon-edit font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="choose-lesson-control disabled">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">2</span>
+                                            <span class="icon-listen font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="choose-lesson-control disabled">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">3</span>
+                                            <span class="icon-listen font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="choose-lesson-control disabled">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">4</span>
+                                            <span class="icon-listen font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="choose-lesson-control disabled">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">5</span>
+                                            <span class="icon-listen font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="choose-lesson-control disabled">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">6</span>
+                                            <span class="icon-listen font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="choose-lesson-control disabled">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">7</span>
+                                            <span class="icon-listen font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0 px-1 px-lg-2 pb-4">
+                            <a class="choose-lesson-control disabled">
+                                <div class="choose-lesson-control-container">
+                                    <div class="choose-lesson-body">
+                                        <div class="progress-value" data-value="0"></div>
+                                        <div class="progress-label">
+                                            <span class="">8</span>
+                                            <span class="icon-listen font-size-16px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container slide-content partice-listening">
+                    <span class="text-white">test 5</span>
+                </div>
+    
+                <div class="container slide-content practice-writing">
+                    <span class="text-white">test 6</span>
+                </div>
+    
+                <nav class="navbar footer-navbar navbar-light justify-content-around align-items-end d-flex">
+                    <a class="nav-link text-center"><span class="icon-user font-size-30px d-block"></span>Account</a>
+                    <a class="nav-link text-center"><span class="icon-layers font-size-30px d-block"></span>Learned</a>
+                    <a class="nav-link text-center active"><span class="icon-home font-size-30px d-block pb-1"></span>Home</a>
+                    <a class="nav-link text-center"><span class="icon-star font-size-30px d-block"></span>Articles</a>
+                    <a class="nav-link text-center"><span class="icon-badges font-size-30px d-block"></span>Badges</a>
+                </nav>
+    
+                <div class="slide-overlay">
+    
+                </div>
+            </div>
+            
+            
+            
             <div class="modal-content text-center">
                 <div id="tutorialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="false" data-bs-interval="false">
                     <div class="carousel-indicators">
@@ -200,124 +528,205 @@
                         <button type="button" data-bs-target="#tutorialCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
                     </div>
                     <div class="carousel-inner tutorial">
-                        <div class="carousel-item active">
-                            <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col-xl px-5">
-                                    <div class="d-flex">
-                                        <div class="number-circle">1</div>
-                                        <h2 class="tutorial-header text-start mb-5 ms-2">
-                                            Choose a language to <span class="text-pink">learn from</span>
-                                        </h2>
-                                    </div>
-
-                                    <div class="d-inline-block">
-                                        <div class="bg-light shadow rounded-2 py-1 px-3 mb-2">
-                                            <span><img src="images/united-kingdom.svg" alt="United Kingdom"></span>
-                                        </div>
-                                        <div class="bg-light shadow rounded-2 py-2 mb-5">
-                                            <ul>
-                                                <p class="font-size-10px text-center">Learn from</p>
-                                                <li class="px-3 bg-pink"><a class="text-start" href="#"><span><img src="images/french.svg" alt="French"></span></a></li>
-                                                <li class="px-3"><a class="text-start" href="#"><span><img src="images/german.svg" alt="German"></span></a></li>
-                                                <li class="px-3"><a class="text-start" href="#"><span><img src="images/saudi-arabia.svg" alt="Aaudi Arabia"></span></a></li>
-                                            </ul>
+                        <div class="carousel-item chose-global-language-slide active">
+                            <div class="container h-100">
+                                <div class="row h-100 justify-content-center flex-column">
+                                    <div class="col-12">
+                                        <div class="slide-title d-flex justify-content-lg-center">
+                                            <div class="number-circle me-2">1</div>
+                                            <h2 class="tutorial-header text-start mb-5 ms-2">
+                                                Choose a language to <span class="text-pink d-inline-block">learn from</span>
+                                            </h2>
                                         </div>
                                     </div>
-
-                                    <p class="tutorial-text text-start">First, select your language on the header.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col-md px-5">
-                                    <div class="d-flex">
-                                        <div class="number-circle">2</div>
-                                        <h2 class="mb-5 tutorial-header text-start ms-2">Choose a language <span class="text-pink">to learn</span></h2>
-                                    </div>
-                                    <p class="tutorial-text text-start pb-5">Select the language you want to learn.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-12 mb-3 tutorial-col-xl px-5">
-                                    <div class="d-flex">
-                                        <div class="number-circle">3</div>
-                                        <h2 class="mb-5 tutorial-header ms-2">Choose a level</h2>
-                                    </div>
-                                    <p class="tutorial-text text-start pb-5">Each level is a city and each lesson is part of your trip!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col-md px-5">
-                                    <div class="d-flex">
-                                        <div class="number-circle">4</div>
-                                        <h2 class="mb-5 tutorial-header ms-2">Choose a lesson</h2>
-                                    </div>
-                                    <p class="tutorial-text text-start pb-5">Some levels have writting lessons and some have listening exercises.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col-md px-5">
-                                    <div class="d-flex pb-4">
-                                        <div class="number-circle">5</div>
-                                        <h2 class="tutorial-header text-start ms-2">Practice your <span class="text-pink">listening</span></h2>
-                                    </div>
-
-                                    <div class="d-flex justify-content-center mb-4">
-                                        <div class="edit-circle-btn d-flex justify-content-center align-items-center">
-                                            <div class="circle-btn-container">
-                                                <span class="icon-edit text-pink font-size-14px"></span>
+                                    <div class="col-12">
+                                        <div class="d-inline-block language-picker tutorial-hand-pointer">
+                                            <div class="bg-light shadow rounded-2 py-1 px-3 mb-2">
+                                                <span><img src="images/united-kingdom.svg" alt="United Kingdom"></span>
+                                            </div>
+                                            <div class="bg-light shadow rounded-2 py-2 mb-5">
+                                                <ul>
+                                                    <p class="font-size-10px text-center">Learn from</p>
+                                                    <li class="px-3 bg-pink"><a class="text-start" href="#"><span><img src="images/french.svg" alt="French"></span></a></li>
+                                                    <li class="px-3"><a class="text-start" href="#"><span><img src="images/german.svg" alt="German"></span></a></li>
+                                                    <li class="px-3"><a class="text-start" href="#"><span><img src="images/saudi-arabia.svg" alt="Aaudi Arabia"></span></a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="tutorial-text pb-0">How do you say?</p>
-                                    <h3 class="text-white">I speak</h3>
+                                        
+                                    <div class="col-12 mt-auto mb-5">
+                                        <p class="tutorial-text text-start text-md-center mx-3">First, select your language on the header.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item tutorial-slide chose-language-slide">
+                            <div class="container h-100">
+                                <div class="row h-100 justify-content-center flex-column">
+                                    <div class="col-12">
+                                        <div class="slide-title d-flex justify-content-lg-center">
+                                            <div class="number-circle me-2">2</div>
+                                            <h2 class="mb-5 tutorial-header text-start ms-2">
+                                                Choose a language <span class="text-pink d-inline-block">to learn</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12"></div>
+
+                                    <div class="col-12 mt-auto mb-5">
+                                        <p class="tutorial-text text-start text-md-center mx-3">Select the language you want to learn.</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col-md px-5">
-                                    <div class="d-flex pb-4">
-                                        <div class="number-circle">6</div>
-                                        <h2 class="tutorial-header text-start ms-2">Practice your <span class="text-pink">wittring</span></h2>
+                            <div class="container h-100">
+                                <div class="row h-100 justify-content-center flex-column">
+                                    <div class="col-12">
+                                        <div class="slide-title d-flex justify-content-lg-center">
+                                            <div class="number-circle me-2">3</div>
+                                            <div class="d-block mb-5">
+                                                <h2 class="tutorial-header text-start ms-2">Choose a level</h2>
+                                                <span class="d-block font-size-13px text-white">Choose what level suits you!</span>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-center mb-4">
-                                        <div class="edit-circle-btn d-flex justify-content-center align-items-center">
-                                            <div class="circle-btn-container">
-                                                <span class="icon-listen text-pink font-size-14px"></span>
+
+                                    <div class="col-12"></div>
+
+                                    <div class="col-12 mt-auto mb-5">
+                                        <p class="tutorial-text text-start text-md-center mx-3">Each level is a city and each lesson is part of your trip!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container h-100">
+                                <div class="row h-100 justify-content-center flex-column">
+                                    <div class="col-12">
+                                        <div class="slide-title d-flex justify-content-lg-center">
+                                            <div class="number-circle me-2">4</div>
+                                            <h2 class="mb-4 tutorial-header text-start ms-2">Choose a lesson</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12"></div>
+
+                                    <div class="col-12 mt-auto mb-5">
+                                        <p class="tutorial-text text-start text-md-center mx-3">Some levels have writing lessons and some have listening exercises.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item listening-exercise-slide">
+                            <div class="container h-100">
+                                <div class="row h-100 justify-content-center">
+                                    <div class="col-12">
+                                        <div class="slide-title d-flex justify-content-lg-center">
+                                            <div class="number-circle me-2">5</div>
+                                            <h2 class="mb-4 tutorial-header text-start ms-2">Practice your <span class="text-pink">listening</span></h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-10">
+                                        <div class="d-flex justify-content-center mb-4">
+                                            <div class="edit-circle-btn d-flex justify-content-center align-items-center">
+                                                <div class="circle-btn-container">
+                                                    <span class="icon-edit text-pink font-size-14px"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="tutorial-text pb-0">How do you say?</p>
+                                        <h3 class="text-white">I speak</h3>
+
+                                        <div class="answer-words text-center mt-5 mb-56px position-relative">
+                                            <div class="card d-inline-block rounded-2 shadow p-0 bg-light mx-2">
+                                                <div class="card-body">
+                                                    <h4 class="text-pink mb-0">I</h4>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="card d-inline-block rounded-2 shadow p-0 bg-light mx-2 moving-card tutorial-hand-pointer">
+                                                <div class="card-body">
+                                                    <h4 class="text-pink mb-0">Speak</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="possible-words d-flex justify-content-between text-center mt-5 pt-5">
+                                            <div class="card d-inline-block rounded-2 shadow p-0 bg-light mx-2 me-auto mb-4">
+                                                <div class="card-body">
+                                                    <h4 class="mb-0">He</h4>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="card d-inline-block rounded-2 shadow p-0 bg-light mx-2 mb-4">
+                                                <div class="card-body">
+                                                    <h4 class="mb-0">Spoke</h4>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="card d-inline-block rounded-2 shadow p-0 bg-light mx-2 mb-4 disabled">
+                                                <div class="card-body">
+                                                    <h4 class="mb-0 text-muted">Speak</h4>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="tutorial-text pb-4">Writte what you hear</p>
 
-                                    <div class="d-flex justify-content-center mb-4">
-                                        <span class="listen-circle-btn">
-                                            <div class="circle-btn-container">
-                                                <div class="circle-btn-body">
-                                                    <span class="icon-listen text-white font-size-24px"></span>
-                                    </div>
+                                    <div class="col-12 mt-auto"></div>
                                 </div>
-                                </span>
                             </div>
+                        </div>
 
-                            <div class="card bg-light rounded shadow-lg mb-56px">
-                                <input type="text" class="form-control unstyled-input text-center" id="inputText" placeholder="I Speak" readonly>
-                            </div>
+                        <div class="carousel-item writing-exercise-slide">
+                            <div class="container h-100">
+                                <div class="row h-100 justify-content-center">
+                                    <div class="col-12">
+                                        <div class="slide-title d-flex justify-content-lg-center">
+                                            <div class="number-circle me-2">5</div>
+                                            <h2 class="mb-4 tutorial-header text-start ms-2">Practice your <span class="text-pink">writing</span></h2>
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <div class="edit-circle-btn d-flex justify-content-center align-items-center">
+                                                <div class="circle-btn-container">
+                                                    <span class="icon-listen text-pink font-size-14px"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="tutorial-text pb-4">Write what you hear</p>
+    
+                                        <div class="d-flex justify-content-center mb-4">
+                                            <span class="listen-circle-btn">
+                                                <div class="circle-btn-container">
+                                                    <div class="circle-btn-body">
+                                                        <span class="icon-listen text-white font-size-24px tutorial-hand-pointer"></span>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
 
-                            <div class="text-center">
-                                <button type="button" class="btn btn-info">Continue</button>
+                                    <div class="col-12">
+                                        <div class="card bg-light rounded shadow-lg mb-47px">
+                                            <input type="text" class="form-control unstyled-input text-center" id="inputText" placeholder="I Speak" readonly>
+                                        </div>
+            
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-info">Continue</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-auto"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

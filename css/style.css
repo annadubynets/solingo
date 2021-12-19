@@ -508,6 +508,10 @@ h4 {
   min-height: 60vh;
 }
 
+.z-index-1 {
+  z-index: 1;
+}
+
 @media (min-width: 992px) {
   .mb-lg-300px {
     margin-bottom: 300px;
@@ -533,6 +537,27 @@ h4 {
   .mb-47px {
     margin-bottom: 100px;
   }
+}
+.modal-tutorial .close-btn-container {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.modal-tutorial .modal-dialog {
+  height: 100%;
+  padding-top: 42px;
+}
+@media (min-width: 992px) {
+  .modal-tutorial .modal-dialog {
+    padding-top: 50px;
+  }
+}
+.modal-tutorial .modal-dialog.media-dialog-body {
+  max-width: initial;
+}
+.modal-tutorial .modal-dialog.media-dialog-body .modal-content {
+  max-width: 500px;
+  margin: auto;
 }
 .modal-tutorial .tutorial-header {
   font-size: 26px;
@@ -563,6 +588,138 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+.modal-tutorial .tutorial-hand-pointer {
+  position: relative;
+}
+.modal-tutorial .tutorial-hand-pointer::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 73px;
+  height: 73px;
+  background-image: url("/images/tutorial-hand.svg");
+  background-size: cover;
+}
+.modal-tutorial .tutorial-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+}
+.modal-tutorial .tutorial-background .slide-header {
+  background: linear-gradient(3.59deg, #1E1B3B 32.08%, #2D2E83 143.69%) !important;
+  min-height: 56px;
+}
+.modal-tutorial .tutorial-background .footer-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-tutorial .tutorial-background .slide-overlay {
+  background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.95) 32.08%, rgba(45, 46, 131, 0.95) 143.69%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-tutorial .tutorial-background .slide-content {
+  margin-bottom: auto;
+  display: none;
+  padding-top: 20px;
+  max-height: calc(100vh - 63px - 56px);
+  overflow-y: hidden;
+}
+.modal-tutorial .tutorial-background .slide-content.active {
+  display: block;
+  opacity: 1;
+}
+.modal-tutorial .tutorial-background .choose-language-bg {
+  padding-top: 80px;
+}
+.modal-tutorial .tutorial-background .choose-language-bg .tutorial-hand-pointer::after {
+  top: 30px;
+  right: -66px;
+}
+.modal-tutorial .tutorial-background .choose-level-bg .tutorial-hand-pointer::after {
+  bottom: -60px;
+  left: 50%;
+}
+.modal-tutorial .tutorial-background .choose-lesson-bg .tutorial-hand-pointer::after {
+  top: 30px;
+  right: -66px;
+}
+.modal-tutorial .carousel-indicators {
+  bottom: -50px;
+}
+.modal-tutorial .carousel-inner {
+  min-height: 488px;
+}
+@media (max-width: 320px) {
+  .modal-tutorial .carousel-inner {
+    min-height: 460px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-tutorial .carousel-inner {
+    min-height: 570px;
+  }
+}
+.modal-tutorial .carousel-inner .carousel-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.modal-tutorial .carousel-inner .carousel-item.chose-global-language-slide .tutorial-hand-pointer::after {
+  top: 25%;
+  right: -73px;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .carousel-inner .carousel-item .language-picker {
+    transform: scale(2) translateY(46px);
+  }
+}
+.modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .card.disabled {
+  opacity: 0.15;
+}
+.modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .moving-card {
+  top: 38px;
+  left: 10%;
+}
+.modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .tutorial-hand-pointer::after {
+  top: 25%;
+  right: -73px;
+}
+@media (max-width: 340px) {
+  .modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .tutorial-hand-pointer::after {
+    right: -68px;
+  }
+}
+.modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .tutorial-hand-pointer::after {
+  top: 20%;
+  right: -80px;
+}
+.modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .form-control.unstyled-input {
+  border-bottom: none;
+  padding: 8px 0 8px 0;
+}
+@media (max-width: 320px) {
+  .modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .mb-47px {
+    margin-bottom: 30px;
+  }
+  .modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .form-control.unstyled-input {
+    border-bottom: none;
+    padding: 4px 0 4px 0;
   }
 }
 
@@ -4165,7 +4322,7 @@ h4 {
   }
 }
 
-.main-blue {
+.main-blue, .modal-tutorial .tutorial-background {
   background-image: url("../images/decor.svg");
   background-repeat: no-repeat;
   background-position: bottom;

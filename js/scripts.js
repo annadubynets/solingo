@@ -274,29 +274,38 @@ $(function() {
 })
 
 /**
- * Tutorial carousel behaviour script. Hides and shows the preb and the next arrows on the carousel
+ * Tutorial carousel behavior script.
  */
 $(function() {
     const carouselSelector = '#tutorialCarousel';
-    var carouselEl = $(carouselSelector);
-    if (carouselEl.length == 0) return;
+    
+    const modalTutorial = document.getElementById('modal-tutorial');
+    if (!modalTutorial) return;
 
-    var checkActiveCard = function() {
-        if ($(carouselSelector + " .carousel-inner .carousel-item:first").hasClass("active")) {
-            carouselEl.children(".carousel-control-prev").hide();
-            carouselEl.children(".carousel-control-next").show();
-        } else if ($(carouselSelector + " .carousel-inner .carousel-item:last").hasClass("active")) {
-            carouselEl.children(".carousel-control-next").hide();
-            carouselEl.children(".carousel-control-prev").show();
-        } else {
-            carouselEl.children(".carousel-control-prev").show();
-            carouselEl.children(".carousel-control-next").show();
-        }
+    const carouselEl = modalTutorial.querySelector(carouselSelector);
+    if (!carouselEl) return;
+
+    const tutorialBackground = modalTutorial.querySelector('.tutorial-background');
+    if (!tutorialBackground) return;
+
+    carouselEl.addEventListener('slide.bs.carousel', function (e) {
+        activateSlideBackground(0);
+    })
+
+    carouselEl.addEventListener('slid.bs.carousel', function (e) {
+        activateSlideBackground(e.to);
+    })
+
+    const activateSlideBackground = function(slideIndex) {
+        
+        const slideContents = tutorialBackground.querySelectorAll('.slide-content');
+        slideContents.forEach(function(elem, index) {
+            elem.classList.toggle('active', index == slideIndex);
+        })
     };
 
-    checkActiveCard();
-
-    $(carouselSelector).on("slid.bs.carousel", "", checkActiveCard);
+    // activate the first background
+    activateSlideBackground(0);
 })
 
 /*
