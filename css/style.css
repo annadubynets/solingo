@@ -633,7 +633,7 @@ h4 {
   bottom: 0;
 }
 .modal-tutorial .tutorial-background .slide-overlay {
-  background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.95) 32.08%, rgba(45, 46, 131, 0.95) 143.69%);
+  background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.94) 32.08%, rgba(45, 46, 131, 0.94) 143.69%);
   position: fixed;
   top: 0;
   left: 0;
@@ -651,8 +651,29 @@ h4 {
   display: block;
   opacity: 1;
 }
+.modal-tutorial .tutorial-background .chose-from-language-bg {
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .chose-from-language-bg {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
+}
 .modal-tutorial .tutorial-background .choose-language-bg {
   padding-top: 80px;
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .choose-language-bg {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
 }
 .modal-tutorial .tutorial-background .choose-language-bg .tutorial-hand-pointer::after {
   top: 30px;
@@ -661,6 +682,30 @@ h4 {
 .modal-tutorial .tutorial-background .choose-level-bg .tutorial-hand-pointer::after {
   bottom: -60px;
   left: 50%;
+}
+.modal-tutorial .tutorial-background .practice-listening {
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .practice-listening {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
+}
+.modal-tutorial .tutorial-background .practice-writing {
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .practice-writing {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
 }
 .modal-tutorial .tutorial-background .choose-lesson-bg .tutorial-hand-pointer::after {
   top: 30px;
