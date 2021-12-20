@@ -185,6 +185,11 @@ h4 {
   border-radius: 27px;
   padding: 13px 30px;
 }
+.btn-info:hover, .btn-info:focus {
+  color: #FFFFFF;
+  background: #7965F5;
+  border: 3px solid #FFFFFF;
+}
 @media (min-width: 1200px) {
   .btn-info {
     padding: 18px 30px;
