@@ -339,7 +339,7 @@ $(function() {
 
         const options = {
             trigger: 'focus',
-            template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close"></span></div><div class="popover-body"></div></div>`,
+            template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close cursor-pointer"></span></div><div class="popover-body"></div></div>`,
         }
         
         if (htmlPopoverContent) {
