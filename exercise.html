@@ -44,7 +44,7 @@
                         <p class="text-secondary font-size-13px">Select </p>
                     </div>
                     <div class="close-btn">
-                        <a href="choose-lesson.html" class="bg-light p-2 rounded-1 shadow d-flex justify-content-center align-items-center">
+                        <a href="choose-lesson.html" class="bg-light p-2 rounded-1 shadow d-flex justify-content-center align-items-center border-0" data-bs-toggle="modal" data-bs-target="#continue">
                             <span class="icon-close text-pink font-size-14px"></span>
                         </a>
                     </div>
@@ -71,7 +71,7 @@
                     </h4>
                 </div>
             </div>
-        
+
             <div class="text-center">
                 <h2>I speak</h2>
 
@@ -143,7 +143,6 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#continueModal">Continue</button>
-
                     </div>
                 </div>
             </div>
@@ -174,6 +173,22 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <a href="congrats.html" class="btn btn-primary" data-bs-target="#continueModal">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="continue" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wrongAnswerLabel" aria-hidden="true">
+        <div class="modal-dialog px-4 pt-140px">
+
+            <div class="modal-content text-start pt-5 p-4">
+                <p class="font-size-14px text-dark mb-4">Are you sure you want to close this lesson? You will lose all your progress.</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#continue">Continue</button>
                     </div>
                 </div>
             </div>
