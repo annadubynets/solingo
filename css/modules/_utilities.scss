@@ -157,3 +157,12 @@
         margin-bottom: 100px;
     }
 }
+
+@media (max-width: 414px) {
+    .mb-56px {
+        margin-bottom: 24px;
+    }
+    .pb-140px {
+        padding-bottom: 90px;
+    }
+}

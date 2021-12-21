@@ -13,6 +13,7 @@ main {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -292,6 +293,11 @@ h4 {
   padding: 0;
   position: relative;
 }
+@media (max-width: 320px) {
+  .footer-navbar .nav-link {
+    font-size: 8px;
+  }
+}
 .footer-navbar .nav-link.active {
   font-weight: 800;
 }
@@ -541,6 +547,15 @@ h4 {
 
   .mb-47px {
     margin-bottom: 100px;
+  }
+}
+@media (max-width: 414px) {
+  .mb-56px {
+    margin-bottom: 24px;
+  }
+
+  .pb-140px {
+    padding-bottom: 90px;
   }
 }
 .modal-tutorial .close-btn-container {
@@ -4275,6 +4290,15 @@ h4 {
   color: #FF4F86;
 }
 
+.input-label {
+  font-size: 11px;
+}
+@media (max-width: 414px) {
+  .input-label {
+    font-size: 9px;
+  }
+}
+
 .article-circle {
   width: 65px;
   height: 65px;
@@ -5181,8 +5205,9 @@ h4 {
 
 .return-link {
   position: absolute;
-  top: 0;
-  left: 1.563rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .return-circle {
@@ -5276,6 +5301,12 @@ h4 {
   font-weight: 500;
   font-size: 18px;
   color: #2C2A71;
+}
+@media (max-width: 414px) {
+  .custom-select .select-items div {
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+  }
 }
 .custom-select .select-hide {
   display: none;

@@ -54,6 +54,9 @@
         color: $slategrey;
         padding: 0;
         position: relative;
+        @media (max-width: 320px) {
+            font-size: 8px;
+        }
         &.active {
             font-weight: 800;
             span {
