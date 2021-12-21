@@ -62,8 +62,6 @@
         }
     }
 
-   
-
     .tutorial-background {
         @include absolute_fit_parent();
         @extend .main-blue;
@@ -85,7 +83,7 @@
         }
 
         .slide-overlay {
-            background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.95) 32.08%, rgba(45, 46, 131, 0.95) 143.69%);
+            background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.94) 32.08%, rgba(45, 46, 131, 0.94) 143.69%);
             position: fixed;
             top: 0;
             left: 0;
@@ -107,9 +105,26 @@
             }
         }
 
+        @mixin abstract-slide-background {
+            background-image: url(../images/languages-bg.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+
+            @media (min-width: 768px) {
+                background-image: url('../images/languages-bg-desktop.svg');
+            }
+        }
+
+        .chose-from-language-bg {
+            @include abstract-slide-background();
+            height: 100%;
+        }
 
         .choose-language-bg {
             padding-top: 80px;
+
+            @include abstract-slide-background();
 
             .tutorial-hand-pointer {
                 &::after {
@@ -126,6 +141,16 @@
                     left: 50%;
                 }
             }
+        }
+
+        .practice-listening {
+            @include abstract-slide-background();
+            height: 100%;
+        }
+
+        .practice-writing {
+            @include abstract-slide-background();
+            height: 100%;
         }
 
         .choose-lesson-bg {
