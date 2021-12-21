@@ -278,7 +278,7 @@ $(function() {
  */
 $(function() {
     const carouselSelector = '#tutorialCarousel';
-    
+
     const modalTutorial = document.getElementById('modal-tutorial');
     if (!modalTutorial) return;
 
@@ -288,16 +288,16 @@ $(function() {
     const tutorialBackground = modalTutorial.querySelector('.tutorial-background');
     if (!tutorialBackground) return;
 
-    carouselEl.addEventListener('slide.bs.carousel', function (e) {
+    carouselEl.addEventListener('slide.bs.carousel', function(e) {
         activateSlideBackground(0);
     })
 
-    carouselEl.addEventListener('slid.bs.carousel', function (e) {
+    carouselEl.addEventListener('slid.bs.carousel', function(e) {
         activateSlideBackground(e.to);
     })
 
     const activateSlideBackground = function(slideIndex) {
-        
+
         const slideContents = tutorialBackground.querySelectorAll('.slide-content');
         slideContents.forEach(function(elem, index) {
             elem.classList.toggle('active', index == slideIndex);
@@ -341,7 +341,7 @@ $(function() {
             trigger: 'focus',
             template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close cursor-pointer"></span></div><div class="popover-body"></div></div>`,
         }
-        
+
         if (htmlPopoverContent) {
             const contentHtml = htmlPopoverContent.innerHTML;
             htmlPopoverContent.remove();

@@ -3,13 +3,12 @@
     opacity: 0.9;
     background-color: #2E2E78;
     color: $white;
+    font-size: 12px;
     @extend .shadow;
-
     .popover-body {
-        padding-top: 0;
         color: $white;
+        padding: 0 12px 12px 12px;
     }
-
     .icon-close {
         margin-top: 0.375rem;
         margin-right: 0.375rem;
