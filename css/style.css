@@ -562,12 +562,11 @@ h4 {
     margin-bottom: 100px;
   }
 }
-@media (max-width: 320px) {
-  .mb-56px {
-    margin-bottom: 26px;
-  }
-}
 @media (max-width: 414px) {
+  .mb-56px {
+    margin-bottom: 40px;
+  }
+
   .pb-140px {
     padding-bottom: 90px;
   }
@@ -4387,6 +4386,11 @@ h4 {
   font-size: 24px;
 }
 
+@media (max-width: 375px) {
+  .word-card .card-body {
+    padding: 10px 10px;
+  }
+}
 @media (min-width: 1200px) {
   .article-circle {
     width: 94px;

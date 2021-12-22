@@ -166,6 +166,15 @@
     }
 }
 
+
+@media (max-width: 375px) {
+    .word-card {
+        .card-body {
+            padding: 10px 10px;
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     .article-circle {
         width: 94px;
