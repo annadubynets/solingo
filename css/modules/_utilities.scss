@@ -162,10 +162,14 @@
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 320px) {
     .mb-56px {
-        margin-bottom: 24px;
+        margin-bottom: 26px;
     }
+}
+
+@media (max-width: 414px) {
+    
     .pb-140px {
         padding-bottom: 90px;
     }
