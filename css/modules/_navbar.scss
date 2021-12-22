@@ -55,7 +55,9 @@
         padding: 0;
         position: relative;
         @media (max-width: 320px) {
-            font-size: 8px;
+            span {
+                font-size: 22px;
+            }
         }
         &.active {
             font-weight: 800;
@@ -73,6 +75,14 @@
                 top: -50px;
                 margin-left: -25px;
                 left: 50%;
+
+                @media (max-width: 320px) {
+                    transform: translateY(-9px) scale(1.05);
+                    width: 40px;
+                    height: 40px;
+                    top: -40px;
+                    margin-left: -20px;
+                }
             }
             &::after {
                 content: "";

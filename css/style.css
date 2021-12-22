@@ -294,8 +294,8 @@ h4 {
   position: relative;
 }
 @media (max-width: 320px) {
-  .footer-navbar .nav-link {
-    font-size: 8px;
+  .footer-navbar .nav-link span {
+    font-size: 22px;
   }
 }
 .footer-navbar .nav-link.active {
@@ -315,6 +315,15 @@ h4 {
   top: -50px;
   margin-left: -25px;
   left: 50%;
+}
+@media (max-width: 320px) {
+  .footer-navbar .nav-link.active span {
+    transform: translateY(-9px) scale(1.05);
+    width: 40px;
+    height: 40px;
+    top: -40px;
+    margin-left: -20px;
+  }
 }
 .footer-navbar .nav-link.active::after {
   content: "";
