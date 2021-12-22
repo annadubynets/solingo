@@ -570,6 +570,10 @@ h4 {
   .pb-140px {
     padding-bottom: 90px;
   }
+
+  .pb-160px {
+    padding-bottom: 140px;
+  }
 }
 .modal-tutorial .close-btn-container {
   position: absolute;
@@ -5462,6 +5466,18 @@ h4 {
 }
 .footer .copyright {
   font-size: 12px;
+}
+
+.continue-training {
+  bottom: 84px;
+}
+@media (min-width: 321px) {
+  .continue-training {
+    bottom: 110px;
+  }
+  .continue-training .btn {
+    padding: 13px 32px;
+  }
 }
 
 .card-img {

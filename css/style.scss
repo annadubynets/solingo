@@ -652,6 +652,17 @@
     }
 }
 
+.continue-training {
+    bottom: 84px;
+    @media (min-width: 321px) {
+        bottom: 110px;
+
+        .btn {
+            padding: 13px 32px;
+        }
+    }
+}
+
 .card-img {
     object-fit: cover;
     object-position: top;
