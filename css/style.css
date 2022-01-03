@@ -5307,7 +5307,7 @@ h4 {
   position: absolute;
   height: 100%;
   display: flex;
-  align-items: center;
+  left: 2rem;
 }
 
 .return-circle {
