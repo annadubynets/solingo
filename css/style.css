@@ -5309,6 +5309,11 @@ h4 {
   display: flex;
   left: 2rem;
 }
+@media (min-width: 1200px) {
+  .return-link {
+    top: 8px;
+  }
+}
 
 .return-circle {
   background-color: #F84281;
