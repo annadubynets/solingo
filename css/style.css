@@ -5486,6 +5486,11 @@ h4 {
 .modal .top-icon-block > * {
   max-width: 90px;
 }
+@media (orientation: landscape) and (max-height: 412px) {
+  .modal .pt-140px {
+    padding-top: 64px;
+  }
+}
 
 .footer .list-items .list-item {
   padding: 0 16px;

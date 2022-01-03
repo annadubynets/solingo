@@ -647,6 +647,12 @@
             max-width: 90px;
         }
     }
+
+    @media (orientation: landscape) and (max-height: 412px) {
+        .pt-140px {
+            padding-top: 64px;
+        }
+    }
 }
 
 .footer {
