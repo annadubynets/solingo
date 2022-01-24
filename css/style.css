@@ -5312,12 +5312,14 @@ h4 {
   position: absolute;
   height: 100%;
   display: flex;
-  left: 2rem;
 }
 @media (min-width: 1200px) {
   .return-link {
     top: 8px;
   }
+}
+.return-link + h2, .return-link + div h2 {
+  padding: 0 40px;
 }
 
 .return-circle {

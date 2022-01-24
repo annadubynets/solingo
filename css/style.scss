@@ -474,7 +474,10 @@
     @media (min-width: 1200px) {
         top: 8px;
     }
-    left: 2rem;
+
+    &+h2, &+div h2 {
+        padding: 0 40px;
+    }
 }
 
 .return-circle {
