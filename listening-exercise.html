@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solingo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+        <div class="container">
+            <a class="navbar-brand d-block" href="./index.html">
+                <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+            </a>
+            <div class="dropdown ms-auto">
+                <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><img src="images/united-kingdom.svg" alt="United Kingdom"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <p class="font-size-10px text-center">Learn from</p>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/french.svg" alt="French"></span></a></li>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/german.svg" alt="German"></span></a></li>
+                    <li><a class="dropdown-item text-start" href="#"><span><img src="images/saudi-arabia.svg" alt="Aaudi Arabia"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="main-blue min-vh-100 pt-22px pb-140px">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-5 col-xl-6 col-12 text-center position-relative">
+                    <div class="return-link">
+                        <a href="choose-lesson.html" class="return-circle rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="icon-back font-size-14px"></span>
+                        </a>
+                    </div>
+                    <div class="text-start d-inline-block">
+                        <h2 class="mb-0">Paris Level 1<span class="ps-2 align-text-top"><img src="images/french-flag.svg" alt="French" class="flag-style rounded-circle"></span>
+                        </h2>
+                    </div>
+                    <div class="close-btn">
+                        <button class="bg-light p-2 rounded-1 shadow d-flex justify-content-center align-items-center border-0" data-bs-toggle="modal" data-bs-target="#continue">
+                            <span class="icon-close text-pink font-size-14px"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center px-lg-3 px-4">
+                <div class="col-lg-6 col-12 text-center mb-4">
+                    <div class="d-flex justify-content-center mb-3">
+                        <span class="listen-circle-btn cursor-pointer">
+                        <div class="circle-btn-container">
+                            <div class="circle-btn-body">
+                                <span class="icon-listen text-white font-size-24px"></span>
+                    </div>
+                </div>
+
+                </span>
+            </div>
+            <h3>Je parle</h3>
+            <h4 class="fw-normal">I speak</h4>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class="text-center">
+            <a href="exercise.html" class="btn btn-primary">Got it</a>
+        </div>
+
+        <nav class="navbar footer-navbar fixed-bottom navbar-light justify-content-around align-items-end d-flex">
+            <a href="account.html" class="nav-link text-center"><span class="icon-user font-size-30px d-block"></span>Account</a>
+            <a href="vocabulary.html" class="nav-link text-center"><span class="icon-layers font-size-30px d-block"></span>Learned</a>
+            <a href="choose-language.html" class="nav-link text-center active"><span class="icon-home font-size-30px d-block pb-1"></span>Home</a>
+            <a href="articles.html" class="nav-link text-center"><span class="icon-star font-size-30px d-block"></span>Articles</a>
+            <a href="badges.html" class="nav-link text-center"><span class="icon-badges font-size-30px d-block"></span>Badges</a>
+        </nav>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="wrongAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wrongAnswerLabel" aria-hidden="true">
+        <div class="modal-dialog px-4 pt-140px">
+            <div class="modal-content text-center pt-5 p-4 position-relative">
+                <div class="top-icon-block">
+                    <img src="images/wrong-answer-bird.svg" alt="Wrong Answer">
+                </div>
+                <span class="mb-1">
+                    <img src="images/wrong-icon.svg" alt="Wrong Answer">
+                </span>
+                <h3 class="text-danger mb-1">Wrong answer</h3>
+                <span class="text-danger font-size-14px pb-3">Je Parle</span>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal" data-bs-toggle="modal">Try again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="continue" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wrongAnswerLabel" aria-hidden="true">
+        <div class="modal-dialog px-4 pt-140px">
+
+            <div class="modal-content text-start pt-5 p-4">
+                <p class="font-size-14px text-dark mb-4">Are you sure you want to close this lesson? You will lose all your progress.</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary w-100 px-0" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary w-100 px-0" data-bs-toggle="modal" data-bs-target="#continue">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
