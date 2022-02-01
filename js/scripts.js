@@ -82,35 +82,6 @@ $(function() {
 
 });
 
-if ($('.owl-carousel').length > 0) {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        autoplay: false,
-        responsive: {
-            0: {
-                items: 3,
-                stagePadding: 40,
-                nav: true
-            },
-            720: {
-                items: 4,
-                stagePadding: 40,
-                nav: true
-            },
-            1050: {
-                items: 4,
-                nav: true
-            },
-            1200: {
-                items: 6,
-                nav: true
-            }
-        }
-    })
-}
-
 /**
  * Build the progress chart
  * @canvasElem instance of HTML5 canvas
