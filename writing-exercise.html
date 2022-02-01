@@ -29,7 +29,7 @@
             </div>
         </div>
     </nav>
-    <section class="main-blue min-vh-100 pt-22px pb-140px">
+    <section class="main-blue d-flex flex-column min-vh-100 pt-22px pb-160px">
         <div class="container">
             <div class="row justify-content-center mb-lg-4">
                 <div class="col-lg-5 col-xl-6 col-12 text-center position-relative">
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="row justify-content-center px-lg-3 px-4">
-                <div class="col-lg-6 col-12 text-center mb-4">
+                <div class="col-lg-6 col-12 text-center">
                     <div class="d-flex align-items-center pt-3 mb-4">
                         <div class="progress w-100">
                             <div class="progress-bar bg-pink" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -62,23 +62,24 @@
                         Writte what you <span class="fw-normal">hear</span>
                     </h4>
                     <div class="d-flex justify-content-center mb-3">
-                        <span class="listen-circle-btn cursor-pointer">
+                        <div class="listen-circle-btn cursor-pointer">
                             <div class="circle-btn-container">
                                 <div class="circle-btn-body">
                                     <span class="icon-listen text-white font-size-24px"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light rounded shadow-lg">
+                        <label for="inputText" class="text-start text-primary input-label">French</label>
+                        <input type="text" class="form-control unstyled-input" id="inputText" placeholder="Type here">
                     </div>
                 </div>
-                </span>
             </div>
-
-            <div class="card bg-light rounded shadow-lg mb-56px">
-                <label for="inputText" class="text-start text-primary input-label">French</label>
-                <input type="text" class="form-control unstyled-input" id="inputText" placeholder="Type here">
-            </div>
-
+        </div>
+        <div class="text-center mt-auto">
             <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wrongAnswer">Check</a>
-        </div>
-        </div>
         </div>
         <nav class="navbar footer-navbar fixed-bottom navbar-light justify-content-around align-items-end d-flex">
             <a href="account.html" class="nav-link text-center"><span class="icon-user font-size-30px d-block"></span>Account</a>
